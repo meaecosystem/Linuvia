@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>特殊文字のためのURLエンコード・デコード方法 | MEA Blog</title>
+<meta name="description" content="テキストを安全なURL形式に変換（エンコード）、またはエンコードされたURLを元に戻す（デコード）方法。ブラウザ内で直接処理。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-encode-decode-url.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "URLのエンコード・デコード方法",
+  "description": "特殊文字のためのURLエンコード・デコード方法。ブラウザ内で直接処理。",
+  "step": [
+    { "@type": "HowToStep", "name": "URL Encoderを開く", "text": "ブラウザで tools.meaecosystem.com/url-encoder/ を開く。" },
+    { "@type": "HowToStep", "name": "モードを選択", "text": "テキストをURLで安全な形式にするにはEncode、その逆はDecodeを選択。" },
+    { "@type": "HowToStep", "name": "エンコードモードを設定", "text": "Encodeの場合、コンポーネント文字全体をエンコードするか、完全なURLを整えるだけかを選択。" },
+    { "@type": "HowToStep", "name": "テキストを入力", "text": "テキストを入力または貼り付けると、結果が自動的に表示される。" }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/cara-encode-decode-url.html","ja":"/ja/cara-encode-decode-url.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">テキスト</a>
+    <span>/</span>
+    <span aria-current="page">URLエンコード・デコードの方法</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">ガイド · 開発者向け</span>
+    <h1>特殊文字のためのURLエンコード・デコード方法</h1>
+    <p class="mea-article-lead">%20や%3Fのようなパーセント記号と数字だらけのURLを見たことは？それはURLエンコードの結果です。テキストをその形式に変換し、また元に戻す方法を紹介します。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月1日</span>
+      <span>·</span>
+      <span>読了時間 2分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>URLには使用できる文字に制限があります——スペース、疑問符、アンパサンド、非ラテン文字は、URLを壊さず有効に保つためにパーセント形式に変換する必要があります（例：スペースは<code>%20</code>になる）。URL Encoder & Decoderはテキストを双方向に変換します：安全なURL形式にするか、その形式を元の普通のテキストに読み戻すか。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">今すぐ試す</span>
+      <h3>URL Encoder & Decoder — MEA Tools</h3>
+      <p>テキストを安全なURL形式に変換（エンコード）、またはエンコードされたURLを元に戻す（デコード）、ブラウザ内で直接処理。</p>
+      <a href="https://tools.meaecosystem.com/url-encoder/" class="mea-tool-cta-btn">URL Encoderを開く →</a>
+    </div>
+
+    <h2>URLエンコード・デコードの手順</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/url-encoder/">tools.meaecosystem.com/url-encoder</a> を開く。</li>
+      <li>必要に応じて「Encode」または「Decode」タブを選ぶ。</li>
+      <li>Encodeモードの場合、「コンポーネント文字全体をエンコード」オプションに注意——違いの説明は下部にある。</li>
+      <li>テキストを入力または貼り付けると、結果が自動的に表示される。</li>
+    </ol>
+
+    <h2>2つのエンコードモード、どちらを選ぶ？</h2>
+    <p>URLエンコードには2つの方法があり、それぞれ機能が異なります。エンコードするテキストが<strong>URLの1つのパラメータの値</strong>になる場合——例えば検索語をURLに組み込む場合——は「コンポーネント文字全体をエンコード」オプションを有効にしてください。このモードは<code>& ? / = #</code>を含むすべての特殊文字をエンコードします。テキストがすでに<strong>完全なURL</strong>で、特殊文字（スペース、非ラテン文字）だけを整えればよい場合はこのオプションをオフにしてください。ただし、URLが壊れないよう<code>://</code>や<code>&</code>、<code>?</code>のような構造はそのまま保持する必要があります。</p>
+
+    <h2>適切なモードを選ぶことがなぜ重要か</h2>
+    <p>モードを間違えると——例えば本来パラメータの値だけをエンコードすべきなのに、URL全体（<code>://</code>や<code>?</code>を含む）をエンコードしてしまうと——結果のURLは無効になり、ブラウザで開いても機能しません。そのため、処理するテキストが「完全なURL」なのか「1つのパラメータの値部分だけ」なのかをまず理解することが重要です。</p>
+
+    <h2>よくある質問</h2>
+    <details class="mea-faq-item">
+      <summary>入力したテキストはサーバーに送信されますか？</summary>
+      <p>いいえ。エンコードとデコードの処理はあなたのブラウザ内で直接行われます。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>デコード結果にまだパーセント記号が残っているのはなぜ？</summary>
+      <p>そのテキストが以前に2回エンコードされていた可能性があります。元のテキストに戻すには複数回デコードする必要があります。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>エンコードされる文字とされない文字の違いは？</summary>
+      <p>URLの基本構造に含まれる文字（<code>: / ? #</code>など）は、完全なURLをエンコードする場合は通常そのまま残されますが、単一のコンポーネント値を処理する場合はエンコードされます。</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>あわせて読みたい</h2>
+      <p><a href="/ja/cara-buat-slug-url.html">記事タイトルからSEOフレンドリーなURLスラッグを作る方法</a></p>
+      <p><a href="/ja/cara-encode-decode-base64.html">テキストをBase64にエンコード・デコードする方法</a></p>
+      <p><a href="/id/cara-cek-regex.html">正規表現（Regex）パターンをオンラインでテストする方法</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

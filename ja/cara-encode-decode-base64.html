@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>テキストをBase64にエンコード・デコードする方法 | MEA Blog</title>
+<meta name="description" content="テキストをBase64にエンコード、またはBase64を通常のテキストに戻す方法。絵文字や非ラテン文字にも対応、ブラウザ内で直接処理。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-encode-decode-base64.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "テキストをBase64にエンコード・デコードする方法",
+  "description": "テキストをBase64へ/から変換する方法。ブラウザ内で直接処理。",
+  "step": [
+    { "@type": "HowToStep", "name": "Base64 Text Encoderを開く", "text": "ブラウザで tools.meaecosystem.com/base64-text/ を開く。" },
+    { "@type": "HowToStep", "name": "モードを選択", "text": "テキストをBase64に変換するにはEncode、その逆はDecodeを選択。" },
+    { "@type": "HowToStep", "name": "テキストを入力", "text": "処理したいテキストを入力または貼り付け。" },
+    { "@type": "HowToStep", "name": "結果をコピー", "text": "結果が自動的に表示されるので、ワンクリックでコピー。" }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/cara-encode-decode-base64.html","ja":"/ja/cara-encode-decode-base64.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">テキスト</a>
+    <span>/</span>
+    <span aria-current="page">Base64エンコード・デコードの方法</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">ガイド · 開発者向け</span>
+    <h1>テキストをBase64にエンコード・デコードする方法</h1>
+    <p class="mea-article-lead">文字と数字、末尾に「=」記号が並ぶ奇妙な文字列を見かけたことは？それはおそらくBase64です。テキストをBase64に変換し、その逆を行う方法を紹介します。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月1日</span>
+      <span>·</span>
+      <span>読了時間 2分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Base64は、バイナリデータ（または任意のテキスト）を文字・数字・一部の記号の組み合わせで表現する方式で、テキストのみ対応のシステム——URLやJSON、メールへの埋め込みなど——でも安全に送信できるようにします。重要な点として、Base64はエンコーディングであって暗号化ではありません——誰でもデコードできるため、機密データを隠す用途には使えません。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">今すぐ試す</span>
+      <h3>Base64 Text Encoder & Decoder — MEA Tools</h3>
+      <p>テキストをBase64にエンコード、または通常のテキストにデコード、Unicode対応、ブラウザ内で直接処理。</p>
+      <a href="https://tools.meaecosystem.com/base64-text/" class="mea-tool-cta-btn">Base64 Text Encoderを開く →</a>
+    </div>
+
+    <h2>Base64エンコード・デコードの手順</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/base64-text/">tools.meaecosystem.com/base64-text</a> を開く。</li>
+      <li>通常のテキストをBase64に変換したい場合は「Encode」タブ、逆方向なら「Decode」タブを選ぶ。</li>
+      <li>入力欄にテキストを入力または貼り付ける。</li>
+      <li>結果欄に自動的に表示されるので、そのままコピーできる。</li>
+    </ol>
+
+    <h2>Base64は暗号化ではない——その違い</h2>
+    <p>エンコーディングと暗号化はよく混同されますが、まったく異なります。暗号化はデータを元に戻すために鍵が必要ですが、Base64は鍵を一切必要としません——それがBase64だと分かれば誰でもすぐにデコードして元の内容を読むことができます。つまり、パスワードのような機密情報を隠す目的にはBase64は適していません。</p>
+
+    <h2>なぜUnicode対応が重要か</h2>
+    <p>Base64は本来、標準的なASCII文字向けに設計されています。エンコードするテキストに絵文字や非ラテン文字（アラビア語、日本語、中国語の文字など）が含まれる場合、Unicodeを正しく扱わないエンコーダーはデコード時に文字化けを起こすことがあります。このツールはUnicodeを正しく処理するため、絵文字を含むどんなテキストでも文字を失うことなく安全にエンコード・デコードできます。</p>
+
+    <h2>よくある質問</h2>
+    <details class="mea-faq-item">
+      <summary>入力したテキストはサーバーに送信されますか？</summary>
+      <p>いいえ。エンコードとデコードの処理はあなたのブラウザ内で直接行われます。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Base64はパスワードを保存するのに安全ですか？</summary>
+      <p>いいえ。Base64は誰でも鍵なしでデコードできるため、機密データを隠す用途には使えません。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>デコード結果が文字化けやエラーになるのはなぜ？</summary>
+      <p>貼り付けたテキストが有効なBase64ではない可能性が高いです——コピー時に文字が欠けたり入れ替わったりしていることがあります。</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>あわせて読みたい</h2>
+      <p><a href="/ja/cara-buat-uuid.html">開発に使えるUUID v4の作り方</a></p>
+      <p><a href="/id/cara-format-json.html">乱れたJSONを整形・検証する方法</a></p>
+      <p><a href="/ja/cara-cek-hash-file.html">ファイルのハッシュ値（MD5、SHA-256）を確認する方法</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
