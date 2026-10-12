@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>手の動きから幾何学模様を作るジェスチャーグリッチの遊び方 | MEA Blog</title>
+<meta name="description" content="Gesture Glitchの遊び方——カメラに指をかざすとグリッチ効果の幾何学模様がリアルタイムで表示される、手検出はブラウザ内で直接処理、アップロードなし。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/cara-main-gesture-glitch.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-main-gesture-glitch.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-main-gesture-glitch.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-main-gesture-glitch.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Gesture Glitchの遊び方",
+  "description": "カメラを通して指の動きから幾何学模様を検出するGesture Glitchの使い方。ブラウザ内で直接処理。",
+  "step": [
+    { "@type": "HowToStep", "name": "Gesture Glitchを開く", "text": "ブラウザで tools.meaecosystem.com/gesture-glitch/ を開く。" },
+    { "@type": "HowToStep", "name": "カメラをオンにする", "text": "カメラをオンにするボタンをクリックし、カメラへのアクセスを許可。" },
+    { "@type": "HowToStep", "name": "指を上げる", "text": "カメラの前で指を上げると、本数に応じて幾何学模様が自動的に表示される。" }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/cara-main-gesture-glitch.html","ja":"/ja/cara-main-gesture-glitch.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#utilitas">ユーティリティ</a>
+    <span>/</span>
+    <span aria-current="page">Gesture Glitchの遊び方</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">ガイド · 実験的</span>
+    <h1>手の動きから幾何学模様を作るジェスチャーグリッチの遊び方</h1>
+    <p class="mea-article-lead">普段のツールとは違う何かを試したい？Gesture Glitchはカメラを通してあなたの指の動きを検出し、グリッチ効果のある幾何学模様をリアルタイムで表示します。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月1日</span>
+      <span>·</span>
+      <span>読了時間 2分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Gesture GlitchはMEA Toolsの他のツールとは異なります——これはあなたの端末のカメラを使って上げている指の本数を検出し、あなたの動きにリアルタイムで反応するグリッチ効果付きの幾何学模様を表示する、インタラクティブなビジュアル実験です。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">今すぐ試す</span>
+      <h3>Gesture Glitch — MEA Tools</h3>
+      <p>カメラに指をかざすとグリッチ効果の幾何学模様がリアルタイムで表示される、ブラウザ内で直接処理。</p>
+      <a href="https://tools.meaecosystem.com/gesture-glitch/" class="mea-tool-cta-btn">Gesture Glitchを開く →</a>
+    </div>
+
+    <h2>Gesture Glitchの遊び方</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/gesture-glitch/">tools.meaecosystem.com/gesture-glitch</a> を開く。</li>
+      <li>「カメラをオンにする」をクリックし、ブラウザから求められたらカメラへのアクセスを許可する。</li>
+      <li>手検出モデルの読み込みが終わるまで少し待つ。</li>
+      <li>カメラの前で指を上げる——検出された指の本数に応じて、グリッチ効果付きの幾何学模様が自動的に表示される。</li>
+      <li>両手を同時に使って、2つの模様を同時に表示することもできる。</li>
+    </ol>
+
+    <h2>検出精度を上げるコツ</h2>
+    <p>部屋の照明が十分に明るく、カメラのフレーム内で手がはっきり見えるようにしてください。カメラからの理想的な距離は約30〜80cmです。模様がちらついたり不安定に見える場合、たいてい照明が不安定だったり指が少し隠れていることが原因です——手をカメラにより正面から向けてみてください。</p>
+
+    <h2>よくある質問</h2>
+    <details class="mea-faq-item">
+      <summary>カメラの映像はサーバーに送信されますか？</summary>
+      <p>いいえ。手検出と模様のレンダリングはすべてあなたのブラウザ内で完全に行われます。映像データがどこかのサーバーに送信・保存されることは一切ありません。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>手が検出されないのはなぜですか？</summary>
+      <p>照明が十分に明るく、カメラのフレーム内で手がはっきり見えるようにしてください。カメラからの理想的な距離は約30〜80cmです。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>スマートフォンでも使えますか？</summary>
+      <p>使えます。端末のブラウザがカメラアクセスに対応している限り可能です。端末で利用可能であれば、カメラ（前面/背面）を切り替えることもできます。</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>あわせて読みたい</h2>
+      <p><a href="/ja/cara-hapus-background-foto.html">写真の背景を透明にする方法（ブラウザ内で直接処理）</a></p>
+      <p><a href="/ja/cara-buat-meme.html">自分の画像からミームを作る方法（無料・透かしなし）</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
