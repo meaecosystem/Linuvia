@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>正規表現（Regex）パターンをオンラインでテストする方法 | MEA Blog</title>
+<meta name="description" content="正規表現パターンをテストし、一致箇所を自動でハイライト表示、各キャプチャグループの詳細も確認。ブラウザ内で直接処理、サーバーへのアップロードなし。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/cara-cek-regex.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-cek-regex.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-cek-regex.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-cek-regex.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "正規表現パターンをテストする方法",
+  "description": "正規表現パターンをテストして一致結果を確認する方法。ブラウザ内で直接処理。",
+  "step": [
+    { "@type": "HowToStep", "name": "Regex Testerを開く", "text": "ブラウザで tools.meaecosystem.com/regex-tester/ を開く。" },
+    { "@type": "HowToStep", "name": "正規表現パターンを入力", "text": "テストしたい正規表現パターンを入力。" },
+    { "@type": "HowToStep", "name": "フラグを選択", "text": "必要に応じてg（グローバル）、i（大文字小文字無視）、m（複数行）のフラグにチェック。" },
+    { "@type": "HowToStep", "name": "テスト用テキストを貼り付け", "text": "テストしたいテキストを貼り付けると、一致結果がすぐにハイライト表示される。" }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/cara-cek-regex.html","ja":"/ja/cara-cek-regex.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">テキスト</a>
+    <span>/</span>
+    <span aria-current="page">Regexテストの方法</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">ガイド · 開発者向け</span>
+    <h1>正規表現（Regex）パターンをオンラインでテストする方法</h1>
+    <p class="mea-article-lead">メールアドレスや電話番号のバリデーション用に正規表現を書いたけど、パターンが正しいか自信がない？本番コードでいきなり試す前に、ここでテストしてリアルタイムで結果を確認しましょう。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月1日</span>
+      <span>·</span>
+      <span>読了時間 3分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Regex Testerは、あなたの正規表現パターンに一致するテキスト部分を他のテキストの中でハイライト表示し、パターンに括弧を使っている場合はキャプチャグループを含む各一致の詳細も表示します。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">今すぐ試す</span>
+      <h3>Regex Tester — MEA Tools</h3>
+      <p>ブラウザ内で直接正規表現パターンをテスト、一致結果はすぐにハイライト表示。</p>
+      <a href="https://tools.meaecosystem.com/regex-tester/" class="mea-tool-cta-btn">Regex Testerを開く →</a>
+    </div>
+
+    <h2>Regexをテストする手順</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/regex-tester/">tools.meaecosystem.com/regex-tester</a> を開く。</li>
+      <li>パターン欄に正規表現を入力する。</li>
+      <li>必要なフラグにチェックを入れる：<code>g</code>はすべての一致を検索（最初の一致だけでなく）、<code>i</code>は大文字小文字を無視、<code>m</code>は複数行モード。</li>
+      <li>テキスト欄にテスト用テキストを貼り付けるか入力する。</li>
+      <li>パターンに一致する部分がすぐにハイライトされ、一致総数が表示される。</li>
+      <li>パターンにキャプチャグループ用の括弧を使っている場合、各一致の詳細（各グループの内容を含む）が下部に表示される。</li>
+    </ol>
+
+    <h2>フラグg、i、m——いつ使う？</h2>
+    <p>フラグ<code>g</code>（グローバル）は、最初に見つかった一致だけでなくテキスト中のパターンのすべての出現を検索したい場合に必要です——通常デフォルトで有効になっています。フラグ<code>i</code>は、大文字小文字の違いを気にせず検索したい場合、例えば大文字・小文字を問わず単語を探す場合に便利です。フラグ<code>m</code>は<code>^</code>と<code>$</code>の挙動を変更し、テキスト全体の先頭・末尾ではなく各行の先頭・末尾に一致するようにします——複数行のテキストに便利です。</p>
+
+    <h2>正しく見えるのにパターンが一致しないのはなぜ？</h2>
+    <p>最もよくある原因は、正規表現の特殊文字（ピリオドや括弧など、本来は普通の文字として検索したいもの）のエスケープを忘れていること、または必要なフラグにチェックが入っていないことです。まずはシンプルなパターンでテストし、問題の箇所が見つかるまで少しずつ複雑さを加えていくのがおすすめです。</p>
+
+    <h2>よくある質問</h2>
+    <details class="mea-faq-item">
+      <summary>パターンとテキストはサーバーに送信されますか？</summary>
+      <p>いいえ。正規表現のテストはJavaScript標準の正規表現エンジンを使って、あなたのブラウザ内で直接行われます。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>すべての種類の正規表現に対応していますか？</summary>
+      <p>このツールはブラウザ標準のJavaScript正規表現エンジンを使用しているため、JavaScriptの正規表現構文に従います——PythonやPHPなど他のプログラミング言語の正規表現と比較すると、若干の違いがある場合があります。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>キャプチャグループとは何ですか？</summary>
+      <p>キャプチャグループは括弧で囲まれた正規表現パターンの一部で、一致したテキストの全体が一致したかどうかだけでなく、特定の部分を「捕捉」して取り出すために使われます。</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>あわせて読みたい</h2>
+      <p><a href="/ja/cara-konversi-csv-json.html">CSVとJSONを相互に変換する方法</a></p>
+      <p><a href="/ja/cara-encode-decode-url.html">特殊文字のためのURLエンコード・デコード方法</a></p>
+      <p><a href="/ja/cara-format-json.html">乱れたJSONを整形・検証する方法</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

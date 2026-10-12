@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>PDFファイル内のすべての画像を抽出する方法 | MEA Blog</title>
+<meta name="description" content="PDFファイルに埋め込まれたすべての画像を抽出して一括ダウンロードする方法。ブラウザ内で直接処理、サーバーへのアップロードなし。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/cara-ekstrak-gambar-dari-pdf.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-ekstrak-gambar-dari-pdf.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-ekstrak-gambar-dari-pdf.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-ekstrak-gambar-dari-pdf.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "PDFファイルからすべての画像を抽出する方法",
+  "description": "PDFファイル内に埋め込まれたすべての画像を抽出する方法。ブラウザ内で直接処理。",
+  "step": [
+    { "@type": "HowToStep", "name": "Extract Images from PDFを開く", "text": "ブラウザで tools.meaecosystem.com/extract-pdf-images/ を開く。" },
+    { "@type": "HowToStep", "name": "PDFをアップロード", "text": "画像を抽出したいPDFファイルを選択。" },
+    { "@type": "HowToStep", "name": "画像のプレビューを確認", "text": "PDF内で見つかったすべての画像が表示される。" },
+    { "@type": "HowToStep", "name": "一括ダウンロード", "text": "すべての画像を1つのZIPファイルとして一括ダウンロード。" }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/cara-ekstrak-gambar-dari-pdf.html","ja":"/ja/cara-ekstrak-gambar-dari-pdf.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#convert">変換</a>
+    <span>/</span>
+    <span aria-current="page">PDFから画像を抽出する方法</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">ガイド · ドキュメント</span>
+    <h1>PDFファイル内のすべての画像を抽出する方法</h1>
+    <p class="mea-article-lead">写真やイラストが入ったプレゼン資料やレポートのPDFをもらって、画像を個別に取り出したい？1枚ずつスクリーンショットせずに取り出す方法を紹介します。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月1日</span>
+      <span>·</span>
+      <span>読了時間 2分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Extract Images from PDFはPDFファイルの内部構造を読み取り、埋め込まれているすべての画像を見つけます——ページのスクリーンショットではなく、文書に実際に挿入された本来の画像ファイルです——そしてそれらをまとめてダウンロードできるようにします。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">今すぐ試す</span>
+      <h3>Extract Images from PDF — MEA Tools</h3>
+      <p>PDFファイルに埋め込まれたすべての画像を抽出して一括ダウンロード、ブラウザ内で直接処理。</p>
+      <a href="https://tools.meaecosystem.com/extract-pdf-images/" class="mea-tool-cta-btn">Extract Images from PDFを開く →</a>
+    </div>
+
+    <h2>PDFから画像を抽出する手順</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/extract-pdf-images/">tools.meaecosystem.com/extract-pdf-images</a> を開く。</li>
+      <li>画像を抽出したいPDFファイルをアップロードする。</li>
+      <li>PDF内で見つかったすべての画像がプレビューとして表示される。</li>
+      <li>すべての画像を1つのZIPファイルで一括ダウンロードするか、必要な画像だけを選んでダウンロードする。</li>
+    </ol>
+
+    <h2>結果がページのスクリーンショットではない理由</h2>
+    <p>WordやデザインソフトなどのツールからエクスポートされたPDFは通常、ページの見た目を単に「描画」するのではなく、画像を構造内の独立したオブジェクトとして埋め込みます。このツールはその元の画像オブジェクトを取り出すため、PDFに最初から挿入された画像とまったく同じ品質が得られます——画質が劣化しうるスクリーンショットとは異なります。</p>
+
+    <h2>見つかる画像が少ないときがあるのはなぜ？</h2>
+    <p>そのPDFが実際にはスキャン結果（各ページがスキャンによる1枚の画像全体）である場合、このツールはそれをページごとの1つのまとまりとして見つけます。スキャンされたPDFには元々そのような分割が存在しないため、中の小さなオブジェクトに分けることはできません。</p>
+
+    <h2>よくある質問</h2>
+    <details class="mea-faq-item">
+      <summary>PDFはサーバーにアップロードされますか？</summary>
+      <p>いいえ。PDFの読み取りと画像抽出の全プロセスはあなたのブラウザ内で直接行われます。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>どの画像形式で出力されますか？</summary>
+      <p>抽出される画像の形式は、PDF内に埋め込まれていた元の形式のままです。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>一部の画像だけを選んで取得できますか？</summary>
+      <p>できます。すべての画像が表示された後、ダウンロードしたいものだけを選ぶことができ、全部を取得する必要はありません。</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>あわせて読みたい</h2>
+      <p><a href="/ja/cara-ubah-pdf-jadi-gambar.html">PDFを画像（JPG/PNG）に変換する方法（ブラウザ内で直接処理）</a></p>
+      <p><a href="/ja/cara-gambar-ke-pdf.html">複数の画像を1つのPDFファイルにまとめる方法</a></p>
+      <p><a href="/ja/cara-kompres-pdf.html">追加アプリなしでPDFファイルのサイズを小さくする方法</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

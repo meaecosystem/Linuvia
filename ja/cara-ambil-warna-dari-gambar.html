@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>画像からカラーコードとパレットを抽出する方法 | MEA Blog</title>
+<meta name="description" content="画像をクリックするだけでHex、RGB、HSLのカラーコードを取得、または主要な配色パレットを自動抽出する方法。ブラウザ内で直接処理。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-ambil-warna-dari-gambar.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "画像からカラーコードとパレットを抽出する方法",
+  "description": "画像からHex、RGB、HSLのカラーコードを取得し、主要な配色パレットを抽出する方法。ブラウザ内で直接処理。",
+  "step": [
+    { "@type": "HowToStep", "name": "Color Pickerを開く", "text": "ブラウザで tools.meaecosystem.com/color-picker/ を開く。" },
+    { "@type": "HowToStep", "name": "画像をアップロード", "text": "色を取得したい画像を選択。" },
+    { "@type": "HowToStep", "name": "色の箇所をクリック", "text": "色を取得したい画像の部分をクリックすると、Hex、RGB、HSLのコードが表示される。" },
+    { "@type": "HowToStep", "name": "主要パレットを確認", "text": "画像から自動抽出された主要な配色を確認し、表示する色数を選択。" }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/cara-ambil-warna-dari-gambar.html","ja":"/ja/cara-ambil-warna-dari-gambar.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#image">画像</a>
+    <span>/</span>
+    <span aria-current="page">画像から色を抽出する方法</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">ガイド · デザイン</span>
+    <h1>画像からカラーコードとパレットを抽出する方法</h1>
+    <p class="mea-article-lead">色の組み合わせが気に入った写真やデザインを見つけて、自分のプロジェクトで使うためにHexコードを知りたい？画像から直接、1色ずつ、またはパレットとしてまとめて色を取得する方法を紹介します。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月1日</span>
+      <span>·</span>
+      <span>読了時間 3分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Color Pickerには2つのモードがあります：画像を直接クリックして特定の一点の色を取得する（結果はHex、RGB、HSLコード）、または画像全体から最も主要な色をツールに自動抽出させてパレットにする。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">今すぐ試す</span>
+      <h3>Color Picker（画像から）— MEA Tools</h3>
+      <p>クリックでカラーコードを取得、または主要な配色パレットを自動抽出、ブラウザ内で直接処理。</p>
+      <a href="https://tools.meaecosystem.com/color-picker/" class="mea-tool-cta-btn">Color Pickerを開く →</a>
+    </div>
+
+    <h2>色を取得する手順</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/color-picker/">tools.meaecosystem.com/color-picker</a> を開く。</li>
+      <li>色を取得したい画像をアップロードする。</li>
+      <li>希望の部分をクリック——その箇所のHex、RGB、HSLコードがすぐに表示され、ワンクリックでコピーできる。</li>
+      <li>全体の主要な配色パレットを見るには、パレット部分までスクロールし、表示する色数（4、8、16）を選ぶ。</li>
+    </ol>
+
+    <h2>Hex、RGB、HSL——何が違う？</h2>
+    <p>3つとも同じ色を表しますが、表記形式が異なり、それぞれ特定の場面でよく使われます。Hex（例：#3B82F6）はCSSやWebデザインで最も一般的です。RGBは赤・緑・青の成分を分けて表現し、使用中のソフトウェアが個別の数値入力を必要とする場合に便利です。HSL（色相・彩度・明度）は、色の「種類」を変えずに明るさや彩度だけを調整したいときに直感的に扱えます。</p>
+
+    <h2>クリック抽出と自動パレット、どちらを使う？</h2>
+    <p>画像のどの部分の色を取得したいか明確に分かっている場合——例えばロゴや特定の商品の色——はクリック抽出が適しています。自動パレットは、参考写真やムードボードから配色スキームを決め始める初期段階でより役立ちます。</p>
+
+    <h2>よくある質問</h2>
+    <details class="mea-faq-item">
+      <summary>画像はサーバーにアップロードされますか？</summary>
+      <p>いいえ。画像はCanvas APIを使ってあなたのブラウザ内で直接読み込み・処理されます。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>対応している画像形式は？</summary>
+      <p>JPG、PNG、WebPなど、ブラウザが読み込める一般的な画像形式すべてに対応しています。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>抽出された色が画像で見た色と違うのはなぜ？</summary>
+      <p>画面や端末の明るさ設定は視覚的な色の見え方に影響しますが、取得されるカラーコードは画面の表示ではなく、画像ファイルの実際のピクセル値に基づいています。</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>あわせて読みたい</h2>
+      <p><a href="/ja/cara-kompres-gambar.html">画質を落とさず画像を圧縮する方法（ブラウザ内で直接処理）</a></p>
+      <p><a href="/ja/cara-buat-qr-code.html">ロゴ入りQRコードを自分で作る方法（無料・透かしなし）</a></p>
+      <p><a href="/ja/kenapa-tools-online-pindah-ke-client-side.html">なぜオンラインツールはクライアントサイド処理へ移行しているのか？</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
