@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Siesta：MEA Team AI初の正式公開研究、Zenodoにて発表 | MEA Blog</title>
+<meta name="description" content="MEA Team AI初の研究論文がZenodoでプレプリントとして正式に公開されました。Siestaは限られたリソースでゼロから構築された、インドネシア語オーケストレーター言語モデルのidentity coherenceを探求します。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/siesta-riset-pertama-resmi-publish.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/siesta-riset-pertama-resmi-publish.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/siesta-riset-pertama-resmi-publish.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/siesta-riset-pertama-resmi-publish.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Siesta：MEA Team AI初の正式公開研究、Zenodoにて発表",
+  "description": "MEA Team AI初の研究論文がZenodoでプレプリントとして正式に公開されました。Siestaは限られたリソースでゼロから構築された、インドネシア語オーケストレーター言語モデルのidentity coherenceを探求します。",
+  "datePublished": "2026-09-16",
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/siesta-riset-pertama-resmi-publish.html","ja":"/ja/siesta-riset-pertama-resmi-publish.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#riset">リサーチ&amp;AI</a>
+    <span>/</span>
+    <span aria-current="page">Siesta正式公開</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">発表 · リサーチ&amp;AI</span>
+    <h1>Siesta：MEA Team AI初の正式公開研究、Zenodoにて発表</h1>
+    <p class="mea-article-lead">数か月間社内プロジェクトとして進められてきたMEA Team AI初の研究が、ついに正式な形を得ました——DOI付きで引用可能、そして誰でも読める形で公開されたプレプリントです。これは何が研究されたのか、なぜゼロから構築されたのか、そしてまだ残っている課題は何かについての話です。</p>
+    <div class="mea-article-meta">
+      <span>2026年9月16日</span>
+      <span>·</span>
+      <span>読了時間 7分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>Siestaとは何か？</h2>
+    <p>Siestaは、MEA Ecosystemの一部門であるMEA Team AIのもとで開発が進められているインドネシア語のオーケストレーター言語モデルです。主眼は万能アシスタントになることではなく、一つのことに特化したスペシャリストになることです——共感的で人間らしく感じられる会話、そして話しかけるたびに一貫した人格を持つことです。</p>
+    <p>多くの言語モデルは常に中立的で、常に丁寧で、一貫したキャラクターを決して見せないよう設計されています。それは特定の用途には理にかなっていますが、人間は人格を持つ相手との会話に慣れています——嬉しくなることもあれば、不機嫌になることもあり、返事が時には短いこともある相手です。そのキャラクターの欠如こそが、AIとのやり取りをしばしば人工的に感じさせる原因です。この研究の根底にある問いはシンプルです。モデルは、どんな話題であっても、誰と話していても、一貫したアイデンティティを保つことができるのか？</p>
+
+    <h2>なぜゼロから構築されたのか？</h2>
+    <p>現在のアーキテクチャに至る前、チームはより一般的な手法——既存の大規模モデルのファインチューニング——をまず試しました。一般的な能力としては十分良い結果が出ましたが、求めている特定の要件には合わないと感じられました。最終的に、そのファインチューニング済みのデータセットとモデルはすべて削除され、開発はゼロからやり直されました。</p>
+    <p>この決断には当然代償があります——ゼロから構築するということは「生まれ持った賢さ」が一切ないことを意味し、すべてを最初から自分で学習させなければなりません。しかし、そこにこそ完全なコントロールがあります。モデルの「アイデンティティ」が何者であるかを、他人の学習データによってすでに性格が形作られたモデルの上に人格の層を後から貼り付けるのではなく、基盤の段階から決めることができるのです。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">この論文が探求すること</span>
+      <h3>オーケストレーターモデルにおけるIdentity Coherence</h3>
+      <p>この論文は完全な技術文書ではありません——内部アーキテクチャの詳細やデータスキームは意図的に公開していません。探求しているのは、モデルがどのように一貫したアイデンティティを保てるのか、なぜ人格が明示的な指示ではなくデータの構成によって形成されるのか、そして補助モデルへの委譲プロセスすべてをやり取りの表面から隠すオーケストレーションアーキテクチャです。</p>
+      <a href="https://doi.org/10.5281/zenodo.22761440" class="mea-tool-cta-btn">論文全文を読む →</a>
+    </div>
+
+    <h2>理想とは程遠いリソースで構築</h2>
+    <p>これは一人が手がける独立研究であり、研究機関がよく使うような大規模な計算クラスターではなく、クォータが限られたコンシューマー向けGPU・TPUで行われています。この制約がプロセス全体の設計判断を大きく形作りました。中でも最も具体的な教訓の一つが、モデルの規模を拡大する実験から得られたものです。</p>
+    <p>より大きなモデルアーキテクチャ（40億パラメータ以上）は、基本的にはそれより遥かに小さな以前の世代と同じで、パラメータ数だけが増やされています。当初の想定は「小規模で安全だと実証済みのトレーニングレシピは、大規模でもそのまま安全なはずだ」というものでした。しかし現実は必ずしもそうではありませんでした。小規模モデルでは安定していたフラットな学習率が、はるかに大きなモデルではloss(損失)を下げるどころか逆に上昇させてしまったのです。大規模モデルは学習率スケジュールの形に対してはるかに敏感であることが分かり、トレーニング開始から終了まで固定の数値ではなく——最初にウォームアップし、その後段階的に減衰させるという、より慎重なアプローチが必要でした。</p>
+    <p>こうした教訓は——失敗や未完了のプロセスも含めて——結果を実際より滑らかに見せるために隠すのではなく、あえてそのまま論文に書かれています。</p>
+
+    <h2>なぜ完成を待たずプレプリントとして公開したのか？</h2>
+    <p>この研究はまだ進行中であり、現在公開されているバージョンは、まだ長い道のりの途中にあるSiestaのある一時点を切り取ったものです——完成したモデルについての報告書ではありません。論文内ではいくつかの限界が明示的に認められています。identity coherenceの主張についても、現時点では定性的な評価にとどまっており、正式な評価手法を経たものではないことが含まれます。</p>
+    <p>まだ完璧ではない状態のまま、この段階で公開することを選んだのは意識的な決断です。Zenodoでのプレプリント公開により、この論文には永続的なDOIが付与され、引用可能になり、明確なタイムスタンプが残ります。同時に、今後の進展があればバージョニングシステムを通じて更新し続けることもできます。</p>
+
+    <h2>次に何がある？</h2>
+    <p>Siestaの現在のロードマップは複数の並行した方向で進められています——まだデバッグ段階にあるより大規模なモデルから、小規模モデルをオープンソースとして公開する可能性（この計画は今後の状況次第で変わる可能性があります）まで。今後の開発方針やまだ解決されていない問いについての詳細は、論文の最終セクションで議論されています。</p>
+    <p>この論文はMEA Team AI初の研究発表であり、おそらく最後にはなりません。</p>
+
+    <div class="mea-related">
+      <h2>公開情報</h2>
+      <p><strong>タイトル：</strong>Siesta: Identitas yang Koheren pada Model Bahasa Orchestrator dengan Kepribadian Emergen（創発的な人格を持つオーケストレーター言語モデルにおける一貫したアイデンティティ）</p>
+      <p><strong>DOI：</strong><a href="https://doi.org/10.5281/zenodo.22761440">10.5281/zenodo.22761440</a></p>
+      <p><strong>ステータス：</strong>プレプリントv1.0（初回公開時点）。この論文はすでに<a href="/ja/siesta-paper-v1-1-rilis.html">v1.1版</a>に更新されており、ライセンスは引き続きCC BY 4.0です</p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

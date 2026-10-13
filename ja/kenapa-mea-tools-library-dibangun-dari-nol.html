@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>なぜMEA Toolsのライブラリは他人のライブラリを使わずゼロから構築されたのか？ | MEA Blog</title>
+<meta name="description" content="MEA ToolsのPDFパーサー、DOCX変換、ハッシュや暗号化の関数はゼロから自前で書かれています——オープンソースライブラリを貼り付けたのではありません。その理由と限界を正直に解説。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "なぜMEA Toolsのライブラリは他人のライブラリを使わずゼロから構築されたのか？",
+  "description": "MEA ToolsのPDFパーサー、ドキュメント変換、暗号関数がなぜゼロから自前で書かれているかの解説。正直に認める例外についても触れる。",
+  "datePublished": "2026-10-02",
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/id/kenapa-mea-tools-library-dibangun-dari-nol.html","ja":"/ja/kenapa-mea-tools-library-dibangun-dari-nol.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#tentang">について</a>
+    <span>/</span>
+    <span aria-current="page">ライブラリはゼロから構築</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">コラム · について</span>
+    <h1>なぜMEA Toolsのライブラリは他人のライブラリを使わずゼロから構築されたのか？</h1>
+    <p class="mea-article-lead">インターネット上のPDFツールやドキュメント変換ツールの多くは、実際には同じオープンソースライブラリの上に美しいインターフェースを被せただけのものです——pdf-lib、pdf.js、mammothなどがあちこちで使い回されています。MEA Toolsはより長い道を選びました。パーサー、コンバーター、暗号関数を自前でゼロから書くという道です。その理由と、そしてすべてが自前というわけではないという例外もあります——それは意図的な決断です。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月2日</span>
+      <span>·</span>
+      <span>読了時間 7分</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>ゼロから書かれたものは本当に「ゼロから」</h2>
+    <p>MEA ToolsにあるほぼすべてのPDF系ツール——PDF結合、PDF分割、PDF→Word変換、PDFフォーム入力、暗号化や透かしまで——の核となっている<code>pdf-lib</code>フォルダを例に挙げます。このフォルダには<strong>合計1万行以上、約37個のJavaScriptファイル</strong>が含まれており、そのすべてがゼロから書かれています——生のPDFオブジェクトをパースする処理、トークナイザー、コンテンツストリームのインタープリター、xref構造の再構築、ページを画像としてレンダリングするラスタライザーまで。</p>
+    <p>つまり、MEA Toolsが1つのPDFファイルを「読む」とき、それは誰かのライブラリをそのまま呼び出しているのではありません——PDF仕様に従ってバイト単位でファイル構造を実際に解析するコードが、このツールの要件に合わせて専用に書かれています。他のフォルダでも同様です。画像圧縮のロジック、色変換、QRコード生成、ハッシュ関数まで——すべて自前のコードであり、<code>import</code>一つで済むnpmパッケージを貼り付けたものではありません。</p>
+
+    <h2>なぜわざわざ自分で書くのか？</h2>
+    <p>これは単なる技術的なこだわりではなく、いくつかの具体的な理由があります。</p>
+    <ul>
+      <li><strong>ファイルサイズが小さくなる。</strong>汎用ライブラリは通常、多くのユースケースに対応できるよう汎用的に作られています——その結果、関係のないコードも一緒に持ち込まれます。自分の要件だけに特化して書かれたコードははるかに軽量にでき、これはすべてがリソースの豊富なサーバーではなくユーザーのブラウザ上で動くため重要です。</li>
+      <li><strong>動作の完全なコントロール。</strong>特定の種類のPDFで奇妙なバグが見つかった場合、他人のライブラリのメンテナーがパッチをリリースするのを待つ必要はありません——すべて自前のコードなので、直接調べて自分で修正できます。</li>
+      <li><strong>メンテナンスが止まる依存関係がない。</strong>多くの人気オープンソースライブラリは、メンテナーが他のことに忙しくなった途端に更新が止まります。ツールの基盤をそこに依存して構築していると、そのリスクも一緒に背負うことになります。</li>
+      <li><strong>ユーザーのデータに何が起きているかを正確に把握できる。</strong>パースの各行が自前で書かれているため、中で何をしているか正確に分からない第三者の「ブラックボックス」がユーザーのファイルを処理することがありません。</li>
+    </ul>
+
+    <h2>ただし、すべてが自前というわけではない——それも意図的</h2>
+    <p>この記事を宣伝だけでなく正直なものにするために：MEA Toolsの一部には実際にサードパーティのライブラリやモデルを使っている箇所があり、それは意識的な決断であって見落としではありません。</p>
+    <ul>
+      <li><strong>写真の背景除去</strong>は、オープンソースのAIモデル（U2Net）を<strong>ONNX Runtime</strong>経由で実行しています——コミュニティによるAI推論エンジンであり、自前のコードではありません。ニューラルネットワークの推論ランタイム全体を一から書き直すのは、数十あるツールの中の1つにしては明らかに現実的な規模を超えています。AIモデルファイル自体はサードパーティのCDNではなくMEAのサーバーでホストされていますが、それを動かすエンジン自体はONNX Runtimeのままです。</li>
+      <li><strong>画像解像度拡大（アップスケーラー）</strong>も同じ理由でReal-ESRGANというAIモデルを、同じくONNX Runtime経由で使っています。</li>
+      <li><strong>画像/スキャンからのテキスト抽出（OCR）</strong>を行う2つのツールは、すでに成熟し広く信頼されているオープンソースのOCRエンジン<strong>Tesseract.js</strong>を使っています。OCRエンジンをゼロから書き直すのは、1つのドキュメント変換ツールの範囲をはるかに超えた、それ自体が独立した研究プロジェクトです。</li>
+    </ul>
+    <p>興味深い部分はコード自体の中にあります。他に<em>意図的に</em>手書きでゼロから書かれなかった唯一の部分は、PDF暗号化用のAES関数です——これはブラウザ標準搭載のWeb Crypto APIを利用しており、自前のAES実装ではありません。その理由はコードのコメントにはっきり書かれています。AESは本当の意味でのセキュリティ（PDFの内容を他者から守る）のために使われており、ブラウザ標準搭載のAES実装はすでに厳格な監査を受けており、タイミング攻撃にも耐性があります——これはセキュリティ監査の保証なしに手動で書き直すには非常にリスクが高い部分です。</p>
+    <p>比較として、同じツール内のMD5やRC4のハッシュ関数は<em>実際に</em>手動でゼロから書かれています——そこではMD5/RC4は古いPDFデータ形式の要件のために使われているのであって（データの機密性を守る目的ではない）、センシティブなセキュリティ目的ではないためです。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">原則</span>
+      <h3>意味があるなら自前で書き、セキュリティに関わるなら実証済みのものを使う</h3>
+      <p>MEA Toolsの哲学は「どんなリスクを冒してもすべて自前で」ではなく——完全にコントロールする意味がある部分は自前で書き、実際のデータセキュリティに関わる部分は監査済みの実装に委ねる、というものです。</p>
+      <a href="https://tools.meaecosystem.com" class="mea-tool-cta-btn">すべてのツールを見る →</a>
+    </div>
+
+    <h2>これはユーザーであるあなたにとってなぜ重要なのか？</h2>
+    <p>裏側の技術的な詳細に過ぎないように聞こえるかもしれません。しかし影響は直接感じられます。自分の要件専用に書かれたツールは、実行時の負荷が軽く、読み込みが速く、動作がより予測可能になる傾向があります——実際には使われない汎用コードの重さを背負っていないためです。そして、PDF暗号化のようにデータセキュリティにとって本当に重要な部分では、すべてを一貫性のためだけに手動で書くよりも、実証済みの実装を使う選択の方がむしろ安全です。</p>
+
+    <h2>まだ発展途上</h2>
+    <p>もう一つ認識しておくべき重要な点があります。「ゼロから書く」というアプローチは、既製のライブラリをインストールするだけの場合に比べ、新機能の実装により時間がかかるということです。例えばPDF関連だけを見ても、この自前の<code>pdf-lib</code>はPDFファイルに対してできることのうちまだ一部しかカバーしていません——PDFフォーマットの世界は広く、MEA Toolsはまだこの地点で止まってはいません。MEA Tools全体として現在も開発・拡張が続けられているため、今ある機能の範囲は最終版ではなく、今後も時間とともに増えていきます。</p>
+
+    <div class="mea-related">
+      <h2>あわせて読みたい</h2>
+      <p><a href="/id/kenapa-mea-tools-gratis-tanpa-watermark.html">なぜMEA Toolsのすべてのツールは無料で透かしなしなのか？</a></p>
+      <p><a href="/id/kenapa-tools-online-pindah-ke-client-side.html">なぜオンラインツールはクライアントサイドへ移行しているのか？</a></p>
+      <p><a href="/ja/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html">MEA Toolsがあなたの端末に自動で最適化する仕組み</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
