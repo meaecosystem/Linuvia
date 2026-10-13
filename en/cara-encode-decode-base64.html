@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>How to Encode and Decode Text to Base64 | MEA Blog</title>
+<meta name="description" content="A guide to encoding text to base64 or decoding base64 back to plain text, with support for emoji and non-Latin characters, right in your browser." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-encode-decode-base64.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Encode and Decode Text to Base64",
+  "description": "A guide to encoding and decoding text to and from base64, right in your browser.",
+  "step": [
+    { "@type": "HowToStep", "name": "Open Base64 Text Encoder", "text": "Open tools.meaecosystem.com/base64-text/ in your browser." },
+    { "@type": "HowToStep", "name": "Choose a mode", "text": "Choose Encode to turn text into base64, or Decode for the reverse." },
+    { "@type": "HowToStep", "name": "Enter text", "text": "Type or paste the text you want to process." },
+    { "@type": "HowToStep", "name": "Copy the result", "text": "The result appears automatically — copy it with one click." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/cara-encode-decode-base64.html","ja":"/ja/cara-encode-decode-base64.html","en":"/en/cara-encode-decode-base64.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">Text</a>
+    <span>/</span>
+    <span aria-current="page">Encode/Decode Base64</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Guide · Developer</span>
+    <h1>How to Encode and Decode Text to Base64</h1>
+    <p class="mea-article-lead">Found a weird string made up of only letters, numbers, and an "=" sign at the end? That's probably base64. Here's how to turn text into base64 and back.</p>
+    <div class="mea-article-meta">
+      <span>October 1, 2026</span>
+      <span>·</span>
+      <span>2 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Base64 is a way of representing binary data (or any text) using a combination of letters, numbers, and a few symbols, so it can be safely transmitted through systems that only support plain text — for example, embedded in a URL, JSON, or email. Important note: base64 is encoding, not encryption — anyone can decode it back, so don't use it to hide sensitive data.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">Try It Now</span>
+      <h3>Base64 Text Encoder & Decoder — MEA Tools</h3>
+      <p>Encode text to base64, or decode it back to plain text, with Unicode support, right in your browser.</p>
+      <a href="https://tools.meaecosystem.com/base64-text/" class="mea-tool-cta-btn">Open Base64 Text Encoder →</a>
+    </div>
+
+    <h2>Steps to encode/decode base64</h2>
+    <ol>
+      <li>Open <a href="https://tools.meaecosystem.com/base64-text/">tools.meaecosystem.com/base64-text</a>.</li>
+      <li>Choose the "Encode" tab to turn plain text into base64, or "Decode" for the reverse.</li>
+      <li>Type or paste the text into the input field.</li>
+      <li>The result appears automatically in the output field, ready to copy.</li>
+    </ol>
+
+    <h2>Base64 isn't encryption — here's the difference</h2>
+    <p>Encoding and encryption are often confused, but they're very different. Encryption needs a key to unlock the data again, while base64 needs no key at all — anyone who knows it's base64 can decode it instantly and read the original content. So if your goal is to hide sensitive information like a password, base64 isn't the answer.</p>
+
+    <h2>Why does Unicode support matter?</h2>
+    <p>Base64 was originally designed for standard ASCII characters. If the text you're encoding contains emoji or non-Latin characters (Arabic, Japanese, Chinese scripts, and the like), an encoder that doesn't handle Unicode properly can produce corrupted results when decoded back. This tool handles Unicode correctly, so any text — emoji included — can be safely encoded and decoded without losing characters.</p>
+
+    <h2>Frequently asked questions</h2>
+    <details class="mea-faq-item">
+      <summary>Is my text sent to a server?</summary>
+      <p>No. The encode and decode process runs directly in your browser.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Is base64 safe for storing passwords?</summary>
+      <p>No. Base64 can be decoded by anyone with no key required, so it shouldn't be used to hide sensitive data.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Why does my decoded result come out garbled or error out?</summary>
+      <p>The text you pasted probably isn't valid base64 — a character may have been dropped or altered when it was copied.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/cara-buat-uuid.html">How to Generate a UUID v4 for Development</a></p>
+      <p><a href="/en/cara-format-json.html">How to Clean Up and Validate Messy JSON</a></p>
+      <p><a href="/en/cara-cek-hash-file.html">How to Check a File Hash (MD5, SHA-256) to Verify Authenticity</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

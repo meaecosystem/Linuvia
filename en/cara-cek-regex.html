@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>How to Test Regular Expression (Regex) Patterns Online | MEA Blog</title>
+<meta name="description" content="A guide to testing a regex pattern, seeing automatically highlighted matches, and the detail of each capture group, right in your browser with no upload to a server." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/cara-cek-regex.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-cek-regex.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-cek-regex.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-cek-regex.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-cek-regex.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Test a Regex Pattern",
+  "description": "A guide to testing a regular expression pattern and seeing its matches, right in your browser.",
+  "step": [
+    { "@type": "HowToStep", "name": "Open Regex Tester", "text": "Open tools.meaecosystem.com/regex-tester/ in your browser." },
+    { "@type": "HowToStep", "name": "Type a regex pattern", "text": "Enter the regex pattern you want to test." },
+    { "@type": "HowToStep", "name": "Choose flags", "text": "Check the g (global), i (case-insensitive), or m (multiline) flags as needed." },
+    { "@type": "HowToStep", "name": "Paste test text", "text": "Paste the text you want to test — matches are highlighted instantly." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/cara-cek-regex.html","ja":"/ja/cara-cek-regex.html","en":"/en/cara-cek-regex.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">Text</a>
+    <span>/</span>
+    <span aria-current="page">Test a Regex</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Guide · Developer</span>
+    <h1>How to Test Regular Expression (Regex) Patterns Online</h1>
+    <p class="mea-article-lead">Writing a regex to validate an email or phone number, but not sure if the pattern is correct? Instead of trial-and-error directly in production code, test it here first and see the results in real time.</p>
+    <div class="mea-article-meta">
+      <span>October 1, 2026</span>
+      <span>·</span>
+      <span>3 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Regex Tester shows exactly which parts of a text match your regex pattern — highlighted inline with the rest of the text — plus the detail of each match, including capture groups if your pattern uses parentheses.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">Try It Now</span>
+      <h3>Regex Tester — MEA Tools</h3>
+      <p>Test a regex pattern right in your browser, with matches highlighted instantly.</p>
+      <a href="https://tools.meaecosystem.com/regex-tester/" class="mea-tool-cta-btn">Open Regex Tester →</a>
+    </div>
+
+    <h2>Steps to test a regex</h2>
+    <ol>
+      <li>Open <a href="https://tools.meaecosystem.com/regex-tester/">tools.meaecosystem.com/regex-tester</a>.</li>
+      <li>Type your regex pattern into the pattern field.</li>
+      <li>Check the flags you need: <code>g</code> to find all matches (not just the first), <code>i</code> to ignore case, <code>m</code> for multiline mode.</li>
+      <li>Paste or type your test text into the text field.</li>
+      <li>Parts matching the pattern are highlighted instantly, and the total match count is shown.</li>
+      <li>If your pattern uses parentheses for capture groups, the detail of each match (including each group's content) appears below.</li>
+    </ol>
+
+    <h2>The g, i, m flags — when should you use them?</h2>
+    <p>The <code>g</code> (global) flag is needed when you want to find every occurrence of the pattern in the text, not just the first one found — usually enabled by default. The <code>i</code> flag is useful when you don't care about case, like searching for a word regardless of whether it's written in upper or lower case. The <code>m</code> flag changes how <code>^</code> and <code>$</code> behave so they match the start/end of each line instead of just the start/end of the whole text — useful for multi-line text.</p>
+
+    <h2>Why doesn't my pattern match even though it looks correct?</h2>
+    <p>The most common cause: forgetting to escape a special regex character (like a period or parenthesis you meant to search for literally, not as regex syntax), or a needed flag that wasn't checked. Try highlighting your test text with a simpler pattern first, then gradually add complexity until you find the problematic part.</p>
+
+    <h2>Frequently asked questions</h2>
+    <details class="mea-faq-item">
+      <summary>Is my pattern and text sent to a server?</summary>
+      <p>No. Regex testing runs directly in your browser using JavaScript's built-in regex engine.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Is every kind of regex syntax supported?</summary>
+      <p>This tool uses the browser's built-in JavaScript regex engine, so the supported syntax follows the JavaScript regex standard — there may be small differences if you compare it to regex in other programming languages like Python or PHP.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>What's a capture group?</summary>
+      <p>A capture group is a part of a regex pattern marked with parentheses, used to "capture" and extract a specific part of the matched text, rather than just knowing whether there's a match overall.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/cara-konversi-csv-json.html">How to Convert CSV to JSON and Back</a></p>
+      <p><a href="/en/cara-encode-decode-url.html">How to Encode and Decode URLs for Special Characters</a></p>
+      <p><a href="/en/cara-format-json.html">How to Clean Up and Validate Messy JSON</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
