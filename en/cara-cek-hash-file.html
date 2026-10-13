@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>How to Check a File Hash (MD5, SHA-256) to Verify Authenticity | MEA Blog</title>
+<meta name="description" content="A guide to computing MD5, SHA-1, SHA-256 hashes of a file or text and comparing them to confirm a file isn't corrupted or altered, right in your browser." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/cara-cek-hash-file.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-cek-hash-file.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-cek-hash-file.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-cek-hash-file.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-cek-hash-file.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Check a File Hash to Verify Authenticity",
+  "description": "A guide to computing and comparing MD5, SHA-1, SHA-256 hashes of a file or text, right in your browser.",
+  "step": [
+    { "@type": "HowToStep", "name": "Open File Hash Checker", "text": "Open tools.meaecosystem.com/file-hash-checker/ in your browser." },
+    { "@type": "HowToStep", "name": "Choose File or Text mode", "text": "Choose whether to compute a hash from a file or from typed text." },
+    { "@type": "HowToStep", "name": "Upload a file or type text", "text": "Choose a file from your device, or type the text you want hashed." },
+    { "@type": "HowToStep", "name": "Choose an algorithm", "text": "Check the hash algorithm you need: MD5, SHA-1, SHA-256, SHA-384, or SHA-512." },
+    { "@type": "HowToStep", "name": "Compare hashes", "text": "Paste a hash you already have to compare it automatically against the computed result." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/cara-cek-hash-file.html","ja":"/ja/cara-cek-hash-file.html","en":"/en/cara-cek-hash-file.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#utilitas">Utilities</a>
+    <span>/</span>
+    <span aria-current="page">Check a File Hash</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Guide · Security</span>
+    <h1>How to Check a File Hash (MD5, SHA-256) to Verify Authenticity</h1>
+    <p class="mea-article-lead">Just downloaded a large file and want to make sure it's intact — not corrupted during transfer, and not tampered with by anyone else? A file hash is the most accurate way to check. Here's how.</p>
+    <div class="mea-article-meta">
+      <span>October 1, 2026</span>
+      <span>·</span>
+      <span>3 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>A hash is a kind of digital "fingerprint" of a file or piece of text — if the content changes even slightly, the resulting hash changes completely. That's why hashes are commonly used to verify that a file you downloaded is truly identical to the original, with no part corrupted or altered along the way.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">Try It Now</span>
+      <h3>File Hash Checker — MEA Tools</h3>
+      <p>Compute MD5, SHA-1, up to SHA-512 hashes of a file or text, and compare them automatically, right in your browser.</p>
+      <a href="https://tools.meaecosystem.com/file-hash-checker/" class="mea-tool-cta-btn">Open File Hash Checker →</a>
+    </div>
+
+    <h2>Steps to check a hash</h2>
+    <ol>
+      <li>Open <a href="https://tools.meaecosystem.com/file-hash-checker/">tools.meaecosystem.com/file-hash-checker</a>.</li>
+      <li>Choose "File" mode to check a file, or "Text" to compute a hash from text you type directly.</li>
+      <li>Upload a file from your device, or type/paste the text.</li>
+      <li>Check the algorithm(s) you need — SHA-256 is usually enough for most verification needs, but you can also compute several at once.</li>
+      <li>If you already have a reference hash (from an official download page, for instance), paste it into the comparison field — the tool will automatically tell you if it matches or not.</li>
+    </ol>
+
+    <h2>Why does the hash need to match exactly?</h2>
+    <p>A fundamental property of hash functions is that any change to a file — even a single bit — produces a hash that's completely different, not just "slightly" different. So if the computed hash matches exactly with the one provided by the official source, it means your file is identical, byte for byte, to the original.</p>
+
+    <h2>MD5, SHA-1, or SHA-256 — which should you use?</h2>
+    <p>For simply checking whether a file was corrupted during download, all of these algorithms work equally well. But if the goal is more about security (making sure a file wasn't deliberately tampered with by someone else), SHA-256 or higher is recommended, since MD5 and SHA-1 are known to have weaknesses that can be exploited in certain scenarios.</p>
+
+    <h2>Frequently asked questions</h2>
+    <details class="mea-faq-item">
+      <summary>Is my file uploaded to a server when its hash is computed?</summary>
+      <p>No. The hash computation runs directly on your device. The file is never sent anywhere.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Why is my hash different even though the file is the same?</summary>
+      <p>First check whether you're using the same algorithm as the reference source — the MD5 and SHA-256 hashes of the same file will naturally differ since they're different algorithms. If the algorithm matches but the hash still differs, the files likely aren't actually identical.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Is there a file size limit?</summary>
+      <p>There's no limit from the service side, since everything is processed on your own device. For very large files, processing time depends on your device's specs.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/cara-buat-password-kuat.html">How to Create a Strong, Hard-to-Guess Password</a></p>
+      <p><a href="/en/cara-buat-qr-code.html">How to Create Your Own QR Code with a Logo</a></p>
+      <p><a href="/en/kenapa-tools-online-pindah-ke-client-side.html">Why Are More Online Tools Moving to Client-Side?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
