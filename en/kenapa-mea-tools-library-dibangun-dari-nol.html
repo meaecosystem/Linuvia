@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Why Is the Library Behind MEA Tools Built from Scratch, Not Using Someone Else's? | MEA Blog</title>
+<meta name="description" content="The PDF parser, DOCX conversion, down to the hash and encryption functions in MEA Tools are written from scratch -- not bolted-on open-source libraries. Here's why, and the limits, told straight." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Is the Library Behind MEA Tools Built from Scratch, Not Using Someone Else's?",
+  "description": "An explanation of why the PDF parser, document conversion, and cryptographic functions in MEA Tools are written from scratch, including the exceptions honestly acknowledged.",
+  "datePublished": "2026-10-02",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/kenapa-mea-tools-library-dibangun-dari-nol.html","ja":"/ja/kenapa-mea-tools-library-dibangun-dari-nol.html","en":"/en/kenapa-mea-tools-library-dibangun-dari-nol.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#tentang">About</a>
+    <span>/</span>
+    <span aria-current="page">Library Built from Scratch</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Insight · About</span>
+    <h1>Why Is the Library Behind MEA Tools Built from Scratch, Not Using Someone Else's?</h1>
+    <p class="mea-article-lead">Most PDF or document-conversion tools on the internet are really just a pretty interface sitting on top of the same open-source libraries — pdf-lib, pdf.js, mammoth, and the like get reused everywhere. MEA Tools took the longer road: writing its own parser, converters, and cryptographic functions from scratch. Here's why — and here are the exceptions too, because not everything is written in-house, and that's a deliberate decision.</p>
+    <div class="mea-article-meta">
+      <span>October 2, 2026</span>
+      <span>·</span>
+      <span>7 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>What's written from scratch is really "from scratch"</h2>
+    <p>Take the <code>pdf-lib</code> folder, the brain behind nearly every PDF-based tool on MEA Tools — from merging PDFs, splitting PDFs, converting PDF to Word, filling PDF forms, down to encryption and watermarking. This folder holds nearly <strong>37 JavaScript files with over 10,000 lines of code total</strong>, and all of it is written from scratch: a raw PDF object parser, a tokenizer, a content-stream interpreter, an xref structure rebuilder, down to a rasterizer for rendering pages into images.</p>
+    <p>That means when MEA Tools "reads" a PDF file, it's not a call to someone else's ready-made library — there's code that genuinely parses the PDF file's structure byte by byte according to the specification, written specifically for this tool's needs. The same applies across other folders: image compression logic, color conversion, QR code generation, down to hash functions — all in-house code, not a bolted-on npm package you just <code>import</code>.</p>
+
+    <h2>Why bother writing it yourself?</h2>
+    <p>There are several concrete reasons, not just technical pride:</p>
+    <ul>
+      <li><strong>Smaller file size.</strong> General-purpose libraries are usually made generic so they can handle many cases — the consequence is a lot of irrelevant code gets dragged along. Code written specifically for your own needs can be far leaner, and that matters because all of this runs in the user's browser, not on a server with large resources.</li>
+      <li><strong>Full control over behavior.</strong> If there's a weird bug with a particular kind of PDF, there's no need to wait for someone else's library maintainer to release a patch — it can be dissected and fixed directly because the code genuinely belongs to us.</li>
+      <li><strong>No dependency that can stop being maintained.</strong> Many popular open-source libraries stop getting updates once their maintainer moves on to other things. If a tool's foundation is built on that, the risk comes along with it.</li>
+      <li><strong>Knowing exactly what happens to user data.</strong> Because every line of parsing is written in-house, there's no third-party "black box" processing someone's file without knowing exactly what it does inside.</li>
+    </ul>
+
+    <h2>But not everything is written from scratch — and that's deliberate</h2>
+    <p>To keep this article honest, not just promotional: there are a few parts of MEA Tools that do use third-party libraries or models, and that's a conscious decision, not an oversight.</p>
+    <ul>
+      <li><strong>Photo background removal</strong> uses an open-source AI model (U2Net) run through <strong>ONNX Runtime</strong> — a community AI inference engine, not in-house code. Rewriting an entire neural-network inference runtime from scratch is clearly beyond reasonable scope for one tool among dozens of others. The AI model file itself is hosted on MEA's own server, not riding a third-party CDN — but the engine running it is still ONNX Runtime.</li>
+      <li><strong>Image resolution upscaler</strong> uses the Real-ESRGAN AI model, also via ONNX Runtime, for the same reason.</li>
+      <li><strong>Extracting text from an image/scan (OCR)</strong> in two tools uses <strong>Tesseract.js</strong> — a mature, widely trusted open-source OCR engine. Rewriting an OCR engine from scratch is its own research project, far outside the scope of one document-conversion tool.</li>
+    </ul>
+    <p>Here's the interesting part found right in the code itself: the only other part that was <em>deliberately not</em> written manually from scratch is the AES function for PDF encryption — it uses the browser's built-in Web Crypto API, not a homemade AES implementation. The reason is spelled out clearly in a code comment: AES is used for genuine security (protecting a PDF's contents from other parties), and the browser's built-in AES implementation is already rigorously audited and resistant to timing attacks — something extremely risky to rewrite manually without an equivalent security audit guarantee.</p>
+    <p>By comparison, the MD5 and RC4 hash functions in the same tools <em>are</em> written manually from scratch — because there, MD5/RC4 is used for legacy PDF data-format needs (not to protect data confidentiality), not for sensitive security purposes.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">The Principle</span>
+      <h3>Write It Yourself When It Makes Sense, Use What's Proven When Security Is on the Line</h3>
+      <p>The philosophy behind MEA Tools isn't "everything must be from scratch no matter the risk" — it's writing things in-house where it genuinely makes sense to fully own, and deferring to proven, audited implementations where real data security is at stake.</p>
+      <a href="https://tools.meaecosystem.com" class="mea-tool-cta-btn">See All Tools →</a>
+    </div>
+
+    <h2>Why does this matter to you as a user?</h2>
+    <p>It might sound like just a behind-the-scenes technical detail. But the impact is immediately felt: a tool written specifically for its own needs tends to run lighter, open faster, and behave more predictably — because it doesn't carry the weight of generic code that actually goes unused. And in the parts that are truly critical for your data's security, like PDF encryption, choosing to use a proven implementation is actually safer than if everything were forced to be written manually purely for the sake of consistency.</p>
+
+    <h2>Still a work in progress</h2>
+    <p>It's also worth noting: this "write from scratch" approach means every new feature takes longer than simply plugging in a ready-made library. On the PDF side specifically, this self-built <code>pdf-lib</code> currently covers only part of everything that can be done with a PDF file — the PDF format's world is vast, and MEA Tools hasn't stopped here. MEA Tools as a whole is still being developed and expanded, so its current feature coverage isn't a final version — it will keep growing over time.</p>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/kenapa-mea-tools-gratis-tanpa-watermark.html">Why Are All of MEA Tools' Tools Free and Watermark-Free?</a></p>
+      <p><a href="/en/kenapa-tools-online-pindah-ke-client-side.html">Why Are More Online Tools Moving to Client-Side?</a></p>
+      <p><a href="/en/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html">How MEA Tools Automatically Adapts to Your Device</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

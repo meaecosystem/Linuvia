@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Why Doesn't Processing Large Files on MEA Tools Freeze the Browser? | MEA Blog</title>
+<meta name="description" content="Upscaling an image or OCR-ing a large document usually freezes the browser tab entirely. Not on MEA Tools, because the heavy work is offloaded to a separate thread via Web Worker." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Doesn't Processing Large Files on MEA Tools Freeze the Browser?",
+  "description": "An explanation of using Web Worker in heavy tools like the upscaler, background remover, and OCR on MEA Tools, so the browser tab stays responsive while processing large files.",
+  "datePublished": "2026-10-02",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/kenapa-mea-tools-gak-bikin-browser-ngelag.html","ja":"/ja/kenapa-mea-tools-gak-bikin-browser-ngelag.html","en":"/en/kenapa-mea-tools-gak-bikin-browser-ngelag.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#tentang">About</a>
+    <span>/</span>
+    <span aria-current="page">No Browser Freezing</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Insight · About</span>
+    <h1>Why Doesn't Processing Large Files on MEA Tools Freeze the Browser?</h1>
+    <p class="mea-article-lead">Ever uploaded a large photo to an online tool, only to watch the tab go "Not Responding" and become unusable until the process finishes? That's a common problem in web apps that process heavy data directly in the browser. MEA Tools avoids it in a specific, deliberate way — not by accident.</p>
+    <div class="mea-article-meta">
+      <span>October 2, 2026</span>
+      <span>·</span>
+      <span>5 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>Why a browser tab can freeze while processing a file</h2>
+    <p>JavaScript in the browser, by default, runs on a single "lane" called the main thread — the same lane also responsible for redrawing the display, responding to clicks, and running scrolling. If a heavy computation (say, processing millions of image pixels for upscaling, or running an AI model to remove a photo's background) runs directly on that lane, that lane automatically becomes fully occupied — and since there's only one lane, the display can't refresh, clicks go unanswered, scrolling stalls. That's what makes a tab look "frozen" or "Not Responding."</p>
+
+    <h2>The solution: offload heavy work to a separate thread</h2>
+    <p>Modern browsers have a feature called a <strong>Web Worker</strong> — a way to run JavaScript code on a thread separate from the main thread, running in parallel in the background. On MEA Tools tools whose work is computationally heavy — like the <strong>image upscaler</strong>, <strong>photo background remover</strong>, <strong>OCR (extracting text from an image/scan)</strong>, and <strong>PDF-to-Word conversion</strong> that involves OCR — that core work is deliberately run inside a Web Worker, not on the main thread.</p>
+    <p>The effect is immediately noticeable: while an image is being processed behind the scenes, the page can still be scrolled, other buttons can still be clicked, and the progress bar still updates smoothly — because the main thread never gets blocked by that heavy computation. Once the worker finishes, the result is then "reported back" to the main page through an inter-thread messaging mechanism.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">A Real Example</span>
+      <h3>An Honest Progress Bar</h3>
+      <p>In the upscaler and background-remover tools, the progress bar you see combines two phases at once — the AI model download and the image inference process — so you always know the process is actually running, not just a loading animation disconnected from real progress.</p>
+      <a href="https://tools.meaecosystem.com/upscaler" class="mea-tool-cta-btn">Try the Upscaler →</a>
+    </div>
+
+    <h2>Why not every tool needs this</h2>
+    <p>Of the <strong>52 tools</strong> on MEA Tools, only some actually use a Web Worker — specifically the ones whose work is genuinely computationally heavy. Tools like Base64 conversion, computing a small file's hash, or generating a QR code usually finish in milliseconds, so there's no benefit to forcing them through a Worker — it would just add unnecessary complexity. The principle is simple: use a Worker where it's genuinely needed, not slap it onto every tool just to look sophisticated.</p>
+
+    <h2>One tool, one function — not a coincidence</h2>
+    <p>There's another reason MEA Tools generally feels lightweight: every tool is split into its own separate page, carrying only the code relevant to that one function. The merge-PDF tool doesn't also load watermark or OCR code it doesn't need. This differs from the "one big do-everything app" approach, which sometimes forces a single page to load code for dozens of features at once, even though only one is actually being used.</p>
+    <p>This separate-per-tool approach is also what lets the automatic performance-detection system (see the article on device adaptation) work effectively — because the load that needs to be measured and adjusted is specific to one function at a time, not one giant app with an unpredictable load.</p>
+
+    <h2>The end result</h2>
+    <p>Combining these two things — a Web Worker where it's genuinely needed, and a one-tool-one-function structure — keeps the experience of using MEA Tools feeling responsive, even when processing fairly large files on a not-so-powerful device. It's not a magical guarantee that everything will always be instant, but at least your browser tab doesn't need to "go comatose" while waiting for one process to finish.</p>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html">How MEA Tools Automatically Adapts to Your Device</a></p>
+      <p><a href="/en/kenapa-mea-tools-library-dibangun-dari-nol.html">Why Is the Library Behind MEA Tools Built from Scratch?</a></p>
+      <p><a href="/en/kenapa-tools-online-pindah-ke-client-side.html">Why Are More Online Tools Moving to Client-Side?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
