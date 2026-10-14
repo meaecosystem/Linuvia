@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>How to Convert CSV to JSON and Back | MEA Blog</title>
+<meta name="description" content="A guide to converting CSV to JSON or JSON to CSV, supporting large files with no lag, right in your browser with no upload to a server." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/cara-konversi-csv-json.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-konversi-csv-json.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-konversi-csv-json.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-konversi-csv-json.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-konversi-csv-json.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Convert CSV to JSON and Back",
+  "description": "A guide to converting CSV to JSON or JSON to CSV, right in your browser.",
+  "step": [
+    { "@type": "HowToStep", "name": "Open CSV JSON Converter", "text": "Open tools.meaecosystem.com/csv-json-converter/ in your browser." },
+    { "@type": "HowToStep", "name": "Choose a direction", "text": "Choose CSV to JSON or JSON to CSV mode." },
+    { "@type": "HowToStep", "name": "Enter your data", "text": "Paste data or upload a file." },
+    { "@type": "HowToStep", "name": "Convert and download", "text": "Click convert, then copy or download the result." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/cara-konversi-csv-json.html","ja":"/ja/cara-konversi-csv-json.html","en":"/en/cara-konversi-csv-json.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">Text</a>
+    <span>/</span>
+    <span aria-current="page">Convert CSV to JSON</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Guide · Developer</span>
+    <h1>How to Convert CSV to JSON and Back</h1>
+    <p class="mea-article-lead">Got data in CSV format but your API or app needs JSON (or the other way around)? Here's how to convert it, including for files that are fairly large.</p>
+    <div class="mea-article-meta">
+      <span>October 1, 2026</span>
+      <span>·</span>
+      <span>3 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>CSV ↔ JSON Converter converts data both ways: from CSV (a comma-separated table format) to JSON (a structured object format), or the reverse. For large files, the conversion runs through a Web Worker — a technique that keeps the browser from freezing up or becoming "not responding" while the process runs.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">Try It Now</span>
+      <h3>CSV ↔ JSON Converter — MEA Tools</h3>
+      <p>Turn CSV into JSON or JSON into CSV, supporting large files with no lag, right in your browser.</p>
+      <a href="https://tools.meaecosystem.com/csv-json-converter/" class="mea-tool-cta-btn">Open CSV JSON Converter →</a>
+    </div>
+
+    <h2>Steps to convert CSV to JSON (or back)</h2>
+    <ol>
+      <li>Open <a href="https://tools.meaecosystem.com/csv-json-converter/">tools.meaecosystem.com/csv-json-converter</a>.</li>
+      <li>Choose "CSV → JSON" or "JSON → CSV" mode depending on the direction you need.</li>
+      <li>Paste your data directly, or upload a file from your device.</li>
+      <li>Click "Convert".</li>
+      <li>Copy the result, or download it as a file.</li>
+    </ol>
+
+    <h2>Why do large files need special handling?</h2>
+    <p>Converting a large amount of data directly on the browser's main thread can make the page feel frozen — buttons unresponsive, scrolling stuttery — because the browser is busy processing data and has no time to redraw the display. A Web Worker moves that heavy processing to a separate background thread, so the page stays responsive while the conversion runs.</p>
+
+    <h2>Things to watch for during conversion</h2>
+    <p>For CSV to JSON, the first row in a CSV is usually treated as the column names (header), which become the keys in each JSON object. Make sure your CSV file actually has a header in the first row so the result comes out clean. For JSON to CSV, the structure should ideally be an array of objects with consistent keys across each object, so the CSV columns form correctly.</p>
+
+    <h2>Frequently asked questions</h2>
+    <details class="mea-faq-item">
+      <summary>Is my data sent to a server?</summary>
+      <p>No. The entire conversion process, including for large files, runs directly in your browser.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>How large a file can be converted?</summary>
+      <p>There's no hard limit from the service side. For very large files, processing speed depends on your device's specs, but thanks to the Web Worker, the browser won't freeze while it runs.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>What happens if my JSON structure isn't consistent?</summary>
+      <p>If the objects in a JSON array have different keys, the resulting CSV might have empty cells in certain rows for keys that aren't present in that object.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/cara-format-json.html">How to Clean Up and Validate Messy JSON</a></p>
+      <p><a href="/en/cara-buat-uuid.html">How to Generate a UUID v4 for Development</a></p>
+      <p><a href="/en/cara-cek-regex.html">How to Test Regular Expression (Regex) Patterns Online</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
