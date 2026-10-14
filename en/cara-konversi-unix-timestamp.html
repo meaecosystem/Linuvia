@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>How to Convert a Unix Timestamp to a Date (and Back) | MEA Blog</title>
+<meta name="description" content="A guide to converting a Unix timestamp into an easy-to-read date, or the reverse, supporting seconds and milliseconds formats, right in your browser." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/cara-konversi-unix-timestamp.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-konversi-unix-timestamp.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-konversi-unix-timestamp.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-konversi-unix-timestamp.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-konversi-unix-timestamp.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Convert a Unix Timestamp to a Date",
+  "description": "A guide to converting a Unix timestamp to a date and back, right in your browser.",
+  "step": [
+    { "@type": "HowToStep", "name": "Open Timestamp Converter", "text": "Open tools.meaecosystem.com/timestamp-converter/ in your browser." },
+    { "@type": "HowToStep", "name": "Enter a timestamp or date", "text": "Type a Unix timestamp to convert to a date, or pick a date to convert to a timestamp." },
+    { "@type": "HowToStep", "name": "View the conversion", "text": "The conversion result appears automatically and in real time." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/cara-konversi-unix-timestamp.html","ja":"/ja/cara-konversi-unix-timestamp.html","en":"/en/cara-konversi-unix-timestamp.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#utilitas">Utilities</a>
+    <span>/</span>
+    <span aria-current="page">Convert Unix Timestamp</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Guide · Developer</span>
+    <h1>How to Convert a Unix Timestamp to a Date (and Back)</h1>
+    <p class="mea-article-lead">A number like 1735689600 in a log or database means nothing to the human eye until it's converted into a date. Here's how to convert it both ways, plus why the number sometimes looks "too long."</p>
+    <div class="mea-article-meta">
+      <span>October 1, 2026</span>
+      <span>·</span>
+      <span>2 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>A Unix timestamp is how computer systems store time: the number of seconds (or milliseconds) that have elapsed since January 1, 1970. Practical for computers, but not directly readable by humans. This tool converts it both ways — from timestamp to date, and from date to timestamp.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">Try It Now</span>
+      <h3>Timestamp Converter — MEA Tools</h3>
+      <p>Convert a Unix timestamp to a date or the reverse, supporting seconds and milliseconds, right in your browser.</p>
+      <a href="https://tools.meaecosystem.com/timestamp-converter/" class="mea-tool-cta-btn">Open Timestamp Converter →</a>
+    </div>
+
+    <h2>Steps to convert</h2>
+    <ol>
+      <li>Open <a href="https://tools.meaecosystem.com/timestamp-converter/">tools.meaecosystem.com/timestamp-converter</a>.</li>
+      <li>To turn a timestamp into a date: type the Unix timestamp number into the available field — the resulting date appears instantly.</li>
+      <li>For the reverse direction: choose the date and time you want, and the timestamp is calculated automatically.</li>
+    </ol>
+
+    <h2>Why does my timestamp number look a different length?</h2>
+    <p>It's a matter of units. A timestamp in seconds is usually 10 digits (e.g. 1735689600), while a timestamp in milliseconds is 13 digits (1735689600000) — the exact same value, just multiplied by 1000. If your conversion result looks strange (say, the year ends up thousands of years in the future), you've likely picked the wrong unit. This tool supports both, so just double-check the unit setting.</p>
+
+    <h2>What are timestamps usually used for?</h2>
+    <p>Most commonly used in server logs, databases, and APIs — because numbers are far easier to compare and sort than string date formats. If you're debugging data from a log or an API response, converting it to an ordinary date is usually the first step that makes the data make sense.</p>
+
+    <h2>Frequently asked questions</h2>
+    <details class="mea-faq-item">
+      <summary>Is the data I enter sent to a server?</summary>
+      <p>No. The conversion is done directly in your browser using JavaScript's built-in date functions.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>What time zone is used?</summary>
+      <p>The conversion result follows your device's time zone by default.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>What's the Unix Epoch?</summary>
+      <p>The Unix Epoch is the zero point of a Unix timestamp: January 1, 1970, 00:00:00 UTC. Every Unix timestamp is calculated as a distance from this point.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/cara-format-json.html">How to Clean Up and Validate Messy JSON</a></p>
+      <p><a href="/en/cara-cek-hash-file.html">How to Check a File Hash (MD5, SHA-256) to Verify Authenticity</a></p>
+      <p><a href="/en/kenapa-tools-online-pindah-ke-client-side.html">Why Are More Online Tools Moving to Client-Side?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
