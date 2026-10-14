@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>How to Encode and Decode URLs for Special Characters | MEA Blog</title>
+<meta name="description" content="A guide to turning text into a safe URL format (encode) or reading an already-encoded URL back (decode), right in your browser." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-encode-decode-url.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Encode and Decode a URL",
+  "description": "A guide to encoding and decoding a URL for special characters, right in your browser.",
+  "step": [
+    { "@type": "HowToStep", "name": "Open URL Encoder", "text": "Open tools.meaecosystem.com/url-encoder/ in your browser." },
+    { "@type": "HowToStep", "name": "Choose a mode", "text": "Choose Encode to make text URL-safe, or Decode for the reverse." },
+    { "@type": "HowToStep", "name": "Set the encode mode", "text": "If encoding, choose whether to encode full component characters or just tidy up a full URL." },
+    { "@type": "HowToStep", "name": "Enter text", "text": "Type or paste the text — the result appears automatically." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/cara-encode-decode-url.html","ja":"/ja/cara-encode-decode-url.html","en":"/en/cara-encode-decode-url.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">Text</a>
+    <span>/</span>
+    <span aria-current="page">Encode/Decode URL</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Guide · Developer</span>
+    <h1>How to Encode and Decode URLs for Special Characters</h1>
+    <p class="mea-article-lead">Ever seen a URL full of percent signs and odd numbers like %20 or %3F? That's the result of URL encoding. Here's how to turn text into that format, and read it back.</p>
+    <div class="mea-article-meta">
+      <span>October 1, 2026</span>
+      <span>·</span>
+      <span>2 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>A URL can only contain certain characters — spaces, question marks, ampersands, and non-Latin characters have to be converted first into a percent-encoded format (for instance, a space becomes <code>%20</code>) so the URL stays valid and doesn't break when opened. URL Encoder & Decoder converts text both ways: into a safe URL format, or back from that format into plain text.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">Try It Now</span>
+      <h3>URL Encoder & Decoder — MEA Tools</h3>
+      <p>Turn text into a safe URL format (encode), or read an already-encoded URL back (decode), right in your browser.</p>
+      <a href="https://tools.meaecosystem.com/url-encoder/" class="mea-tool-cta-btn">Open URL Encoder →</a>
+    </div>
+
+    <h2>Steps to encode/decode a URL</h2>
+    <ol>
+      <li>Open <a href="https://tools.meaecosystem.com/url-encoder/">tools.meaecosystem.com/url-encoder</a>.</li>
+      <li>Choose the "Encode" or "Decode" tab depending on what you need.</li>
+      <li>In Encode mode, note the "Encode full component characters" option — the difference is explained below.</li>
+      <li>Type or paste your text, and the result appears automatically.</li>
+    </ol>
+
+    <h2>Two encoding modes — which should you pick?</h2>
+    <p>There are two ways to encode a URL, and they serve different purposes. Turn on "Encode full component characters" when the text you're encoding will become <strong>the value of a single URL parameter</strong> — like a search query being inserted into a URL. This mode encodes every special character, including <code>& ? / = #</code>. Leave that option off when your text is already a <strong>full URL</strong> that just needs its special characters tidied up (spaces, non-Latin letters), while its structure (like <code>://</code>, <code>&</code>, <code>?</code>) needs to stay intact so the URL doesn't break.</p>
+
+    <h2>Why does picking the right mode matter?</h2>
+    <p>If you pick the wrong mode — for instance, encoding an entire URL (including <code>://</code> and <code>?</code>) when you only should have encoded a parameter's value — the result becomes an invalid URL that won't work when opened in a browser. That's why it's important to first understand whether your text is a "full URL" or "just the value portion of a single parameter."</p>
+
+    <h2>Frequently asked questions</h2>
+    <details class="mea-faq-item">
+      <summary>Is my text sent to a server?</summary>
+      <p>No. The encode and decode process runs directly in your browser.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Why does my decoded result still have percent signs in it?</summary>
+      <p>The text was likely encoded twice before, so it needs to be decoded more than once to get back to the original text.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>What's the difference between characters that get encoded and ones that don't?</summary>
+      <p>Characters that are part of a URL's basic structure (like <code>: / ? #</code>) are usually left as-is when encoding a full URL, but get encoded too when processing a single component's value.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/cara-buat-slug-url.html">How to Create an SEO-Friendly URL Slug from an Article Title</a></p>
+      <p><a href="/en/cara-encode-decode-base64.html">How to Encode and Decode Text to Base64</a></p>
+      <p><a href="/en/cara-cek-regex.html">How to Test Regular Expression (Regex) Patterns Online</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
