@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>如何从图片中提取颜色代码和调色板 | MEA Blog</title>
+<meta name="description" content="教你如何通过点击从图片中提取Hex、RGB、HSL颜色代码，或自动提取主色调调色板，全部在浏览器本地完成。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/zh/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-ambil-warna-dari-gambar.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "如何从图片中提取颜色代码和调色板",
+  "description": "教你如何从图片中提取Hex、RGB、HSL颜色代码，并提取主色调调色板，全部在浏览器本地完成。",
+  "step": [
+    { "@type": "HowToStep", "name": "打开取色器", "text": "在浏览器中打开 tools.meaecosystem.com/color-picker/。" },
+    { "@type": "HowToStep", "name": "上传图片", "text": "选择要提取颜色的图片。" },
+    { "@type": "HowToStep", "name": "点击取色", "text": "点击图片上想要提取颜色的位置，查看其Hex、RGB和HSL代码。" },
+    { "@type": "HowToStep", "name": "查看主色调", "text": "查看自动提取出的图片主色调，选择要显示的颜色数量。" }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="zh" data-lang-links='{"id":"/id/cara-ambil-warna-dari-gambar.html","ja":"/ja/cara-ambil-warna-dari-gambar.html","en":"/en/cara-ambil-warna-dari-gambar.html","zh":"/zh/cara-ambil-warna-dari-gambar.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#image">图片</a>
+    <span>/</span>
+    <span aria-current="page">从图片提取颜色</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">指南 · 设计</span>
+    <h1>如何从图片中提取颜色代码和调色板</h1>
+    <p class="mea-article-lead">发现一张配色很好看的照片或设计图，想知道它的Hex代码用在自己的项目里？本文教你如何直接从图片中提取颜色，可以逐个提取，也可以一次性生成调色板。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月1日</span>
+      <span>·</span>
+      <span>3分钟阅读</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>取色器有两种模式：直接点击图片上的某一点提取颜色（结果包括Hex、RGB和HSL代码），或者让工具自动从整张图片中提取出最主要的颜色，生成调色板。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">立即体验</span>
+      <h3>图片取色器 — MEA Tools</h3>
+      <p>点击图片即可提取颜色代码，或自动提取主色调调色板，全部在浏览器本地完成。</p>
+      <a href="https://tools.meaecosystem.com/color-picker/" class="mea-tool-cta-btn">打开取色器 →</a>
+    </div>
+
+    <h2>提取颜色的步骤</h2>
+    <ol>
+      <li>打开 <a href="https://tools.meaecosystem.com/color-picker/">tools.meaecosystem.com/color-picker</a>。</li>
+      <li>上传要提取颜色的图片。</li>
+      <li>点击图片上想要的位置——该点的Hex、RGB和HSL代码会立即显示，点击一下即可复制。</li>
+      <li>要查看整体的主色调调色板，滚动到调色板部分，选择想显示的颜色数量（4、8或16个）。</li>
+    </ol>
+
+    <h2>Hex、RGB、HSL有什么区别？</h2>
+    <p>三者表示的是同一种颜色，只是写法不同，各自更常用于特定场景。Hex（比如 #3B82F6）在CSS和网页设计中最常用。RGB把红、绿、蓝三个分量分开表示——如果你用的软件需要分别输入数值，这种格式很实用。HSL（色相、饱和度、明度）在你想调整颜色的明暗或饱和度而不改变"色相本身"时更直观。</p>
+
+    <h2>什么时候点击取色，什么时候用自动调色板？</h2>
+    <p>如果你已经清楚知道图片中哪个部分的颜色需要提取——比如某个标志或产品的颜色——直接点击更合适。自动调色板在初期阶段更有用，比如你刚开始从一张参考图或情绪板中确定配色方案的时候。</p>
+
+    <h2>常见问题</h2>
+    <details class="mea-faq-item">
+      <summary>我的图片会上传到服务器吗？</summary>
+      <p>不会。图片的读取和处理都直接在你的浏览器中通过Canvas API完成。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>支持哪些图片格式？</summary>
+      <p>支持浏览器能读取的所有常见图片格式，如JPG、PNG和WebP。</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>为什么提取出的颜色和我在图片上看到的不一样？</summary>
+      <p>屏幕和设备的亮度设置会影响你对颜色的视觉感知，但提取出的颜色代码始终基于图片文件中的原始像素值，而不是你屏幕上显示的效果。</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>你可能还喜欢</h2>
+      <p><a href="/zh/cara-kompres-gambar.html">如何在不损失画质的情况下压缩图片，直接在浏览器完成</a></p>
+      <p><a href="/zh/cara-buat-qr-code.html">如何制作带Logo的自定义二维码</a></p>
+      <p><a href="/zh/kenapa-tools-online-pindah-ke-client-side.html">为什么越来越多在线工具转向客户端处理？</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 保留所有权利。</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">隐私政策</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">服务条款</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">免责声明</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
