@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Siesta: MEA AI Team's First Research Officially Published on Zenodo | MEA Blog</title>
+<meta name="description" content="MEA AI Team's first research paper has officially been published as a preprint on Zenodo. Siesta explores identity coherence in an Indonesian-language orchestrator language model, built from scratch with limited resources." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/siesta-riset-pertama-resmi-publish.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/siesta-riset-pertama-resmi-publish.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/siesta-riset-pertama-resmi-publish.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/siesta-riset-pertama-resmi-publish.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/siesta-riset-pertama-resmi-publish.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Siesta: MEA AI Team's First Research Officially Published on Zenodo",
+  "description": "MEA AI Team's first research paper has officially been published as a preprint on Zenodo. Siesta explores identity coherence in an Indonesian-language orchestrator language model, built from scratch with limited resources.",
+  "datePublished": "2026-09-16",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/siesta-riset-pertama-resmi-publish.html","ja":"/ja/siesta-riset-pertama-resmi-publish.html","en":"/en/siesta-riset-pertama-resmi-publish.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#riset">Research &amp; AI</a>
+    <span>/</span>
+    <span aria-current="page">Siesta Officially Published</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Announcement · Research &amp; AI</span>
+    <h1>Siesta: MEA AI Team's First Research Officially Published on Zenodo</h1>
+    <p class="mea-article-lead">After months running as an internal project, MEA AI Team's first piece of research finally has an official form: a preprint with a DOI, citable, and open for anyone to read. Here's the story of what was researched, why it was built from scratch, and what's still an open item.</p>
+    <div class="mea-article-meta">
+      <span>September 16, 2026</span>
+      <span>·</span>
+      <span>7 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>What is Siesta?</h2>
+    <p>Siesta is an Indonesian-language orchestrator language model being developed under MEA AI Team — part of the MEA Ecosystem. Its main focus isn't being a do-everything assistant, but rather specializing in one thing: conversation that feels empathetic and human, with a personality that's consistent every time you talk to it.</p>
+    <p>Most language models are designed to always be neutral, always polite, and never show a consistent character. That makes sense for certain needs, but humans are used to talking with people who have a personality — who can be happy, can be annoyed, whose answers are sometimes just short. That absence of character is exactly what often makes interacting with AI feel artificial. The question underlying this research is simple: can a model maintain a coherent identity, regardless of whatever topic comes up or whoever it's talking to?</p>
+
+    <h2>Why built from scratch?</h2>
+    <p>Before arriving at its current architecture, the team did try a more commonly used route first: fine-tuning an existing large model. The result was decent in general capability, but felt like a poor fit for the specific needs wanted. In the end, the entire dataset and fine-tuned model from that attempt were deleted, and development started over from scratch.</p>
+    <p>This decision wasn't without consequences — building from scratch means there's no "built-in intelligence," everything has to be trained from the ground up. But that's exactly where the full control lies: who the model's "identity" is can be decided from the foundation up, not just stuck on as a personality layer over a model whose character was already shaped beforehand by someone else's training data.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">What This Paper Explores</span>
+      <h3>Identity Coherence in an Orchestrator Model</h3>
+      <p>This paper isn't complete technical documentation — internal architecture details and data schemas are deliberately not disclosed. What's explored: how a model can maintain a consistent identity, why personality is shaped through data composition rather than explicit instructions, and an orchestration architecture that hides the entire delegation process to supporting models from the surface of interaction.</p>
+      <a href="https://doi.org/10.5281/zenodo.22761440" class="mea-tool-cta-btn">Read the Full Paper →</a>
+    </div>
+
+    <h2>Built with resources far from ideal</h2>
+    <p>This is independent research with one person behind it, done with consumer-grade, quota-limited GPUs and TPUs — not the large compute clusters typically used by AI research labs. This constraint actually shaped a lot of design decisions throughout the process, and one of the most concrete lessons came from an experiment scaling the model up.</p>
+    <p>The larger model architecture (4B+ parameters) is essentially the same as the much smaller earlier generations — only the parameter count was increased. The initial assumption: a training recipe already proven safe at small scale would stay safe at large scale too. In reality, that wasn't always true. A flat learning rate stable for a small model, on a much larger model, actually made the loss rise instead of fall. Larger models turned out to be far more sensitive to the shape of the learning-rate schedule, and needed a more careful approach — warmup at the start, followed by gradual decay — rather than a fixed number from start to finish of training.</p>
+    <p>Lessons like these — including the ones that are failures or processes still unfinished — are deliberately written as-is in the paper, not hidden to make the results look smoother than reality.</p>
+
+    <h2>Why publish as a preprint instead of holding off?</h2>
+    <p>This research is still ongoing, and the version published now captures Siesta at one point in a journey that's still long — not a report on a finished model. Several limitations are explicitly acknowledged in the paper, including that the identity-coherence claims are, for now, still assessed qualitatively, not yet through a formal evaluation methodology.</p>
+    <p>Choosing to publish at this stage — with everything still imperfect — is a deliberate decision. A preprint on Zenodo gives this paper a permanent DOI, makes it citable, and gives it a clear timestamp, while still allowing updates through the versioning system as new developments come along.</p>
+
+    <h2>What's next?</h2>
+    <p>Siesta's roadmap currently runs along several parallel tracks — from a larger-scale model still in the debugging stage, to the possibility of releasing a small-scale model version as open source (this plan can still change depending on how things develop). More complete details on the future development direction, including still-open questions, are discussed at the end of the paper.</p>
+    <p>This paper is MEA AI Team's first research publication, and likely not its last.</p>
+
+    <div class="mea-related">
+      <h2>Publication details</h2>
+      <p><strong>Title:</strong> Siesta: Coherent Identity in an Orchestrator Language Model with Emergent Personality</p>
+      <p><strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.22761440">10.5281/zenodo.22761440</a></p>
+      <p><strong>Status:</strong> Preprint v1.0 (as of initial release). This paper has since been updated to <a href="/en/siesta-paper-v1-1-rilis.html">version v1.1</a>, still under the CC BY 4.0 license</p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

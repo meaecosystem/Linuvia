@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>How MEA Tools Automatically Adapts to Your Device | MEA Blog</title>
+<meta name="description" content="MEA Tools quietly detects RAM, CPU core count, even actual FPS while you scroll, then adjusts the display to stay smooth -- from entry-level phones to fast laptops." />
+<link rel="canonical" href="https://blog.meaecosystem.com/en/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How MEA Tools Automatically Adapts to Your Device",
+  "description": "An explanation of the automatic performance-detection system on MEA Tools that adjusts the display based on the user's actual RAM, CPU, and FPS.",
+  "datePublished": "2026-10-02",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="en" data-lang-links='{"id":"/id/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html","ja":"/ja/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html","en":"/en/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#tentang">About</a>
+    <span>/</span>
+    <span aria-current="page">Automatic Adaptation</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">Insight · About</span>
+    <h1>How MEA Tools Automatically Adapts to Your Device</h1>
+    <p class="mea-article-lead">Ever opened a site that looked great on a laptop but ran painfully slow on an old phone? MEA Tools has a small system quietly running behind the scenes, with one job: recognize how powerful the device you're using is, then adjust the display so it stays pleasant to use — without you having to configure anything.</p>
+    <div class="mea-article-meta">
+      <span>October 2, 2026</span>
+      <span>·</span>
+      <span>6 min read</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>The baseline: a Samsung J2 Prime-class phone</h2>
+    <p>This isn't an arbitrary baseline. The MEA team deliberately set the lowest device class as the heaviest reference point — equivalent to a Samsung J2 Prime, a phone with around 1.5GB of RAM and a quad-core processor that's a realistic picture of the "entry-level" devices still widely used by people. Rather than just testing on the development team's fast laptop and assuming everyone has a similar device, the baseline is instead the most modest device realistically used by actual users.</p>
+
+    <h2>Three display tiers, chosen automatically</h2>
+    <p>The moment a MEA Tools page opens, a small script runs immediately before the display even renders, and decides on one of three tiers (called "tier" in the code): <strong>Low (Efficient)</strong>, <strong>Mid (Balanced)</strong>, or <strong>High (Full)</strong>. This tier is purely about visuals — glow effects, animations, gradients, and the like — not about reduced tool functionality. The tools remain fully functional at any tier; what changes is only how "heavy" the visual decoration is.</p>
+    <p>The decision uses several signals the browser can read:</p>
+    <ul>
+      <li><strong>Device RAM</strong> (if the browser allows reading this info) — 2GB or below automatically lands in the Efficient tier.</li>
+      <li><strong>CPU core count</strong> — used as the main signal on browsers that don't expose RAM info (like Safari), and as an additional filter on other browsers.</li>
+      <li><strong>Data-saver mode or reduced-motion</strong> already enabled by the user in their system or browser settings — if this is on, MEA Tools respects it immediately and uses the lightest tier with no further questions.</li>
+    </ul>
+
+    <h2>Not just a one-time guess — actually measured too</h2>
+    <p>Here's the more interesting part: this system doesn't just guess once at the start and call it done. Once the page starts being used — say, you scroll or touch the screen — an FPS (frames per second) measurement runs in the background, checking whether the animations are genuinely smooth on your device or actually stuttering.</p>
+    <p>If FPS is detected dropping below 40 two times in a row, the system automatically drops the display down one tier — from Full to Balanced, or from Balanced to Efficient — to keep the experience comfortable to use. Once dropped, a small notification appears saying "Visuals adjusted for your device's comfort," so you're not left confused about why the display suddenly changed.</p>
+    <p>There's one rule deliberately enforced strictly here: <strong>a tier can only drop automatically, never rise on its own without evidence.</strong> So once the system detects a device struggling and drops the display, it won't "try bumping it back up" quietly — that could create an annoying up-and-down experience. If you want to go back to the full display, that decision is left to the user's manual choice.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">You're Still in Control</span>
+      <h3>Can Be Changed Manually Anytime</h3>
+      <p>There's a small display settings button you can click anytime to manually choose between Auto, Efficient, Balanced, or Full mode — if you'd rather decide for yourself instead of relying on automatic detection.</p>
+      <a href="https://tools.meaecosystem.com" class="mea-tool-cta-btn">Try It Now →</a>
+    </div>
+
+    <h2>Detection results are remembered, not re-measured every visit</h2>
+    <p>So you don't need to measure FPS from scratch every time you open MEA Tools, the automatic detection result is stored on your own device (via the browser's <code>localStorage</code>). So once the system knows your device fits better in the Efficient tier, your next visit immediately uses that tier from the start, with no need to wait for the measuring process again.</p>
+    <p>The FPS measurement itself also isn't done carelessly — it's only calculated while you're actually actively interacting (scrolling, touching, or moving the mouse), and stops when the tab isn't active. This prevents a page sitting idle from being judged "slow" when really there's nothing that needs rendering at that moment.</p>
+
+    <h2>Why does this matter?</h2>
+    <p>Many sites or web apps are built and tested on a fast development device, with the assumption that all users will have a similar experience. In reality, in Indonesia alone the range of devices people use for browsing is very wide — from the latest flagships to old phones with limited RAM. This adaptive system is how MEA Tools ensures the experience stays comfortable at either end of that spectrum, without having to build two separate versions of the site or force everyone to download the same heaviest display.</p>
+
+    <div class="mea-related">
+      <h2>You might also like</h2>
+      <p><a href="/en/kenapa-mea-tools-gratis-tanpa-watermark.html">Why Are All of MEA Tools' Tools Free and Watermark-Free?</a></p>
+      <p><a href="/en/kenapa-mea-tools-library-dibangun-dari-nol.html">Why Is the Library Behind MEA Tools Built from Scratch?</a></p>
+      <p><a href="/en/kenapa-tools-online-pindah-ke-client-side.html">Why Are More Online Tools Moving to Client-Side?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
