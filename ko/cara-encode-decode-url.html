@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>특수 문자를 위한 URL 인코딩/디코딩 방법 | MEA Blog</title>
+<meta name="description" content="텍스트를 안전한 URL 형식으로 바꾸거나(인코딩), 이미 인코딩된 URL을 다시 읽는(디코딩) 방법을 안내합니다. 전부 브라우저에서." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/cara-encode-decode-url.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-encode-decode-url.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "URL 인코딩/디코딩 방법",
+  "description": "특수 문자를 위한 URL 인코딩 및 디코딩 방법, 전부 브라우저에서.",
+  "step": [
+    { "@type": "HowToStep", "name": "URL Encoder 열기", "text": "브라우저에서 tools.meaecosystem.com/url-encoder/ 를 엽니다." },
+    { "@type": "HowToStep", "name": "모드 선택", "text": "텍스트를 URL에서 안전하게 바꾸려면 인코딩을, 반대 방향이면 디코딩을 선택합니다." },
+    { "@type": "HowToStep", "name": "인코딩 모드 설정", "text": "인코딩이라면 전체 컴포넌트 문자를 인코딩할지, 전체 URL을 정리만 할지 선택합니다." },
+    { "@type": "HowToStep", "name": "텍스트 입력", "text": "텍스트를 입력하거나 붙여넣으면 결과가 자동으로 나타납니다." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/cara-encode-decode-url.html","ja":"/ja/cara-encode-decode-url.html","en":"/en/cara-encode-decode-url.html","zh":"/zh/cara-encode-decode-url.html","ko":"/ko/cara-encode-decode-url.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">텍스트</a>
+    <span>/</span>
+    <span aria-current="page">URL 인코딩 디코딩</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">가이드 · 개발자</span>
+    <h1>특수 문자를 위한 URL 인코딩/디코딩 방법</h1>
+    <p class="mea-article-lead">%20이나 %3F처럼 퍼센트 기호와 이상한 숫자로 가득한 URL을 본 적 있나요? 그게 URL 인코딩의 결과입니다. 텍스트를 그 형식으로 바꾸고 다시 읽는 방법을 소개합니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 10월 1일</span>
+      <span>·</span>
+      <span>읽는 시간 2분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>URL은 특정 문자만 포함할 수 있습니다 — 공백, 물음표, 앰퍼샌드, 비라틴 문자는 URL이 깨지지 않고 유효하게 작동하려면 먼저 퍼센트 형식(예: 공백은 <code>%20</code>)으로 바꿔야 합니다. URL Encoder & Decoder는 텍스트를 양방향으로 변환합니다: 안전한 URL 형식으로, 또는 그 형식을 다시 읽어 일반 텍스트로.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">지금 사용해보기</span>
+      <h3>URL Encoder & Decoder — MEA Tools</h3>
+      <p>텍스트를 안전한 URL 형식으로 바꾸거나(인코딩), 이미 인코딩된 URL을 다시 읽으세요(디코딩). 전부 브라우저에서.</p>
+      <a href="https://tools.meaecosystem.com/url-encoder/" class="mea-tool-cta-btn">URL Encoder 열기 →</a>
+    </div>
+
+    <h2>URL 인코딩/디코딩 단계</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/url-encoder/">tools.meaecosystem.com/url-encoder</a>를 엽니다.</li>
+      <li>필요에 따라 "인코딩" 또는 "디코딩" 탭을 선택합니다.</li>
+      <li>인코딩 모드라면 "전체 컴포넌트 문자 인코딩" 옵션을 확인하세요 — 차이는 아래에서 설명합니다.</li>
+      <li>텍스트를 입력하거나 붙여넣으면 결과가 자동으로 나타납니다.</li>
+    </ol>
+
+    <h2>인코딩 모드 두 가지, 어떤 걸 선택해야 하나요?</h2>
+    <p>URL 인코딩 방식은 두 가지이며 기능이 서로 다릅니다. 인코딩할 텍스트가 <strong>하나의 URL 파라미터 값</strong>이 될 경우 — 예를 들어 URL에 삽입되는 검색어 — "전체 컴포넌트 문자 인코딩" 옵션을 켜세요. 이 모드는 <code>& ? / = #</code>을 포함한 모든 특수 문자를 인코딩합니다. 텍스트가 이미 <strong>완전한 URL</strong>이고 특수 문자(공백, 비라틴 문자)만 정리하면 되지만 구조(<code>://</code>, <code>&</code>, <code>?</code> 같은)는 그대로 유지해야 URL이 깨지지 않는 경우라면 이 옵션을 끄세요.</p>
+
+    <h2>왜 올바른 모드를 선택하는 게 중요한가요?</h2>
+    <p>모드를 잘못 선택하면 — 예를 들어 파라미터 값만 인코딩해야 하는데 전체 URL(<code>://</code>와 <code>?</code> 포함)을 인코딩해버리면 — 결과 URL이 유효하지 않아서 브라우저에서 열어도 작동하지 않습니다. 그래서 텍스트가 "완전한 URL"인지 "하나의 파라미터 값"인지 먼저 파악하는 게 중요합니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="mea-faq-item">
+      <summary>제 텍스트가 서버로 전송되나요?</summary>
+      <p>아니요. 인코딩과 디코딩 과정은 브라우저에서 직접 진행됩니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>디코딩 결과에 왜 아직 퍼센트 기호가 남아있나요?</summary>
+      <p>그 텍스트가 이전에 두 번 인코딩됐을 가능성이 큽니다, 그래서 원래 텍스트로 돌아가려면 디코딩을 한 번 더 해야 합니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>인코딩되는 문자와 안 되는 문자의 차이는 무엇인가요?</summary>
+      <p>URL의 기본 구조에 속하는 문자(<code>: / ? #</code> 등)는 전체 URL을 인코딩하는 경우 보통 그대로 유지되지만, 단일 컴포넌트 값을 처리하는 경우에는 함께 인코딩됩니다.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/cara-buat-slug-url.html">기사 제목으로 SEO 친화적인 URL 슬러그 만드는 방법</a></p>
+      <p><a href="/ko/cara-encode-decode-base64.html">텍스트를 Base64로 인코딩/디코딩하는 방법</a></p>
+      <p><a href="/ko/cara-cek-regex.html">정규표현식(Regex) 패턴 온라인으로 테스트하는 방법</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

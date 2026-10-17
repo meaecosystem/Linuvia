@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>여러 PDF 파일을 하나로 합치는 방법 | MEA Blog</title>
+<meta name="description" content="여러 PDF 파일을 한 번에 합치는 방법을 안내합니다. 순서를 마음대로 조정하고, 서버 업로드 없이, 품질 손실 없이 — 전부 브라우저에서 바로." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/cara-gabungkan-pdf.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-gabungkan-pdf.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-gabungkan-pdf.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-gabungkan-pdf.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-gabungkan-pdf.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/cara-gabungkan-pdf.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-gabungkan-pdf.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "여러 PDF 파일을 하나로 합치는 방법",
+  "description": "여러 PDF 파일을 한 번에 합치는 방법, 서버 업로드 없이.",
+  "step": [
+    { "@type": "HowToStep", "name": "Merge PDF 열기", "text": "브라우저에서 tools.meaecosystem.com/merge-pdf/ 를 엽니다." },
+    { "@type": "HowToStep", "name": "여러 PDF 파일 선택", "text": "최소 2개의 PDF 파일을 선택하거나 드롭 영역으로 끌어다 놓습니다." },
+    { "@type": "HowToStep", "name": "순서 설정", "text": "목록에서 파일을 끌어서, 또는 화살표 버튼으로 합칠 순서를 바꿉니다." },
+    { "@type": "HowToStep", "name": "합치기", "text": "합치기 버튼을 클릭하면 결과가 바로 하나의 PDF 파일로 다운로드됩니다." }
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/cara-gabungkan-pdf.html","ja":"/ja/cara-gabungkan-pdf.html","en":"/en/cara-gabungkan-pdf.html","zh":"/zh/cara-gabungkan-pdf.html","ko":"/ko/cara-gabungkan-pdf.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#convert">변환</a>
+    <span>/</span>
+    <span aria-current="page">PDF 합치기</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">가이드 · 파일 변환</span>
+    <h1>여러 PDF 파일을 하나로 합치는 방법</h1>
+    <p class="mea-article-lead">사실은 하나로 묶여야 할 PDF 파일 여러 개를 따로 가지고 있나요 — 페이지별 스캔 결과나, 하나의 깔끔한 파일로 보내야 할 여러 첨부파일처럼요? 앱 설치 없이 합치는 방법을 소개합니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 8월 17일</span>
+      <span>·</span>
+      <span>읽는 시간 4분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>PDF 합치기는 간단해 보이지만, 잘못된 방식으로 하면 실망스러운 결과가 나올 수 있습니다: 다시 압축되면서 이미지 품질이 떨어지거나, 페이지 순서가 엉망이 되거나 — 가장 흔한 경우 — 합치기 전에 파일을 다른 누군가의 사이트에 업로드해야 하는 경우입니다.</p>
+
+    <p>하지만 기술적으로 PDF를 합치는 건 각 파일의 내용을 복사해서 새 문서로 재구성하는 것뿐입니다 — 서버가 진짜로 필요한 복잡한 과정이 아닙니다. 전부 사용자의 브라우저에서 직접 처리할 수 있습니다.</p>
+
+    <h2>왜 일부 PDF 합치기 도구는 품질이 떨어지나요?</h2>
+    <p>많은 온라인 "PDF 합치기" 서비스는 사실 재구성하기 전에 각 페이지를 이미지로 다시 렌더링합니다. 그 결과, 원래 선명하고 복사 가능했던 텍스트가 약간 흐릿해지고 더 이상 선택할 수 없게 됩니다. 결과물이 여전히 "PDF처럼 보이기" 때문에 이 문제는 종종 간과되지만, 품질은 조용히 떨어집니다.</p>
+    <p>더 올바른 방법은 각 페이지의 원본 내용 — 폰트와 이미지 포함 — 을 있는 그대로 복사한 뒤 하나의 문서로 구성하는 것입니다. 이렇게 하면 합쳐진 결과물의 품질이 원본 파일과 동일합니다. 내용이 바뀐 적 없이 단지 재구성됐을 뿐이기 때문입니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">지금 사용해보기</span>
+      <h3>Merge PDF — MEA Tools</h3>
+      <p>여러 PDF 파일을 하나로 합치세요, 순서는 원하는 대로, 전부 브라우저에서. 무료, 로그인 없음, 파일은 서버에 업로드되지 않습니다 — 합쳐진 결과물의 품질은 원본과 동일합니다.</p>
+      <a href="https://tools.meaecosystem.com/merge-pdf/" class="mea-tool-cta-btn">Merge PDF 열기 →</a>
+    </div>
+
+    <h2>PDF 합치는 단계</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/merge-pdf/">tools.meaecosystem.com/merge-pdf</a>를 엽니다 — 가입이나 로그인이 필요 없습니다.</li>
+      <li>기기에서 PDF 파일을 최소 2개 선택하거나, 전부 업로드 영역으로 한 번에 끌어다 놓습니다.</li>
+      <li>모든 파일이 인식되면 합쳐질 파일 목록이 나타납니다. 목록 항목을 끌어서 순서를 바꾸거나, 더 편하다면 위/아래 화살표 버튼을 사용하세요.</li>
+      <li>순서가 맞으면 합치기 버튼을 클릭합니다.</li>
+      <li>합쳐진 PDF 파일이 바로 다운로드됩니다 — 하나의 파일로, 설정한 순서대로, 품질은 원본 파일과 동일합니다.</li>
+    </ol>
+
+    <h2>깔끔한 파일 순서를 정리하는 팁</h2>
+    <p>파일이 많고 이름이 순서대로 되어 있지 않다면(예: 스캐너가 임의로 붙인 이름), 업로드 전에 기기에서 앞에 숫자를 붙여 미리 이름을 바꿔두는 게 더 편합니다 — 예: <code>01-cover.pdf</code>, <code>02-isi.pdf</code> — 그러면 업로드했을 때 목록이 이미 거의 올바른 순서가 되어 있어서 약간만 조정하면 됩니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="mea-faq-item">
+      <summary>제 PDF 파일이 서버로 업로드되나요?</summary>
+      <p>아니요. 합치기 과정 전체가 브라우저에서 직접 진행됩니다 — 파일은 기기를 떠나지 않습니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>합쳐진 PDF의 품질이 떨어지나요?</summary>
+      <p>아니요. 각 페이지의 원본 내용이 폰트와 이미지를 포함해 있는 그대로 복사되므로 품질이 원본 파일과 동일합니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>한 번에 몇 개의 파일을 합칠 수 있나요?</summary>
+      <p>모든 처리가 사용자 기기에서 이뤄지므로 서비스 측 제한은 없습니다. 한계는 오직 사용자의 브라우저와 기기 성능뿐입니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>합치기 전에 페이지 순서를 조정할 수 있나요?</summary>
+      <p>가능합니다. 목록에서 파일을 끌어서 순서를 바꾸거나, 각 파일의 위/아래 화살표 버튼을 사용하세요.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/cara-ubah-pdf-jadi-gambar.html">PDF를 이미지(JPG/PNG)로 바꾸는 방법, 브라우저에서 바로</a></p>
+      <p><a href="/ko/cara-kompres-gambar.html">품질 손실 없이 이미지 압축하는 방법, 브라우저에서 바로</a></p>
+      <p><a href="/ko/cara-memecah-pdf.html">하나의 PDF를 여러 파일로 나누는 방법</a></p>
+      <p><a href="/ko/kenapa-tools-online-pindah-ke-client-side.html">왜 점점 더 많은 온라인 툴이 클라이언트 사이드로 옮겨갈까?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

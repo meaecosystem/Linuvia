@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>텍스트를 Base64로 인코딩/디코딩하는 방법 | MEA Blog</title>
+<meta name="description" content="텍스트를 Base64로 인코딩하거나 다시 일반 텍스트로 디코딩하는 방법을 안내합니다. 이모지와 비라틴 문자도 지원합니다. 전부 브라우저에서." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/cara-encode-decode-base64.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-encode-decode-base64.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "텍스트를 Base64로 인코딩/디코딩하는 방법",
+  "description": "텍스트를 Base64로 인코딩하고 디코딩하는 방법, 전부 브라우저에서.",
+  "step": [
+    { "@type": "HowToStep", "name": "Base64 Text Encoder 열기", "text": "브라우저에서 tools.meaecosystem.com/base64-text/ 를 엽니다." },
+    { "@type": "HowToStep", "name": "모드 선택", "text": "텍스트를 Base64로 바꾸려면 인코딩 모드를, 반대 방향이면 디코딩 모드를 선택합니다." },
+    { "@type": "HowToStep", "name": "텍스트 입력", "text": "처리할 텍스트를 입력하거나 붙여넣습니다." },
+    { "@type": "HowToStep", "name": "결과 복사", "text": "결과가 자동으로 나타나면 클릭 한 번으로 복사합니다." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/cara-encode-decode-base64.html","ja":"/ja/cara-encode-decode-base64.html","en":"/en/cara-encode-decode-base64.html","zh":"/zh/cara-encode-decode-base64.html","ko":"/ko/cara-encode-decode-base64.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">텍스트</a>
+    <span>/</span>
+    <span aria-current="page">Base64 인코딩 디코딩</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">가이드 · 개발자</span>
+    <h1>텍스트를 Base64로 인코딩/디코딩하는 방법</h1>
+    <p class="mea-article-lead">글자, 숫자, 끝에 "=" 기호만 있는 이상한 문자열을 본 적 있나요? 그건 거의 Base64일 가능성이 큽니다. 텍스트를 Base64로 바꾸고 다시 원래대로 돌리는 방법을 소개합니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 10월 1일</span>
+      <span>·</span>
+      <span>읽는 시간 2분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Base64는 이진 데이터(또는 어떤 텍스트든)를 문자, 숫자, 몇 가지 기호의 조합으로 표현해서, 일반 텍스트만 지원하는 시스템에서 안전하게 전송할 수 있게 하는 방법입니다 — 예를 들어 URL, JSON, 이메일에 삽입할 때 쓰입니다. 중요한 점: Base64는 인코딩이지 암호화가 아닙니다 — 누구나 다시 디코딩할 수 있으므로 비밀 데이터를 숨기는 데는 사용하면 안 됩니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">지금 사용해보기</span>
+      <h3>Base64 Text Encoder & Decoder — MEA Tools</h3>
+      <p>텍스트를 Base64로 인코딩하거나 다시 일반 텍스트로 디코딩하세요, 유니코드도 지원합니다. 전부 브라우저에서.</p>
+      <a href="https://tools.meaecosystem.com/base64-text/" class="mea-tool-cta-btn">Base64 Text Encoder 열기 →</a>
+    </div>
+
+    <h2>Base64 인코딩/디코딩 단계</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/base64-text/">tools.meaecosystem.com/base64-text</a>를 엽니다.</li>
+      <li>일반 텍스트를 Base64로 바꾸려면 "인코딩" 탭을, 반대 방향이면 "디코딩" 탭을 선택합니다.</li>
+      <li>입력란에 텍스트를 입력하거나 붙여넣습니다.</li>
+      <li>결과란에 자동으로 결과가 나타나면 바로 복사하면 됩니다.</li>
+    </ol>
+
+    <h2>Base64는 암호화가 아닙니다 — 이게 차이입니다</h2>
+    <p>인코딩과 암호화는 자주 혼동되지만 완전히 다릅니다. 암호화는 데이터를 다시 열려면 키가 필요하지만, Base64는 어떤 키도 필요 없습니다 — Base64라는 것만 알면 누구나 바로 디코딩해서 원본을 읽을 수 있습니다. 그러니 비밀번호 같은 민감한 정보를 숨기는 게 목적이라면 Base64는 해결책이 아닙니다.</p>
+
+    <h2>왜 유니코드 지원이 필요한가요?</h2>
+    <p>Base64는 원래 표준 ASCII 문자용으로 설계됐습니다. 인코딩할 텍스트에 이모지나 비라틴 문자(아랍 문자, 일본어, 중국어 등)가 포함되어 있다면, 유니코드를 제대로 처리하지 못하는 인코더는 다시 디코딩할 때 깨진 결과를 낼 수 있습니다. 이 툴은 유니코드를 올바르게 처리하므로, 이모지를 포함한 어떤 텍스트든 문자 손실 없이 안전하게 인코딩/디코딩됩니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="mea-faq-item">
+      <summary>제 텍스트가 서버로 전송되나요?</summary>
+      <p>아니요. 인코딩과 디코딩 과정은 브라우저에서 직접 진행됩니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>Base64로 비밀번호를 저장해도 안전한가요?</summary>
+      <p>아니요. Base64는 어떤 키도 없이 누구나 디코딩할 수 있으므로 민감한 데이터를 숨기는 데 사용하면 안 됩니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>디코딩 결과가 이상한 텍스트나 오류로 나오는 이유는?</summary>
+      <p>붙여넣은 텍스트가 유효한 Base64가 아닐 가능성이 큽니다 — 복사하는 과정에서 일부 문자가 빠지거나 바뀌었을 수 있습니다.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/cara-buat-uuid.html">개발용 UUID v4 만드는 방법</a></p>
+      <p><a href="/ko/cara-format-json.html">지저분한 JSON 정리하고 검증하는 방법</a></p>
+      <p><a href="/ko/cara-cek-hash-file.html">진위 확인을 위한 파일 해시(MD5, SHA-256) 확인 방법</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
