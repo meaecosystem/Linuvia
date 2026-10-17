@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>정규표현식(Regex) 패턴 온라인으로 테스트하는 방법 | MEA Blog</title>
+<meta name="description" content="정규표현식 패턴을 테스트하고, 일치하는 부분을 자동으로 하이라이트하며, 각 캡처 그룹의 세부 정보를 확인하는 방법을 안내합니다. 전부 브라우저에서, 서버 업로드 없이." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/cara-cek-regex.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-cek-regex.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-cek-regex.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-cek-regex.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-cek-regex.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/cara-cek-regex.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-cek-regex.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "정규표현식 패턴 테스트하는 방법",
+  "description": "정규표현식 패턴을 테스트하고 일치하는 부분을 확인하는 방법, 전부 브라우저에서.",
+  "step": [
+    { "@type": "HowToStep", "name": "Regex Tester 열기", "text": "브라우저에서 tools.meaecosystem.com/regex-tester/ 를 엽니다." },
+    { "@type": "HowToStep", "name": "정규식 패턴 입력", "text": "테스트할 정규식 패턴을 입력합니다." },
+    { "@type": "HowToStep", "name": "플래그 선택", "text": "필요에 따라 g(전역), i(대소문자 무시), m(여러 줄) 플래그를 체크합니다." },
+    { "@type": "HowToStep", "name": "테스트 텍스트 붙여넣기", "text": "테스트할 텍스트를 붙여넣으면 일치하는 부분이 바로 하이라이트됩니다." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/cara-cek-regex.html","ja":"/ja/cara-cek-regex.html","en":"/en/cara-cek-regex.html","zh":"/zh/cara-cek-regex.html","ko":"/ko/cara-cek-regex.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">텍스트</a>
+    <span>/</span>
+    <span aria-current="page">정규식 테스트</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">가이드 · 개발자</span>
+    <h1>정규표현식(Regex) 패턴 온라인으로 테스트하는 방법</h1>
+    <p class="mea-article-lead">이메일이나 전화번호 검증용 정규식을 작성했는데 패턴이 맞는지 확신이 안 서나요? 실제 프로덕션 코드에서 바로 시도하는 대신, 여기서 먼저 테스트하고 실시간으로 결과를 확인하세요.</p>
+    <div class="mea-article-meta">
+      <span>2026년 10월 1일</span>
+      <span>·</span>
+      <span>읽는 시간 3분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Regex Tester는 작성한 정규식 패턴과 일치하는 텍스트 부분을 — 다른 텍스트 사이에서 하이라이트해 — 바로 보여주며, 패턴이 괄호를 사용하는 경우 각 일치 항목의 캡처 그룹을 포함한 세부 정보도 함께 보여줍니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">지금 사용해보기</span>
+      <h3>Regex Tester — MEA Tools</h3>
+      <p>정규식 패턴을 브라우저에서 바로 테스트하세요. 일치하는 부분이 바로 하이라이트됩니다.</p>
+      <a href="https://tools.meaecosystem.com/regex-tester/" class="mea-tool-cta-btn">Regex Tester 열기 →</a>
+    </div>
+
+    <h2>정규식 테스트하는 단계</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/regex-tester/">tools.meaecosystem.com/regex-tester</a>를 엽니다.</li>
+      <li>패턴 입력란에 정규식을 입력합니다.</li>
+      <li>필요한 플래그를 체크합니다: 첫 번째가 아닌 모든 일치 항목을 찾으려면 <code>g</code>, 대소문자 차이를 무시하려면 <code>i</code>, 여러 줄 모드는 <code>m</code>.</li>
+      <li>텍스트란에 테스트할 텍스트를 붙여넣거나 입력합니다.</li>
+      <li>패턴과 일치하는 부분이 바로 하이라이트되고, 전체 일치 개수가 표시됩니다.</li>
+      <li>패턴이 캡처 그룹용 괄호를 사용한다면, 각 일치 항목의 세부 정보(각 그룹의 내용 포함)가 아래에 나타납니다.</li>
+    </ol>
+
+    <h2>플래그 g, i, m — 언제 쓰나요?</h2>
+    <p><code>g</code>(전역) 플래그는 텍스트에서 처음 찾은 것뿐 아니라 패턴의 모든 출현을 찾고 싶을 때 필요합니다 — 보통 기본으로 활성화되어 있습니다. <code>i</code> 플래그는 대소문자 차이에 상관없이 — 예를 들어 대문자든 소문자든 신경 쓰지 않고 단어를 찾을 때 — 유용합니다. <code>m</code> 플래그는 <code>^</code>와 <code>$</code>의 동작을 바꿔 전체 텍스트의 시작/끝이 아니라 각 줄의 시작/끝과 일치하도록 합니다 — 여러 줄로 된 텍스트에 유용합니다.</p>
+
+    <h2>맞는 것 같은데 왜 패턴이 일치하지 않나요?</h2>
+    <p>가장 흔한 원인: 특수 문자(마침표나 괄호처럼 정규식 문법이 아니라 일반 문자로 찾아야 하는 것)를 이스케이프하는 걸 깜빡했거나, 필요한 플래그를 체크하지 않은 경우입니다. 먼저 더 단순한 패턴으로 테스트 텍스트를 다시 하이라이트해보고, 문제가 되는 부분을 찾을 때까지 점진적으로 복잡도를 더해보세요.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="mea-faq-item">
+      <summary>제 패턴과 텍스트가 서버로 전송되나요?</summary>
+      <p>아니요. 정규식 테스트는 JavaScript 내장 정규식 엔진을 사용해 브라우저에서 직접 진행됩니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>모든 종류의 정규식이 지원되나요?</summary>
+      <p>이 툴은 브라우저 내장 JavaScript 정규식 엔진을 사용하므로, 지원되는 문법은 JavaScript 정규식 표준을 따릅니다 — Python이나 PHP 같은 다른 프로그래밍 언어의 정규식과 비교하면 약간의 차이가 있을 수 있습니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>캡처 그룹이 무엇인가요?</summary>
+      <p>캡처 그룹은 괄호로 표시된 정규식 패턴의 일부로, 전체가 일치하는지 여부뿐 아니라 일치하는 텍스트의 특정 부분을 "포착"해서 추출하는 데 쓰입니다.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/cara-konversi-csv-json.html">CSV를 JSON으로, 또는 그 반대로 바꾸는 방법</a></p>
+      <p><a href="/ko/cara-encode-decode-url.html">특수 문자를 위한 URL 인코딩/디코딩 방법</a></p>
+      <p><a href="/ko/cara-format-json.html">지저분한 JSON 정리하고 검증하는 방법</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
