@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>为什么MEA Tools的代码库从零开始构建，而不是使用现成的库？ | MEA Blog</title>
+<meta name="description" content="MEA Tools中的PDF解析器、DOCX转换、哈希和加密函数都是自主编写，而非依赖开源库。这是原因和限制所在，坦诚相告。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/zh/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "为什么MEA Tools的代码库从零开始构建，而不是使用现成的库？",
+  "description": "解释为什么MEA Tools的PDF解析器、文档转换和加密函数都是自主从零编写的，包括坦诚承认的例外情况。",
+  "datePublished": "2026-10-02",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="zh" data-lang-links='{"id":"/id/kenapa-mea-tools-library-dibangun-dari-nol.html","ja":"/ja/kenapa-mea-tools-library-dibangun-dari-nol.html","en":"/en/kenapa-mea-tools-library-dibangun-dari-nol.html","zh":"/zh/kenapa-mea-tools-library-dibangun-dari-nol.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#tentang">关于</a>
+    <span>/</span>
+    <span aria-current="page">代码库从零构建</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">洞察 · 关于</span>
+    <h1>为什么MEA Tools的代码库从零开始构建，而不是使用现成的库？</h1>
+    <p class="mea-article-lead">互联网上大多数PDF或文档转换工具实际上只是套在相同开源库之上的漂亮界面——pdf-lib、pdf.js、mammoth等库被到处重复使用。MEA Tools选择了一条更长的路：从零开始自己编写解析器、转换器和加密函数。这是为什么——这也是例外情况，因为并非所有东西都是自己写的，而那也是刻意的决定。</p>
+    <div class="mea-article-meta">
+      <span>2026年10月2日</span>
+      <span>·</span>
+      <span>7分钟阅读</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>真正从零编写的部分确实是"从零"</h2>
+    <p>以驱动MEA Tools几乎所有PDF相关工具的<code>pdf-lib</code>文件夹为例——从合并PDF、拆分PDF、PDF转Word、填写PDF表单，到加密和水印。这个文件夹包含近<strong>37个JavaScript文件，总代码量超过10,000行</strong>，全部从零编写：原始PDF对象解析器、分词器、内容流解释器、交叉引用结构重建器，以及把页面渲染成图片的光栅化器。</p>
+    <p>这意味着当MEA Tools"读取"一个PDF文件时，这不是对别人现成库的调用——有代码真正逐字节解析PDF文件结构，依照规范编写，专门为这些工具的需求定制。其他文件夹也是类似情况：图片压缩逻辑、色彩转换、二维码生成，以及哈希函数——全都是自己的代码，而不是粘贴一个npm包然后<code>import</code>进来。</p>
+
+    <h2>为什么要费心自己写？</h2>
+    <p>有几个具体原因，不只是技术上的自尊心：</p>
+    <ul>
+      <li><strong>文件体积更小。</strong>通用库通常被设计得很泛用，以适应多种使用场景——结果是带来了许多不相关的代码。为自身需求定制编写的代码可以精简得多，这一点很重要，因为这一切都运行在用户的浏览器中，而不是资源充足的服务器上。</li>
+      <li><strong>完全掌控行为。</strong>如果某种特定PDF出现了奇怪的bug，不需要等待别人库的维护者发布补丁——可以直接剖析和修复，因为所有代码本来就是自己的。</li>
+      <li><strong>没有可能停止维护的依赖项。</strong>许多流行的开源库一旦维护者转去忙别的事情就会停止更新。如果工具的根基建立在这之上，风险也会随之而来。</li>
+      <li><strong>确切了解用户数据发生了什么。</strong>因为每一行解析代码都是自己写的，没有第三方"黑箱"在不清楚具体操作的情况下处理别人的文件。</li>
+    </ul>
+
+    <h2>但并非一切都从零编写——这是刻意的</h2>
+    <p>为了让这篇文章诚实，而不只是宣传：MEA Tools确实有一些部分使用了第三方库或模型，这是有意识的决定，不是疏忽。</p>
+    <ul>
+      <li><strong>照片去背景</strong>使用了开源AI模型（U2Net），通过<strong>ONNX Runtime</strong>运行——这是来自社区的AI推理引擎，不是自己编写的。为几十个工具中的一个重写整个神经网络推理运行时，显然超出了合理的规模。AI模型文件本身托管在MEA的服务器上，而不是依赖第三方CDN——但运行它的引擎依然是ONNX Runtime。</li>
+      <li><strong>图片分辨率放大（upscaler）</strong>使用了Real-ESRGAN AI模型，同样通过ONNX Runtime运行，原因相同。</li>
+      <li><strong>从图片/扫描件提取文字（OCR）</strong>的两个工具使用了<strong>Tesseract.js</strong>——一个成熟且广受信任的开源OCR引擎。从零重写OCR引擎本身就是一个独立的研究项目，远超出一个文档转换工具的范畴。</li>
+    </ul>
+    <p>有趣的部分在代码内部：唯一另一个<em>刻意不</em>手动从零编写的部分是用于PDF加密的AES函数——它使用了浏览器内置的Web Crypto API，而不是自制的AES实现。原因在代码注释中写得很清楚：AES用于真正的安全需求（保护PDF内容不被他人查看），而浏览器内置的AES实现已经经过严格审计，并能抵御计时攻击——如果手动重写而没有同等级别的安全审计保证，这是非常危险的。</p>
+    <p>相比之下，同一批工具中的MD5和RC4哈希函数<em>确实</em>是手动从零编写的——因为那里的MD5/RC4是用于旧版PDF数据格式的需求（而不是用于保护数据机密性），不涉及敏感的安全目的。</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">核心原则</span>
+      <h3>说得通就自己写，涉及安全就用经过验证的方案</h3>
+      <p>MEA Tools的理念不是"不管风险都必须全部从零开始"——而是在真正适合完全掌控的部分自己编写，在涉及真正数据安全的部分则交给已经过审计的实现。</p>
+      <a href="https://tools.meaecosystem.com" class="mea-tool-cta-btn">查看所有工具 →</a>
+    </div>
+
+    <h2>这对你作为用户来说为什么重要？</h2>
+    <p>这听起来可能只是幕后的技术细节。但影响是直接可感受到的：专为自身需求定制编写的工具往往运行更轻量、打开更快、行为更可预测——因为没有携带实际用不到的通用代码的负担。而在真正关乎你数据安全的部分，比如PDF加密，选择使用经过验证的实现，实际上比单纯为了一致性而强行手写所有东西更安全。</p>
+
+    <h2>仍在持续发展</h2>
+    <p>同样需要意识到的是："从零编写"这种方式意味着每个新功能都比直接装一个现成库需要更长的时间。比如单就PDF而言，自建的<code>pdf-lib</code>目前只覆盖了PDF文件所能做到的一部分——PDF格式的世界很广阔，MEA Tools还没有止步于此。MEA Tools整体仍在持续开发和扩充，所以现在的功能范围并非最终版本——会随着时间持续增加。</p>
+
+    <div class="mea-related">
+      <h2>你可能还喜欢</h2>
+      <p><a href="/zh/kenapa-mea-tools-gratis-tanpa-watermark.html">为什么MEA Tools所有工具都免费且无水印？</a></p>
+      <p><a href="/zh/kenapa-mea-tools-gak-bikin-browser-ngelag.html">为什么MEA Tools处理大文件时不会让浏览器卡死？</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 保留所有权利。</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">隐私政策</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">服务条款</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">免责声明</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
