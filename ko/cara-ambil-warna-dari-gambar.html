@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>이미지에서 색상 코드와 팔레트 추출하는 방법 | MEA Blog</title>
+<meta name="description" content="이미지에서 클릭 한 번으로 Hex, RGB, HSL 색상 코드를 추출하거나, 자동으로 주요 색상 팔레트를 뽑아내는 방법을 안내합니다. 전부 브라우저에서 바로." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/cara-ambil-warna-dari-gambar.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-ambil-warna-dari-gambar.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "이미지에서 색상 코드와 팔레트 추출하는 방법",
+  "description": "이미지에서 Hex, RGB, HSL 색상 코드를 추출하고 주요 색상 팔레트를 뽑아내는 방법, 전부 브라우저에서 바로.",
+  "step": [
+    { "@type": "HowToStep", "name": "Color Picker 열기", "text": "브라우저에서 tools.meaecosystem.com/color-picker/ 를 엽니다." },
+    { "@type": "HowToStep", "name": "이미지 업로드", "text": "색상을 추출할 이미지를 선택합니다." },
+    { "@type": "HowToStep", "name": "색상 지점 클릭", "text": "이미지에서 색상을 추출하고 싶은 부분을 클릭해 Hex, RGB, HSL 코드를 확인합니다." },
+    { "@type": "HowToStep", "name": "주요 팔레트 확인", "text": "이미지에서 자동 추출된 주요 색상들을 확인하고, 표시할 색상 개수를 선택합니다." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/cara-ambil-warna-dari-gambar.html","ja":"/ja/cara-ambil-warna-dari-gambar.html","en":"/en/cara-ambil-warna-dari-gambar.html","zh":"/zh/cara-ambil-warna-dari-gambar.html","ko":"/ko/cara-ambil-warna-dari-gambar.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#image">이미지</a>
+    <span>/</span>
+    <span aria-current="page">이미지에서 색상 추출</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">가이드 · 디자인</span>
+    <h1>이미지에서 색상 코드와 팔레트 추출하는 방법</h1>
+    <p class="mea-article-lead">색 조합이 딱 마음에 드는 사진이나 디자인을 발견해서, 내 프로젝트에 쓸 수 있도록 Hex 코드를 알고 싶으신가요? 이미지에서 색상을 하나씩, 또는 한 번에 팔레트로 추출하는 방법을 소개합니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 10월 1일</span>
+      <span>·</span>
+      <span>읽는 시간 3분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Color Picker는 두 가지 모드를 제공합니다: 이미지의 특정 지점을 직접 클릭해 색상을 추출하거나(Hex, RGB, HSL 코드 결과), 전체 이미지에서 가장 주요한 색상들을 자동으로 추출해 팔레트로 만드는 것입니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">지금 사용해보기</span>
+      <h3>이미지 색상 추출 — MEA Tools</h3>
+      <p>클릭 한 번으로 색상 코드를 추출하거나, 주요 색상 팔레트를 자동으로 추출하세요. 전부 브라우저에서.</p>
+      <a href="https://tools.meaecosystem.com/color-picker/" class="mea-tool-cta-btn">Color Picker 열기 →</a>
+    </div>
+
+    <h2>색상 추출 단계</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/color-picker/">tools.meaecosystem.com/color-picker</a>를 엽니다.</li>
+      <li>색상을 추출할 이미지를 업로드합니다.</li>
+      <li>원하는 부분을 클릭하면 — 해당 지점의 Hex, RGB, HSL 코드가 바로 나타나고 클릭 한 번으로 복사할 수 있습니다.</li>
+      <li>전체 주요 색상 팔레트를 보려면 팔레트 영역으로 스크롤해서 표시할 색상 개수(4, 8, 16)를 선택하세요.</li>
+    </ol>
+
+    <h2>Hex, RGB, HSL — 무엇이 다른가요?</h2>
+    <p>세 가지 모두 같은 색을 표현하지만, 표기 방식이 다르고 각각 특정 맥락에서 더 많이 쓰입니다. Hex(예: #3B82F6)는 CSS와 웹 디자인에서 가장 흔히 쓰입니다. RGB는 빨강, 초록, 파랑 구성요소를 분리합니다 — 쓰는 소프트웨어가 숫자를 따로 입력해야 할 때 유용합니다. HSL(색조, 채도, 명도)은 색의 "종류"는 바꾸지 않고 밝기나 채도만 조정하고 싶을 때 더 직관적입니다.</p>
+
+    <h2>언제 직접 클릭하고, 언제 자동 팔레트를 쓸까요?</h2>
+    <p>직접 클릭은 이미지의 어느 부분 색상을 추출할지 정확히 알고 있을 때 적합합니다 — 예를 들어 로고나 특정 제품의 색상처럼요. 자동 팔레트는 초기 단계에서 더 유용합니다. 예를 들어 참고 사진이나 무드보드에서 색상 체계를 막 정하기 시작할 때입니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="mea-faq-item">
+      <summary>제 이미지가 서버로 업로드되나요?</summary>
+      <p>아니요. 이미지는 Canvas API를 사용해 브라우저에서 직접 읽고 처리됩니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>어떤 이미지 형식을 지원하나요?</summary>
+      <p>JPG, PNG, WebP 등 브라우저가 읽을 수 있는 모든 일반 이미지 형식을 지원합니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>추출된 색상이 이미지에서 본 것과 다른 이유는 무엇인가요?</summary>
+      <p>화면과 기기 밝기 설정은 색상을 시각적으로 인식하는 방식에 영향을 줄 수 있지만, 추출된 색상 코드는 화면 표시가 아니라 이미지 파일의 실제 픽셀 값을 기준으로 합니다.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/cara-kompres-gambar.html">품질 손실 없이 이미지 압축하는 방법, 브라우저에서 바로</a></p>
+      <p><a href="/ko/cara-buat-qr-code.html">로고가 들어간 QR 코드 직접 만드는 방법</a></p>
+      <p><a href="/ko/kenapa-tools-online-pindah-ke-client-side.html">왜 점점 더 많은 온라인 툴이 클라이언트 사이드로 옮겨갈까?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
