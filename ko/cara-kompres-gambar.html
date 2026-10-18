@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>품질 손실 없이 이미지 압축하는 방법, 브라우저에서 바로 | MEA Blog</title>
+<meta name="description" content="이미지(JPG, PNG, WebP) 파일 크기를 줄이고 여러 이미지를 한 번에 리사이즈하는 방법을 안내합니다. 서버 업로드 없이, 무료, 로그인 불필요." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/cara-kompres-gambar.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-kompres-gambar.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-kompres-gambar.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-kompres-gambar.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-kompres-gambar.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/cara-kompres-gambar.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-kompres-gambar.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "품질 손실 없이 이미지 압축하는 방법, 브라우저에서 바로",
+  "description": "이미지 파일 크기를 줄이고 여러 이미지를 한 번에 리사이즈하는 방법, 서버 업로드 없이.",
+  "step": [
+    { "@type": "HowToStep", "name": "Image Compressor 열기", "text": "브라우저에서 tools.meaecosystem.com/image-compressor/ 를 엽니다." },
+    { "@type": "HowToStep", "name": "이미지 업로드", "text": "이미지를 하나 또는 여러 개 선택하거나 드롭 영역으로 끌어다 놓습니다." },
+    { "@type": "HowToStep", "name": "크기 설정", "text": "새 너비와 높이를 지정합니다, 비율 고정 옵션으로 왜곡을 방지하세요." },
+    { "@type": "HowToStep", "name": "품질과 형식 선택", "text": "품질 수준(높음/중간/낮음)과 출력 형식 JPEG, WebP, PNG를 선택합니다." },
+    { "@type": "HowToStep", "name": "압축 및 다운로드", "text": "이미지 압축을 클릭해 전후 결과를 비교한 뒤 다운로드합니다." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/cara-kompres-gambar.html","ja":"/ja/cara-kompres-gambar.html","en":"/en/cara-kompres-gambar.html","zh":"/zh/cara-kompres-gambar.html","ko":"/ko/cara-kompres-gambar.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#image">이미지</a>
+    <span>/</span>
+    <span aria-current="page">이미지 압축</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">가이드 · 이미지 최적화</span>
+    <h1>품질 손실 없이 이미지 압축하는 방법, 브라우저에서 바로</h1>
+    <p class="mea-article-lead">요즘 스마트폰 사진은 파일당 5~10MB를 쉽게 넘깁니다 — 웹사이트 업로드, 이메일 전송, 온라인 양식 첨부에는 너무 큽니다. 결과물이 깨지거나 흐려지지 않게 크기를 줄이는 방법을 소개합니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 8월 17일</span>
+      <span>·</span>
+      <span>읽는 시간 5분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>"이미지 압축"은 흔히 "파일이 작아지는 대신 화질이 나빠진다"고 오해받습니다. 하지만 제대로 하면 파일 크기가 크게 줄면서도 눈으로는 거의 차이를 느낄 수 없습니다 — 특히 화면에서만 볼 이미지라면 더욱 그렇습니다.</p>
+
+    <p>MEA Tools의 다른 도구들처럼 이 이미지 압축 과정도 서버가 필요 없습니다. 최신 브라우저에는 이미지를 읽고, 크기를 바꾸고, 원하는 품질과 형식으로 다시 저장하는 내장 기능(Canvas API)이 있습니다 — 모두 사용자 기기에서 직접 처리됩니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">지금 사용해보기</span>
+      <h3>Image Compressor — MEA Tools</h3>
+      <p>여러 이미지를 한 번에 압축하고 리사이즈하세요, 브라우저에서 바로. 원하는 품질과 출력 형식을 직접 선택하고, 서버 업로드와 로그인이 필요 없습니다.</p>
+      <a href="https://tools.meaecosystem.com/image-compressor/" class="mea-tool-cta-btn">Image Compressor 열기 →</a>
+    </div>
+
+    <h2>이미지 압축하는 단계</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/image-compressor/">tools.meaecosystem.com/image-compressor</a>를 엽니다 — 가입이나 로그인이 필요 없습니다.</li>
+      <li>기기에서 이미지를 하나 또는 여러 개 선택하거나, 전부 업로드 영역으로 한 번에 끌어다 놓습니다.</li>
+      <li>단순히 압축만이 아니라 리사이즈도 원한다면 크기(너비 × 높이)를 설정합니다. 숫자를 하나 바꿀 때 비율이 틀어지지 않도록 "비율 고정"을 켜세요.</li>
+      <li>필요에 따라 품질 수준 — 높음, 중간, 낮음 — 을 선택합니다.</li>
+      <li>출력 형식을 선택합니다: JPEG, WebP, 또는 PNG.</li>
+      <li>"이미지 압축"을 클릭합니다. 결과가 원본과 나란히 표시되어 파일 크기 비교까지 확인한 뒤 다운로드할 수 있습니다.</li>
+    </ol>
+
+    <h2>어떤 형식이 가장 적합한가요?</h2>
+    <p>일반 사진(풍경, 제품, 인물)이라면 보통 높음 또는 중간 품질의 JPEG이 딱 맞습니다 — 파일은 작고 결과는 여전히 보기 좋습니다. WebP는 동일한 품질에서 더 작은 파일 크기를 줄 수 있지만, 일부 구형 플랫폼에서는 지원이 완전하지 않을 수 있습니다. 투명도가 필요한 이미지(로고, 아이콘)나 흐려지면 안 되는 선명한 텍스트·선이 포함된 경우 PNG가 적합합니다.</p>
+
+    <h2>언제 압축만이 아니라 리사이즈도 해야 하나요?</h2>
+    <p>원본 이미지의 크기가 실제 필요보다 훨씬 크다면 — 예를 들어 4000×3000 픽셀 사진이 웹 페이지에서 800×600으로만 표시될 때 — 먼저 적절한 크기로 리사이즈하면 압축 품질만 낮추는 것보다 훨씬 큰 폭으로 파일 크기를 줄일 수 있습니다. 리사이즈 + 중간 품질 압축 조합이 보통 가장 효율적인 결과를 줍니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="mea-faq-item">
+      <summary>제 이미지가 서버로 업로드되나요?</summary>
+      <p>아니요. 압축과 리사이즈 과정 전체가 브라우저 내장 Canvas API를 사용해 브라우저에서 직접 진행됩니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>어떤 형식을 지원하나요?</summary>
+      <p>브라우저가 읽을 수 있는 어떤 형식의 이미지도 업로드할 수 있고, 출력은 JPEG, WebP, PNG 중에서 선택할 수 있습니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>파일 크기에 제한이 있나요?</summary>
+      <p>서비스 측 제한은 없습니다, 모든 처리가 사용자 기기에서 이뤄지기 때문입니다. 한계는 오직 브라우저와 기기 성능뿐입니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>여러 이미지를 한 번에 압축할 수 있나요?</summary>
+      <p>가능합니다. 여러 이미지를 한 번에 업로드하고 품질과 크기를 설정하면, 결과는 자동으로 하나의 ZIP 파일로 다운로드됩니다.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/cara-ubah-pdf-jadi-gambar.html">PDF를 이미지(JPG/PNG)로 바꾸는 방법, 브라우저에서 바로</a></p>
+      <p><a href="/ko/cara-gabungkan-pdf.html">여러 PDF 파일을 하나로 합치는 방법</a></p>
+      <p><a href="/ko/cara-memecah-pdf.html">하나의 PDF를 여러 파일로 나누는 방법</a></p>
+      <p><a href="/ko/kenapa-tools-online-pindah-ke-client-side.html">왜 점점 더 많은 온라인 툴이 클라이언트 사이드로 옮겨갈까?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
