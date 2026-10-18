@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>텍스트의 단어 수, 글자 수, 읽기 시간 계산하는 방법 | MEA Blog</title>
+<meta name="description" content="텍스트의 단어 수, 글자 수, 문장 수, 예상 읽기 시간을 실시간으로 계산하는 방법을 안내합니다. 전부 브라우저에서, 서버 업로드 없이." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/cara-hitung-kata.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/cara-hitung-kata.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/cara-hitung-kata.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/cara-hitung-kata.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/cara-hitung-kata.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/cara-hitung-kata.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/cara-hitung-kata.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "텍스트의 단어 수와 글자 수 계산하는 방법",
+  "description": "단어 수, 글자 수, 문장 수, 문단 수, 예상 읽기 시간을 계산하는 방법, 전부 브라우저에서.",
+  "step": [
+    { "@type": "HowToStep", "name": "Word Counter 열기", "text": "브라우저에서 tools.meaecosystem.com/word-counter/ 를 엽니다." },
+    { "@type": "HowToStep", "name": "텍스트 붙여넣기 또는 입력", "text": "계산할 텍스트를 입력란에 붙여넣습니다." },
+    { "@type": "HowToStep", "name": "결과 확인", "text": "단어 수, 글자 수, 문장 수, 문단 수, 예상 읽기 시간이 실시간으로 자동으로 나타납니다." }
+  ],
+  "isPartOf": { "@type": "WebSite", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" },
+  "publisher": { "@type": "Organization", "name": "MEA Ecosystem", "url": "https://meaecosystem.com" }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/cara-hitung-kata.html","ja":"/ja/cara-hitung-kata.html","en":"/en/cara-hitung-kata.html","zh":"/zh/cara-hitung-kata.html","ko":"/ko/cara-hitung-kata.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#text">텍스트</a>
+    <span>/</span>
+    <span aria-current="page">단어 수 계산</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">가이드 · 텍스트 & 코드</span>
+    <h1>텍스트의 단어 수, 글자 수, 읽기 시간 계산하는 방법</h1>
+    <p class="mea-article-lead">글자 수 제한이 있는 캡션, 최소 단어 수가 필요한 에세이를 쓰고 있나요, 아니면 단순히 사람들이 내 글을 읽는 데 얼마나 걸릴지 궁금하신가요? 붙여넣기 한 번으로 확인하는 방법을 소개합니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 10월 1일</span>
+      <span>·</span>
+      <span>읽는 시간 2분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <p>Word Counter는 텍스트의 기본 통계를 계산합니다 — 단어 수, 글자 수(공백 포함/제외), 문장 수, 문단 수, 예상 읽기 시간까지 — 입력하거나 붙여넣는 동안 모두 자동으로 업데이트됩니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">지금 사용해보기</span>
+      <h3>Word Counter — MEA Tools</h3>
+      <p>단어, 글자, 문장을 세고 예상 읽기 시간을 실시간으로 계산하세요. 전부 브라우저에서.</p>
+      <a href="https://tools.meaecosystem.com/word-counter/" class="mea-tool-cta-btn">Word Counter 열기 →</a>
+    </div>
+
+    <h2>텍스트 계산하는 단계</h2>
+    <ol>
+      <li><a href="https://tools.meaecosystem.com/word-counter/">tools.meaecosystem.com/word-counter</a>를 엽니다.</li>
+      <li>계산할 텍스트를 직접 입력하거나 입력란에 붙여넣습니다.</li>
+      <li>모든 통계 — 단어 수, 공백 포함/제외 글자 수, 문장 수, 문단 수, 예상 읽기 시간 — 가 바로 나타나고 텍스트를 편집할 때마다 계속 업데이트됩니다.</li>
+    </ol>
+
+    <h2>예상 읽기 시간은 어떻게 계산되나요?</h2>
+    <p>예상 읽기 시간은 성인의 평균 읽기 속도를 기준으로 계산되며, 보통 분당 200~250단어 범위입니다. 이 숫자는 독자가 글이나 캡션에 얼마나 시간을 쓸지 대략 가늠하는 데 유용합니다 — 정확한 수치는 아니지만 전반적인 감을 잡기에 충분합니다.</p>
+
+    <h2>공백 포함 vs 공백 제외 글자 수, 어느 걸 쓰나요?</h2>
+    <p>플랫폼에 따라 다릅니다. 소셜 미디어의 글자 수 제한은 보통 공백도 글자로 계산합니다. 하지만 특정 규칙이 있는 양식(예: 공백 제외 글자 수 제한)을 작성한다면, 이 툴은 둘 다 제공하므로 수동으로 계산할 필요가 없습니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <details class="mea-faq-item">
+      <summary>제 텍스트가 서버로 전송되나요?</summary>
+      <p>아니요. 모든 계산은 입력하는 동안 브라우저에서 직접 진행됩니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>인도네시아어 외 다른 언어의 텍스트도 계산할 수 있나요?</summary>
+      <p>가능합니다. 단어와 글자 계산은 일반적인 단어 구분자와 문장부호를 기준으로 작동하므로, 공백을 단어 구분자로 사용하는 다양한 언어에 적합합니다.</p>
+    </details>
+    <details class="mea-faq-item">
+      <summary>왜 제 문단 수가 맞지 않아 보이나요?</summary>
+      <p>문단은 텍스트 블록을 구분하는 빈 줄을 기준으로 계산됩니다. 텍스트에 문단 사이 빈 줄이 없다면 전체가 하나의 문단으로 계산됩니다.</p>
+    </details>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/cara-format-json.html">지저분한 JSON 정리하고 검증하는 방법</a></p>
+      <p><a href="/ko/cara-konversi-unix-timestamp.html">Unix 타임스탬프를 날짜로 바꾸는 방법(그 반대도)</a></p>
+      <p><a href="/ko/kenapa-tools-online-pindah-ke-client-side.html">왜 점점 더 많은 온라인 툴이 클라이언트 사이드로 옮겨갈까?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
