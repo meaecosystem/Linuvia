@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>MEA Tools의 라이브러리는 왜 다른 사람의 것 대신 처음부터 직접 만들었을까? | MEA Blog</title>
+<meta name="description" content="MEA Tools의 PDF 파서, DOCX 변환, 해시 및 암호화 함수는 오픈소스 라이브러리를 붙여넣는 대신 직접 처음부터 작성되었습니다. 그 이유와 한계를 솔직하게 설명합니다." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-library-dibangun-dari-nol.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "MEA Tools의 라이브러리는 왜 다른 사람의 것 대신 처음부터 직접 만들었을까?",
+  "description": "MEA Tools의 PDF 파서, 문서 변환, 암호 함수가 왜 처음부터 직접 작성되었는지, 그리고 정직하게 인정하는 예외 사항까지 함께 설명합니다.",
+  "datePublished": "2026-10-02",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/kenapa-mea-tools-library-dibangun-dari-nol.html","ja":"/ja/kenapa-mea-tools-library-dibangun-dari-nol.html","en":"/en/kenapa-mea-tools-library-dibangun-dari-nol.html","zh":"/zh/kenapa-mea-tools-library-dibangun-dari-nol.html","ko":"/ko/kenapa-mea-tools-library-dibangun-dari-nol.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#tentang">소개</a>
+    <span>/</span>
+    <span aria-current="page">처음부터 만든 라이브러리</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">인사이트 · 소개</span>
+    <h1>MEA Tools의 라이브러리는 왜 다른 사람의 것 대신 처음부터 직접 만들었을까?</h1>
+    <p class="mea-article-lead">인터넷에 있는 대부분의 PDF나 문서 변환 툴은 사실 같은 오픈소스 라이브러리 위에 얹은 예쁜 인터페이스일 뿐입니다 — pdf-lib, pdf.js, mammoth 같은 것들이 여기저기서 재사용됩니다. MEA Tools는 더 긴 길을 선택했습니다: 파서, 변환기, 암호 함수를 처음부터 직접 작성하는 것입니다. 그 이유를 설명하고, 예외도 함께 공개합니다 — 모든 것이 직접 작성된 건 아니며, 그것도 의도적인 결정이었기 때문입니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 10월 2일</span>
+      <span>·</span>
+      <span>읽는 시간 7분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>직접 작성했다는 건 정말로 "처음부터"라는 뜻입니다</h2>
+    <p>MEA Tools의 PDF 기반 툴 — PDF 합치기, PDF 나누기, PDF를 Word로 변환, PDF 양식 채우기, 암호화와 워터마크까지 — 거의 모두의 핵심인 <code>pdf-lib</code> 폴더를 예로 들어보겠습니다. 이 폴더는 <strong>37개에 가까운 JavaScript 파일, 총 1만 줄이 넘는 코드</strong>로 이루어져 있으며, 모두 처음부터 직접 작성되었습니다: 원시 PDF 객체 파서, 토크나이저, 콘텐츠 스트림 인터프리터, xref 구조 재구성기, 페이지를 이미지로 렌더링하는 래스터라이저까지요.</p>
+    <p>즉 MEA Tools가 PDF 파일을 "읽을" 때, 이것은 그냥 가져다 쓰는 남의 라이브러리 호출이 아닙니다 — PDF 파일 구조를 사양에 맞춰 바이트 단위로 실제로 파싱하는 코드가, 이 툴의 필요에 맞춰 특별히 작성되어 있습니다. 다른 폴더들도 마찬가지입니다: 이미지 압축 로직, 색상 변환, QR 코드 생성, 해시 함수까지 — 전부 직접 작성한 코드이지, <code>import</code>해서 바로 쓰는 npm 패키지가 아닙니다.</p>
+
+    <h2>왜 굳이 직접 작성하는 수고를 들일까요?</h2>
+    <p>단순한 기술적 자존심이 아니라 구체적인 이유가 몇 가지 있습니다:</p>
+    <ul>
+      <li><strong>더 작은 파일 크기.</strong> 범용 라이브러리는 보통 여러 사용 사례를 처리하기 위해 일반적으로 만들어지며, 그 결과 관련 없는 코드가 많이 딸려옵니다. 자신의 필요에 맞춰 작성된 코드는 훨씬 가벼울 수 있고, 이것은 모든 처리가 넉넉한 리소스의 서버가 아니라 사용자의 브라우저에서 실행되기 때문에 중요합니다.</li>
+      <li><strong>동작에 대한 완전한 제어.</strong> 특정 PDF 유형에서 이상한 버그가 나타나도, 다른 라이브러리 메인테이너가 패치를 내놓기를 기다릴 필요 없이 직접 분석하고 고칠 수 있습니다 — 모든 코드가 실제로 자신의 소유이기 때문입니다.</li>
+      <li><strong>유지보수가 중단될 의존성이 없음.</strong> 많은 인기 오픈소스 라이브러리가 메인테이너가 다른 일로 바빠지면서 업데이트를 멈춥니다. 툴의 기반이 그런 것 위에 세워져 있다면, 그 위험도 함께 안게 됩니다.</li>
+      <li><strong>사용자 데이터에 무슨 일이 일어나는지 정확히 파악.</strong> 모든 파싱 코드 줄이 직접 작성되었기 때문에, 어떤 일을 하는지 정확히 알 수 없는 "블랙박스" 형태의 제3자가 사용자 파일을 처리하는 일이 없습니다.</li>
+    </ul>
+
+    <h2>하지만 전부 직접 작성한 건 아닙니다 — 그리고 그것도 의도적입니다</h2>
+    <p>이 글이 홍보가 아니라 정직하려면: MEA Tools의 일부 영역은 실제로 제3자 라이브러리나 모델을 사용하며, 이는 잊어버린 게 아니라 의식적인 결정입니다.</p>
+    <ul>
+      <li><strong>사진 배경 제거</strong>는 오픈소스 AI 모델(U2Net)을 <strong>ONNX Runtime</strong>을 통해 실행합니다 — 커뮤니티에서 만든 AI 추론 엔진으로, 직접 작성한 것이 아닙니다. 신경망 추론 런타임 전체를 처음부터 다시 작성하는 것은 수십 개 중 하나의 툴을 위한 작업치고는 분명 합리적인 범위를 벗어납니다. AI 모델 파일 자체는 제3자 CDN이 아닌 MEA 서버에 호스팅되어 있지만, 이를 실행하는 엔진은 여전히 ONNX Runtime입니다.</li>
+      <li><strong>이미지 해상도 확대(업스케일러)</strong>도 같은 이유로 Real-ESRGAN AI 모델을 ONNX Runtime을 통해 사용합니다.</li>
+      <li><strong>이미지/스캔에서 텍스트 추출(OCR)</strong>을 하는 두 가지 툴은 이미 성숙하고 널리 신뢰받는 오픈소스 OCR 엔진인 <strong>Tesseract.js</strong>를 사용합니다. OCR 엔진을 처음부터 다시 작성하는 것은 하나의 문서 변환 툴의 범위를 훨씬 벗어나는 별도의 연구 프로젝트입니다.</li>
+    </ul>
+    <p>흥미로운 부분은 코드 자체 안에 있습니다: 처음부터 수동으로 작성하지 <em>않기로 일부러</em> 결정한 또 다른 부분은 PDF 암호화를 위한 AES 함수입니다 — 이는 직접 만든 AES 구현이 아니라 브라우저 내장 Web Crypto API를 활용합니다. 그 이유는 코드 주석에 분명히 적혀 있습니다: AES는 실제 보안(PDF 내용을 다른 사람으로부터 보호)을 위해 사용되며, 브라우저 내장 AES 구현은 이미 철저히 감사되었고 타이밍 공격에도 강합니다 — 보안 감사의 보장 없이 수동으로 다시 작성한다면 매우 위험한 부분입니다.</p>
+    <p>비교해보면, 같은 툴에 있는 MD5와 RC4 해시 함수는 <em>실제로</em> 처음부터 수동으로 작성되었습니다 — 거기서 MD5/RC4는 민감한 보안 목적이 아니라, 오래된 PDF 데이터 형식의 필요를 위해 사용되기 때문입니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">원칙</span>
+      <h3>합리적일 땐 직접 작성, 보안이 걸린 부분은 검증된 것을 사용</h3>
+      <p>MEA Tools의 철학은 "위험을 감수하더라도 무조건 전부 직접 작성한다"가 아니라, 완전히 스스로 파악하는 것이 합리적인 부분은 직접 작성하고, 실제 데이터 보안이 걸린 부분은 이미 검증된 구현에 맡기는 것입니다.</p>
+      <a href="https://tools.meaecosystem.com" class="mea-tool-cta-btn">모든 툴 보기 →</a>
+    </div>
+
+    <h2>이게 사용자인 당신에게 왜 중요할까요?</h2>
+    <p>겉보기엔 그냥 배경의 기술적 디테일처럼 들릴 수 있습니다. 하지만 그 영향은 바로 체감됩니다: 자신의 필요에 맞춰 특별히 작성된 툴은 대체로 더 가볍게 실행되고, 더 빨리 열리며, 동작을 더 예측하기 쉽습니다 — 실제로는 쓰이지 않는 범용 코드의 부담을 짊어지지 않기 때문입니다. 그리고 PDF 암호화처럼 데이터 보안에 정말 핵심적인 부분에서는, 일관성만을 위해 모든 것을 억지로 수동 작성하는 것보다 이미 검증된 구현을 사용하는 선택이 오히려 더 안전합니다.</p>
+
+    <h2>여전히 계속 발전 중입니다</h2>
+    <p>이것도 알아둘 필요가 있습니다: "처음부터 작성" 방식은 바로 쓸 수 있는 라이브러리를 설치하는 것보다 새 기능마다 더 많은 시간이 걸린다는 뜻입니다. 특히 PDF 관련해서, 직접 만든 <code>pdf-lib</code>는 PDF 파일로 할 수 있는 전체 영역 중 일부만을 다루고 있습니다 — PDF 형식의 세계는 넓고, MEA Tools는 아직 여기서 멈추지 않았습니다. MEA Tools 전반은 여전히 계속 개발되고 추가되고 있으므로, 지금 있는 기능 범위가 최종 버전이 아니라 시간이 지나면서 계속 늘어날 것입니다.</p>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/kenapa-mea-tools-gratis-tanpa-watermark.html">MEA Tools의 모든 툴은 왜 무료이고 워터마크가 없을까?</a></p>
+      <p><a href="/ko/kenapa-tools-online-pindah-ke-client-side.html">왜 점점 더 많은 온라인 툴이 클라이언트 사이드로 옮겨갈까?</a></p>
+      <p><a href="/ko/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html">MEA Tools가 당신의 기기에 자동으로 맞춰지는 방법</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>

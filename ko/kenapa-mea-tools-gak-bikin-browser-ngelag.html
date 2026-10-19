@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>MEA Tools는 왜 큰 파일을 처리해도 브라우저가 멈추지 않을까? | MEA Blog</title>
+<meta name="description" content="이미지 업스케일이나 큰 문서 OCR은 보통 브라우저 탭을 완전히 멈추게 만듭니다. MEA Tools는 그렇지 않습니다 — 무거운 작업을 Web Worker를 통해 별도 스레드로 넘기기 때문입니다." />
+<link rel="canonical" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/id/kenapa-mea-tools-gak-bikin-browser-ngelag.html" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "MEA Tools는 왜 큰 파일을 처리해도 브라우저가 멈추지 않을까?",
+  "description": "MEA Tools의 업스케일러, 배경 제거, OCR 같은 무거운 툴에서 Web Worker를 사용하는 이유에 대한 설명으로, 큰 파일을 처리하는 동안에도 브라우저 탭이 계속 반응하도록 합니다.",
+  "datePublished": "2026-10-02",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="ko" data-lang-links='{"id":"/id/kenapa-mea-tools-gak-bikin-browser-ngelag.html","ja":"/ja/kenapa-mea-tools-gak-bikin-browser-ngelag.html","en":"/en/kenapa-mea-tools-gak-bikin-browser-ngelag.html","zh":"/zh/kenapa-mea-tools-gak-bikin-browser-ngelag.html","ko":"/ko/kenapa-mea-tools-gak-bikin-browser-ngelag.html"}'>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<main class="container-article">
+  <nav class="mea-breadcrumb">
+    <a href="/">MEA Blog</a>
+    <span>/</span>
+    <a href="/#tentang">소개</a>
+    <span>/</span>
+    <span aria-current="page">브라우저가 멈추지 않는 이유</span>
+  </nav>
+
+  <header class="mea-article-header">
+    <span class="eyebrow">인사이트 · 소개</span>
+    <h1>MEA Tools는 왜 큰 파일을 처리해도 브라우저가 멈추지 않을까?</h1>
+    <p class="mea-article-lead">큰 사진을 온라인 툴에 업로드했더니 탭이 바로 "응답 없음" 상태가 되어 처리가 끝날 때까지 아무것도 할 수 없었던 경험이 있나요? 이건 브라우저에서 직접 무거운 데이터를 처리하는 웹 앱에서 흔한 문제입니다. MEA Tools는 이를 특정한 방법으로 피하고 있습니다 — 우연이 아닙니다.</p>
+    <div class="mea-article-meta">
+      <span>2026년 10월 2일</span>
+      <span>·</span>
+      <span>읽는 시간 5분</span>
+    </div>
+  </header>
+
+  <article class="mea-article-body">
+    <h2>파일 처리 중 브라우저 탭이 멈추는 이유</h2>
+    <p>브라우저의 JavaScript는 기본적으로 "메인 스레드"라는 단일 경로에서 실행됩니다 — 화면을 다시 그리고, 클릭에 반응하고, 스크롤을 처리하는 것도 모두 같은 경로입니다. 만약 무거운 연산(예: 업스케일링을 위한 수백만 픽셀 이미지 처리, 또는 사진 배경 제거를 위한 AI 모델 실행)이 그 경로에서 직접 실행되면, 그 경로는 자동으로 완전히 막혀버립니다 — 경로가 단 하나뿐이기 때문에, 화면은 새로고침되지 않고, 클릭은 반응하지 않고, 스크롤은 멈춥니다. 이것이 탭이 "멈춤" 또는 "응답 없음"으로 보이는 이유입니다.</p>
+
+    <h2>해결책: 무거운 작업을 별도 스레드로 넘기기</h2>
+    <p>최신 브라우저에는 <strong>Web Worker</strong>라는 기능이 있습니다 — 메인 스레드와 분리된 스레드에서 JavaScript 코드를 실행해 백그라운드에서 병렬로 작동하는 방식입니다. 계산량이 많은 MEA Tools의 기능들 — <strong>이미지 업스케일러</strong>, <strong>사진 배경 제거</strong>, <strong>OCR(이미지/스캔에서 텍스트 추출)</strong>, OCR이 포함된 <strong>PDF를 Word로 변환</strong> 같은 — 은 핵심 작업을 메인 스레드가 아닌 Web Worker 안에서 일부러 실행하도록 되어 있습니다.</p>
+    <p>그 효과는 바로 체감됩니다: 백그라운드에서 이미지가 처리되는 동안에도 페이지는 계속 스크롤할 수 있고, 다른 버튼도 클릭할 수 있으며, 진행률 표시줄도 부드럽게 업데이트됩니다 — 메인 스레드가 그 무거운 연산에 전혀 막히지 않기 때문입니다. Worker가 작업을 끝내면, 결과는 스레드 간 메시지 메커니즘을 통해 메인 페이지로 "보고"됩니다.</p>
+
+    <div class="mea-tool-cta glass">
+      <span class="eyebrow">실제 사례</span>
+      <h3>정직한 진행률 표시줄</h3>
+      <p>업스케일러와 배경 제거 툴에서 보는 진행률 표시줄은 두 단계를 동시에 결합합니다 — AI 모델 다운로드 과정과 이미지 추론 과정 — 그래서 단순히 진행과 무관한 로딩 애니메이션이 아니라, 실제 진행 상황과 연결된 프로세스가 진행 중이라는 걸 항상 알 수 있습니다.</p>
+      <a href="https://tools.meaecosystem.com/upscaler" class="mea-tool-cta-btn">업스케일러 사용해보기 →</a>
+    </div>
+
+    <h2>왜 모든 툴에 이게 필요하지는 않은가</h2>
+    <p>MEA Tools에 있는 <strong>52개 툴</strong> 중, 실제로 Web Worker를 사용하는 것은 일부뿐입니다 — 정확히는 연산량이 정말 많은 기능들입니다. Base64 변환, 작은 파일의 해시 계산, QR 코드 생성 같은 툴은 보통 밀리초 단위로 끝나기 때문에, 억지로 Worker를 거치게 할 이점이 없습니다 — 오히려 불필요한 복잡성만 더할 뿐입니다. 원칙은 단순합니다: 정말 필요한 곳에만 Worker를 쓰고, 그럴듯하게 보이려고 모든 툴에 무작정 추가하지 않는 것입니다.</p>
+
+    <h2>하나의 툴, 하나의 기능 — 우연이 아닙니다</h2>
+    <p>MEA Tools 전반의 성능이 가볍게 느껴지는 데는 또 다른 이유가 있습니다: 각 툴이 자체 페이지로 분리되어 있고, 해당 기능에 관련된 코드만 불러옵니다. PDF 합치기 툴은 자신에게 필요 없는 워터마크나 OCR 코드를 함께 불러오지 않습니다. 이는 때때로 한 페이지가 실제로는 하나만 쓰이는데도 수십 개 기능의 코드를 한꺼번에 불러와야 하는 "하나의 거대한 올인원 앱" 방식과는 다릅니다.</p>
+    <p>이렇게 분리된 툴별 접근 방식 덕분에 자동 성능 감지 시스템(기기별 자동 조정에 관한 글 참고)도 효과적으로 작동할 수 있습니다 — 측정하고 조정해야 할 부하가 한 번에 하나의 특정 기능에만 집중되어 있기 때문이지, 부하를 예측하기 어려운 하나의 거대한 애플리케이션이 아니기 때문입니다.</p>
+
+    <h2>결과적으로</h2>
+    <p>이 두 가지 — 정말 필요한 곳에만 쓰이는 Web Worker, 그리고 하나의 툴-하나의 기능 구조 — 가 합쳐져, 그다지 성능이 좋지 않은 기기에서도 꽤 큰 파일을 처리할 때 MEA Tools가 계속 반응성을 유지하는 경험을 만들어냅니다. 모든 게 항상 즉각적이라는 마법 같은 보장은 아니지만, 적어도 하나의 처리가 끝날 때까지 브라우저 탭이 "가사 상태"에 빠질 필요는 없습니다.</p>
+
+    <div class="mea-related">
+      <h2>이런 글도 추천해요</h2>
+      <p><a href="/ko/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html">MEA Tools가 당신의 기기에 자동으로 맞춰지는 방법</a></p>
+      <p><a href="/ko/kenapa-mea-tools-library-dibangun-dari-nol.html">MEA Tools의 라이브러리는 왜 처음부터 직접 만들었을까?</a></p>
+      <p><a href="/ko/kenapa-tools-online-pindah-ke-client-side.html">왜 점점 더 많은 온라인 툴이 클라이언트 사이드로 옮겨갈까?</a></p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. 모든 권리 보유.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">개인정보처리방침</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">이용약관</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">면책조항</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/shared/lang-switcher.js" defer></script>
+</body>
+</html>
