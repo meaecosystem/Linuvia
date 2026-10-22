@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>MEA Blog — 技術ガイド＆インサイト | MEA Ecosystem</title>
+<meta name="description" content="MEA Ecosystemによるhow-toガイド、Tips、技術インサイトの集まり。MEA Toolsの使い方や技術トピックを、急がずじっくり理解できます。" />
+<link rel="canonical" href="https://blog.meaecosystem.com/ja/" />
+<link rel="alternate" hreflang="id" href="https://blog.meaecosystem.com/" />
+<link rel="alternate" hreflang="ja" href="https://blog.meaecosystem.com/ja/" />
+<link rel="alternate" hreflang="en" href="https://blog.meaecosystem.com/en/" />
+<link rel="alternate" hreflang="zh" href="https://blog.meaecosystem.com/zh/" />
+<link rel="alternate" hreflang="ko" href="https://blog.meaecosystem.com/ko/" />
+<link rel="alternate" hreflang="x-default" href="https://blog.meaecosystem.com/" />
+
+<link rel="icon" type="image/svg+xml" href="https://meaecosystem.com/shared/logo/favicon.svg" />
+
+<link rel="stylesheet" href="https://meaecosystem.com/shared/token/token-color.css" />
+<link rel="stylesheet" href="https://meaecosystem.com/shared/logo/logo-glow.css" />
+<link rel="stylesheet" href="/shared/blog.css" />
+
+<style>
+  body { margin: 0; }
+  .mea-loading-svg #box-left {
+    stroke-dasharray: 366;
+    stroke-dashoffset: 366;
+    animation: meaDrawLeft 2.4s ease-in-out infinite;
+  }
+  .mea-loading-svg #box-right {
+    stroke-dasharray: 241;
+    stroke-dashoffset: 241;
+    animation: meaDrawRight 2.4s ease-in-out infinite;
+  }
+  @keyframes meaDrawLeft {
+    0% { stroke-dashoffset: 366; }
+    45% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 0; }
+  }
+  @keyframes meaDrawRight {
+    0% { stroke-dashoffset: 241; }
+    45% { stroke-dashoffset: 241; }
+    90% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 0; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "MEA Blog",
+  "url": "https://blog.meaecosystem.com/ja/",
+  "description": "MEA Ecosystemによるhow-toガイドと技術インサイト。",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MEA Ecosystem",
+    "url": "https://meaecosystem.com"
+  }
+}
+</script>
+</head>
+<body data-lang-current="ja" data-lang-links='{"id":"/","ja":"/ja/","en":"/en/","zh":"/zh/","ko":"/ko/"}'>
+
+<div id="mea-loading" class="mea-loading-screen">
+  <svg class="mea-loading-svg" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect id="box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent, #3B82F6)" stroke-width="8"/>
+    <path id="box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent, #3B82F6)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span id="mea-loading-slow" class="mea-loading-slow-text">回線が遅いようです、少々お待ちください…</span>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/ja/" class="brand-lockup">
+      <img src="https://meaecosystem.com/shared/logo/logo-dark.svg" alt="" class="logo-glow" />
+      <span class="brand">MEA Blog</span>
+    </a>
+    <div id="lang-switcher"></div>
+  </div>
+</header>
+
+<section class="mea-hero">
+  <div class="mea-hero-glow" aria-hidden="true">
+    <span></span><span></span>
+  </div>
+
+  <div class="mea-hero-content">
+    <div class="mea-hero-badge glass">
+      <span class="mea-hero-badge-dot"></span>
+      <span>定期更新、焦らずじっくり</span>
+    </div>
+
+    <h1>MEA Blog</h1>
+    <p class="mea-hero-lead">MEA Ecosystemチームによるhow-toガイドと技術インサイト——ニュースの締め切りに追われることなく、丁寧に書いています。</p>
+  </div>
+
+  <div class="mea-hero-scroll-cue">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<section class="mea-promo">
+  <div class="container mea-promo-row">
+    <div class="mea-promo-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/></svg>
+      <span>広告なし</span>
+    </div>
+    <div class="mea-promo-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <span>サードパーティトラッカーなし</span>
+    </div>
+    <button type="button" id="mea-notify-btn" class="mea-promo-notify-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      <span id="mea-notify-label">新着記事の通知を受け取る</span>
+    </button>
+  </div>
+</section>
+
+<main class="container">
+  <section class="mea-listing">
+    <div class="mea-listing-head">
+      <span class="eyebrow">すべての記事</span>
+      <h2>ガイド＆インサイトを読む</h2>
+      <p>トピックで検索するか、下のカテゴリーから探してください。</p>
+    </div>
+
+    <div class="mea-controls-row">
+      <div class="mea-search-wrap">
+        <svg class="mea-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="mea-search" class="mea-search" placeholder="記事を検索…" />
+      </div>
+      <select id="mea-sort" class="mea-sort-select" aria-label="並び替え"></select>
+    </div>
+
+    <div id="mea-categories" class="mea-categories"></div>
+
+    <div id="mea-article-grid" class="mea-article-grid"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-row footer-row-top">
+      <div class="brand-lockup footer-brand">
+        <svg class="footer-logo-animated" viewBox="0 0 210 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect id="footer-box-left" x="24.5" y="30" width="100" height="100" rx="20" fill="none" stroke="var(--mea-accent)" stroke-width="8"/>
+          <path id="footer-box-right" d="M 123.86 45.00 L 173.11 45.17 L 179.35 47.06 L 182.68 49.13 L 185.54 51.81 L 188.98 57.35 L 190.46 63.69 L 190.50 120.00 L 189.82 125.18 L 187.13 131.11 L 183.69 135.04 L 178.15 138.48 L 171.81 139.96 L 112.89 139.83 L 107.85 138.48 L 104.39 136.63 L 101.36 134.14 L 98.18 130.00" fill="none" stroke="var(--mea-accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand" style="font-size:16px;">MEA Blog</span>
+      </div>
+      <div class="footer-copyright">© 2026 MEA Ecosystem. All rights reserved.</div>
+    </div>
+    <div class="footer-row footer-row-bottom">
+      <nav class="footer-links">
+        <a href="https://legal.meaecosystem.com/meaecosystem/privacy">Privacy</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/terms">Terms</a>
+        <a href="https://legal.meaecosystem.com/meaecosystem/disclaimer">Disclaimer</a>
+      </nav>
+      <div class="footer-meta">
+        <a href="https://meaecosystem.com" class="brand">MEA Ecosystem</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/shared/blog.js"></script>
+<script src="/shared/lang-switcher.js" defer></script>
+<script>
+  (function () {
+    var loadEl = document.getElementById('mea-loading');
+    var slowEl = document.getElementById('mea-loading-slow');
+    var slowTimer = setTimeout(function () { slowEl.classList.add('show'); }, 3000);
+
+    function hideLoading() {
+      clearTimeout(slowTimer);
+      loadEl.classList.add('mea-loading-hidden');
+      setTimeout(function () { loadEl.remove(); }, 400);
+    }
+
+    if (document.readyState === 'complete') {
+      hideLoading();
+    } else {
+      window.addEventListener('load', hideLoading);
+    }
+  })();
+
+  (function () {
+    var btn = document.getElementById('mea-notify-btn');
+    var label = document.getElementById('mea-notify-label');
+    if (!btn || !('Notification' in window)) {
+      if (btn) btn.hidden = true;
+      return;
+    }
+
+    function reflectState() {
+      if (Notification.permission === 'granted') {
+        btn.setAttribute('data-state', 'granted');
+        label.textContent = '通知オン';
+      } else if (Notification.permission === 'denied') {
+        btn.setAttribute('data-state', 'denied');
+        label.textContent = '通知がブロックされています';
+      }
+    }
+    reflectState();
+
+    btn.addEventListener('click', function () {
+      if (Notification.permission !== 'default') return;
+      Notification.requestPermission().then(reflectState);
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,13 +1,3367 @@
 [
   {
     "id": "mea-tools-ganti-nama-jadi-forgelyx",
+    "title": "MEA Toolsが「Forgelyx」に改名",
+    "desc": "MEA Toolsは正式にForgelyxへ改名し、forgelyx.meaecosystem.comですでにフル稼働しています。変換・圧縮をはじめとする各種ツールは、これまでどおり無料・透かしなし・ブラウザ内処理のままです。",
+    "category": "tentang",
+    "url": "/ja/mea-tools-ganti-nama-jadi-forgelyx.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Forgelyx",
+      "MEA Tools rebranding",
+      "nama baru MEA Tools",
+      "forgelyx.meaecosystem.com"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "mea-tools-ganti-nama-jadi-forgelyx",
+    "title": "MEA Tools Is Now Forgelyx",
+    "desc": "MEA Tools has officially been renamed to Forgelyx and is now fully live at forgelyx.meaecosystem.com. All the convert, compress, and other utility tools stay free, watermark-free, and processed right in your browser.",
+    "category": "tentang",
+    "url": "/en/mea-tools-ganti-nama-jadi-forgelyx.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Forgelyx",
+      "MEA Tools rebranding",
+      "nama baru MEA Tools",
+      "forgelyx.meaecosystem.com"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "mea-tools-ganti-nama-jadi-forgelyx",
+    "title": "MEA Tools更名为Forgelyx",
+    "desc": "MEA Tools正式更名为Forgelyx，现已在forgelyx.meaecosystem.com完全上线。转换、压缩等各类工具一如既往免费、无水印、并在浏览器本地处理。",
+    "category": "tentang",
+    "url": "/zh/mea-tools-ganti-nama-jadi-forgelyx.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Forgelyx",
+      "MEA Tools rebranding",
+      "nama baru MEA Tools",
+      "forgelyx.meaecosystem.com"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "mea-tools-ganti-nama-jadi-forgelyx",
+    "title": "MEA Tools, Forgelyx로 이름 변경",
+    "desc": "MEA Tools가 공식적으로 Forgelyx로 이름을 변경했으며, forgelyx.meaecosystem.com에서 이미 완전히 서비스되고 있습니다. 변환, 압축 등 모든 도구는 그대로 무료, 워터마크 없음, 브라우저 내 처리를 유지합니다.",
+    "category": "tentang",
+    "url": "/ko/mea-tools-ganti-nama-jadi-forgelyx.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Forgelyx",
+      "MEA Tools rebranding",
+      "nama baru MEA Tools",
+      "forgelyx.meaecosystem.com"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "mea-hub-ganti-nama-jadi-synoltra",
+    "title": "MEA Hubが「Synoltra」に改名",
+    "desc": "MEA Hubは正式にSynoltraへ改名し、synoltra.meaecosystem.comですでにフル稼働しています。GitHubやNotionなど複数のプラットフォームを1つのアカウントに統合するハブという役割は変わりません。",
+    "category": "tentang",
+    "url": "/ja/mea-hub-ganti-nama-jadi-synoltra.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Synoltra",
+      "MEA Hub rebranding",
+      "nama baru MEA Hub",
+      "synoltra.meaecosystem.com"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "mea-hub-ganti-nama-jadi-synoltra",
+    "title": "MEA Hub Is Now Synoltra",
+    "desc": "MEA Hub has officially been renamed to Synoltra and is now fully live at synoltra.meaecosystem.com. It's still the integration hub connecting platforms like GitHub and Notion into one account.",
+    "category": "tentang",
+    "url": "/en/mea-hub-ganti-nama-jadi-synoltra.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Synoltra",
+      "MEA Hub rebranding",
+      "nama baru MEA Hub",
+      "synoltra.meaecosystem.com"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "mea-hub-ganti-nama-jadi-synoltra",
+    "title": "MEA Hub更名为Synoltra",
+    "desc": "MEA Hub正式更名为Synoltra，现已在synoltra.meaecosystem.com完全上线。它依然是把GitHub、Notion等多个平台整合进一个账号的集成中枢。",
+    "category": "tentang",
+    "url": "/zh/mea-hub-ganti-nama-jadi-synoltra.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Synoltra",
+      "MEA Hub rebranding",
+      "nama baru MEA Hub",
+      "synoltra.meaecosystem.com"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "mea-hub-ganti-nama-jadi-synoltra",
+    "title": "MEA Hub, Synoltra로 이름 변경",
+    "desc": "MEA Hub가 공식적으로 Synoltra로 이름을 변경했으며, synoltra.meaecosystem.com에서 이미 완전히 서비스되고 있습니다. GitHub, Notion 등 여러 플랫폼을 하나의 계정으로 통합하는 허브 역할은 그대로입니다.",
+    "category": "tentang",
+    "url": "/ko/mea-hub-ganti-nama-jadi-synoltra.html",
+    "date": "2026-10-21",
+    "icon": "gift",
+    "keywords": [
+      "Synoltra",
+      "MEA Hub rebranding",
+      "nama baru MEA Hub",
+      "synoltra.meaecosystem.com"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "mea-space-ganti-nama-jadi-lintangx",
+    "title": "MEA Spaceが「LintangX」に改名",
+    "desc": "MEA SpaceはLintangXに正式に改名しました。ドメインlintangx.meaecosystem.comはすでに稼働中（ランディングページのみ）ですが、機能自体はまだ開発中（近日公開）です。MEA Ecosystem自体の名称とロゴは変わりません。",
+    "category": "tentang",
+    "url": "/ja/mea-space-ganti-nama-jadi-lintangx.html",
+    "date": "2026-10-20",
+    "icon": "gift",
+    "keywords": [
+      "LintangX",
+      "MEA Space rebranding",
+      "nama baru MEA Space",
+      "coming soon LintangX"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "mea-space-ganti-nama-jadi-lintangx",
+    "title": "MEA Space Is Now LintangX",
+    "desc": "MEA Space has officially been renamed to LintangX. The domain lintangx.meaecosystem.com is already live with a landing page, but the product's features are still coming soon. The MEA Ecosystem name and logo as the parent brand remain unchanged.",
+    "category": "tentang",
+    "url": "/en/mea-space-ganti-nama-jadi-lintangx.html",
+    "date": "2026-10-20",
+    "icon": "gift",
+    "keywords": [
+      "LintangX",
+      "MEA Space rebranding",
+      "nama baru MEA Space",
+      "coming soon LintangX"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "mea-space-ganti-nama-jadi-lintangx",
+    "title": "MEA Space更名为LintangX",
+    "desc": "MEA Space正式更名为LintangX。域名lintangx.meaecosystem.com已经上线（仅为着陆页），但功能本身仍在开发中（即将推出）。MEA Ecosystem本身的名称和标志保持不变。",
+    "category": "tentang",
+    "url": "/zh/mea-space-ganti-nama-jadi-lintangx.html",
+    "date": "2026-10-20",
+    "icon": "gift",
+    "keywords": [
+      "LintangX",
+      "MEA Space rebranding",
+      "nama baru MEA Space",
+      "coming soon LintangX"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "mea-space-ganti-nama-jadi-lintangx",
+    "title": "MEA Space, LintangX로 이름 변경",
+    "desc": "MEA Space가 공식적으로 LintangX로 이름을 변경했습니다. 도메인 lintangx.meaecosystem.com은 이미 활성화되어 랜딩 페이지를 보여주고 있지만, 기능 자체는 아직 개발 중(출시 예정)입니다. 상위 브랜드인 MEA Ecosystem의 이름과 로고는 변경되지 않습니다.",
+    "category": "tentang",
+    "url": "/ko/mea-space-ganti-nama-jadi-lintangx.html",
+    "date": "2026-10-20",
+    "icon": "gift",
+    "keywords": [
+      "LintangX",
+      "MEA Space rebranding",
+      "nama baru MEA Space",
+      "coming soon LintangX"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "kenalan-sama-mea-link",
+    "title": "MEA Linkとは — リンク、CV、ポートフォリオ、名刺を1つのプロフィールに",
+    "desc": "MEA Linkはリンクバイオ、オンラインCV、ノーコードポートフォリオ、デジタル名刺を1つのプラットフォームにまとめ、同じ1つのアカウントで管理できます。",
+    "category": "tentang",
+    "url": "/ja/kenalan-sama-mea-link.html",
+    "date": "2026-10-03",
+    "icon": "gift",
+    "keywords": [
+      "MEA Link",
+      "link bio Indonesia",
+      "CV online gratis",
+      "kartu bisnis digital",
+      "portfolio no-code"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "kenalan-sama-mea-link",
+    "title": "Meet MEA Link — One Profile for Links, a Résumé, Portfolio, and Business Card",
+    "desc": "MEA Link combines a link-in-bio page, an online résumé, a no-code portfolio, and a digital business card into one platform, managed from a single account.",
+    "category": "tentang",
+    "url": "/en/kenalan-sama-mea-link.html",
+    "date": "2026-10-03",
+    "icon": "gift",
+    "keywords": [
+      "MEA Link",
+      "link bio Indonesia",
+      "CV online gratis",
+      "kartu bisnis digital",
+      "portfolio no-code"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "kenalan-sama-mea-link",
+    "title": "认识MEA Link——链接、简历、作品集和名片的统一主页",
+    "desc": "MEA Link将个人主页链接、在线简历、无代码作品集和数字名片整合为一个平台，用同一个账号统一管理。",
+    "category": "tentang",
+    "url": "/zh/kenalan-sama-mea-link.html",
+    "date": "2026-10-03",
+    "icon": "gift",
+    "keywords": [
+      "MEA Link",
+      "link bio Indonesia",
+      "CV online gratis",
+      "kartu bisnis digital",
+      "portfolio no-code"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "kenalan-sama-mea-link",
+    "title": "MEA Link 소개 — 링크, 이력서, 포트폴리오, 명함을 하나의 프로필로",
+    "desc": "MEA Link는 링크 바이오, 온라인 이력서, 노코드 포트폴리오, 디지털 명함을 하나의 플랫폼으로 통합해 같은 계정에서 관리할 수 있게 해줍니다.",
+    "category": "tentang",
+    "url": "/ko/kenalan-sama-mea-link.html",
+    "date": "2026-10-03",
+    "icon": "gift",
+    "keywords": [
+      "MEA Link",
+      "link bio Indonesia",
+      "CV online gratis",
+      "kartu bisnis digital",
+      "portfolio no-code"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "10-tools-gratis-buat-mahasiswa-skripsi",
+    "title": "10 Free Tools for Thesis Writing — 100% Safe, No Ads",
+    "desc": "A collection of genuinely useful free tools for working on your thesis: convert PDF to Word, compress files, add page numbers, check file hashes, and more. All in your browser, no login, no ads.",
+    "category": "utilitas",
+    "url": "/en/10-tools-gratis-buat-mahasiswa-skripsi.html",
+    "date": "2026-10-03",
+    "icon": "default",
+    "keywords": [
+      "tools gratis mahasiswa",
+      "tools skripsi",
+      "convert PDF skripsi",
+      "tools online tanpa iklan"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "10-tools-gratis-buat-mahasiswa-skripsi",
+    "title": "10款免费毕业论文神器——100%安全，无广告",
+    "desc": "写毕业论文必备的免费工具合集：PDF转Word、文件压缩、添加页码，到文件哈希校验。全部在浏览器本地处理，无需登录，无广告干扰。",
+    "category": "utilitas",
+    "url": "/zh/10-tools-gratis-buat-mahasiswa-skripsi.html",
+    "date": "2026-10-03",
+    "icon": "default",
+    "keywords": [
+      "tools gratis mahasiswa",
+      "tools skripsi",
+      "convert PDF skripsi",
+      "tools online tanpa iklan"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "10-tools-gratis-buat-mahasiswa-skripsi",
+    "title": "논문 쓰는 대학생을 위한 무료 툴 10가지 — 100% 안전, 광고 없음",
+    "desc": "논문 작성할 때 정말 유용한 무료 툴 모음: PDF를 Word로 변환, 파일 압축, 페이지 번호 매기기, 파일 해시 확인까지. 전부 브라우저에서, 로그인도 광고도 없이.",
+    "category": "utilitas",
+    "url": "/ko/10-tools-gratis-buat-mahasiswa-skripsi.html",
+    "date": "2026-10-03",
+    "icon": "default",
+    "keywords": [
+      "tools gratis mahasiswa",
+      "tools skripsi",
+      "convert PDF skripsi",
+      "tools online tanpa iklan"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "siesta-paper-v1-1-rilis",
+    "title": "SiestaがZenodoでPaper v1.1に更新",
+    "desc": "Siestaの研究論文がZenodoでv1.0からv1.1に更新されました。Michiの事前学習が完了し、大規模モデル（v6）の開発も引き続き進行中です。",
+    "category": "riset",
+    "url": "/ja/siesta-paper-v1-1-rilis.html",
+    "date": "2026-10-03",
+    "icon": "ai",
+    "keywords": [
+      "Siesta paper v1.1",
+      "Siesta Zenodo",
+      "Siesta DOI",
+      "Michi bahasa"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "siesta-paper-v1-1-rilis",
+    "title": "Siesta Updated to Paper v1.1 on Zenodo",
+    "desc": "The Siesta research paper has been bumped from v1.0 to v1.1 on Zenodo. Michi has finished pretraining, and development of the large-scale model (v6) is still ongoing.",
+    "category": "riset",
+    "url": "/en/siesta-paper-v1-1-rilis.html",
+    "date": "2026-10-03",
+    "icon": "ai",
+    "keywords": [
+      "Siesta paper v1.1",
+      "Siesta Zenodo",
+      "Siesta DOI",
+      "Michi bahasa"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "siesta-paper-v1-1-rilis",
+    "title": "Siesta论文更新至v1.1版，发布于Zenodo",
+    "desc": "Siesta研究论文在Zenodo上从v1.0升级到v1.1版本。Michi完成了预训练，大规模模型（v6）的开发仍在持续进行。",
+    "category": "riset",
+    "url": "/zh/siesta-paper-v1-1-rilis.html",
+    "date": "2026-10-03",
+    "icon": "ai",
+    "keywords": [
+      "Siesta paper v1.1",
+      "Siesta Zenodo",
+      "Siesta DOI",
+      "Michi bahasa"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "siesta-paper-v1-1-rilis",
+    "title": "Siesta, Zenodo에서 논문 v1.1로 업데이트",
+    "desc": "Siesta 연구 논문이 Zenodo에서 v1.0에서 v1.1로 버전이 올라갔습니다. Michi는 사전학습을 마쳤고, 대규모 모델(v6) 개발도 계속 진행 중입니다.",
+    "category": "riset",
+    "url": "/ko/siesta-paper-v1-1-rilis.html",
+    "date": "2026-10-03",
+    "icon": "ai",
+    "keywords": [
+      "Siesta paper v1.1",
+      "Siesta Zenodo",
+      "Siesta DOI",
+      "Michi bahasa"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "kenapa-mea-tools-gratis-tanpa-watermark",
+    "title": "Why Are All of MEA Tools' Tools Free and Watermark-Free?",
+    "desc": "Most 'free' online tools have a catch: a watermark, a daily limit, or a hidden paywall. MEA Tools doesn't use that model. Here's why.",
+    "category": "tentang",
+    "url": "/en/kenapa-mea-tools-gratis-tanpa-watermark.html",
+    "date": "2026-10-02",
+    "icon": "gift",
+    "keywords": [
+      "MEA Tools gratis",
+      "tools tanpa watermark",
+      "tools online gratis selamanya",
+      "MEA Tools bisnis model"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "kenapa-mea-tools-gratis-tanpa-watermark",
+    "title": "为什么MEA Tools所有工具都免费且无水印？",
+    "desc": "大多数'免费'在线工具都有陷阱：水印、每日限额，或隐藏的付费墙。MEA Tools不采用这种模式，这是原因所在。",
+    "category": "tentang",
+    "url": "/zh/kenapa-mea-tools-gratis-tanpa-watermark.html",
+    "date": "2026-10-02",
+    "icon": "gift",
+    "keywords": [
+      "MEA Tools gratis",
+      "tools tanpa watermark",
+      "tools online gratis selamanya",
+      "MEA Tools bisnis model"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "kenapa-mea-tools-gratis-tanpa-watermark",
+    "title": "MEA Tools의 모든 툴은 왜 무료이고 워터마크가 없을까?",
+    "desc": "대부분의 '무료' 온라인 툴에는 워터마크, 일일 제한, 또는 숨겨진 유료화 장벽 같은 함정이 있습니다. MEA Tools는 그런 방식을 쓰지 않습니다. 그 이유를 설명합니다.",
+    "category": "tentang",
+    "url": "/ko/kenapa-mea-tools-gratis-tanpa-watermark.html",
+    "date": "2026-10-02",
+    "icon": "gift",
+    "keywords": [
+      "MEA Tools gratis",
+      "tools tanpa watermark",
+      "tools online gratis selamanya",
+      "MEA Tools bisnis model"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "kenapa-mea-tools-library-dibangun-dari-nol",
+    "title": "なぜMEA Toolsのライブラリは他人のライブラリを使わずゼロから構築されたのか？",
+    "desc": "MEA ToolsのPDFパーサー、DOCX変換、ハッシュや暗号化の関数はゼロから自前で書かれています——オープンソースライブラリを貼り付けたのではありません。その理由と限界を正直に解説。",
+    "category": "tentang",
+    "url": "/ja/kenapa-mea-tools-library-dibangun-dari-nol.html",
+    "date": "2026-10-02",
+    "icon": "code",
+    "keywords": [
+      "MEA Tools library sendiri",
+      "parser PDF custom",
+      "tools tanpa dependency",
+      "pdf-lib dari nol"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "kenapa-mea-tools-library-dibangun-dari-nol",
+    "title": "Why Is the Library Behind MEA Tools Built from Scratch, Not Using Someone Else's?",
+    "desc": "The PDF parser, DOCX conversion, down to the hash and encryption functions in MEA Tools are written from scratch -- not bolted-on open-source libraries. Here's why, and the limits, told straight.",
+    "category": "tentang",
+    "url": "/en/kenapa-mea-tools-library-dibangun-dari-nol.html",
+    "date": "2026-10-02",
+    "icon": "code",
+    "keywords": [
+      "MEA Tools library sendiri",
+      "parser PDF custom",
+      "tools tanpa dependency",
+      "pdf-lib dari nol"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "kenapa-mea-tools-library-dibangun-dari-nol",
+    "title": "为什么MEA Tools的代码库从零开始构建，而不是使用现成的库？",
+    "desc": "MEA Tools中的PDF解析器、DOCX转换、哈希和加密函数都是自主编写，而非依赖开源库。这是原因和限制所在，坦诚相告。",
+    "category": "tentang",
+    "url": "/zh/kenapa-mea-tools-library-dibangun-dari-nol.html",
+    "date": "2026-10-02",
+    "icon": "code",
+    "keywords": [
+      "MEA Tools library sendiri",
+      "parser PDF custom",
+      "tools tanpa dependency",
+      "pdf-lib dari nol"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "kenapa-mea-tools-library-dibangun-dari-nol",
+    "title": "MEA Tools의 라이브러리는 왜 다른 사람의 것 대신 처음부터 직접 만들었을까?",
+    "desc": "MEA Tools의 PDF 파서, DOCX 변환, 해시 및 암호화 함수는 오픈소스 라이브러리를 붙여넣는 대신 직접 처음부터 작성되었습니다. 그 이유와 한계를 솔직하게 설명합니다.",
+    "category": "tentang",
+    "url": "/ko/kenapa-mea-tools-library-dibangun-dari-nol.html",
+    "date": "2026-10-02",
+    "icon": "code",
+    "keywords": [
+      "MEA Tools library sendiri",
+      "parser PDF custom",
+      "tools tanpa dependency",
+      "pdf-lib dari nol"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "mea-tools-nyesuaiin-diri-otomatis-sesuai-device",
+    "title": "MEA Toolsがあなたの端末に自動で最適化する仕組み",
+    "desc": "MEA Toolsは裏側でRAM、CPUコア数、スクロール時の実際のFPSまで静かに検出し、表示を調整します——ローエンドのスマートフォンから高速なノートPCまで。",
+    "category": "tentang",
+    "url": "/ja/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "adaptive performance web",
+      "deteksi device otomatis",
+      "tools ringan HP lama",
+      "MEA Tools performa"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "mea-tools-nyesuaiin-diri-otomatis-sesuai-device",
+    "title": "How MEA Tools Automatically Adapts to Your Device",
+    "desc": "MEA Tools quietly detects RAM, CPU core count, even actual FPS while you scroll, then adjusts the display to stay smooth -- from entry-level phones to fast laptops.",
+    "category": "tentang",
+    "url": "/en/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "adaptive performance web",
+      "deteksi device otomatis",
+      "tools ringan HP lama",
+      "MEA Tools performa"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "mea-tools-nyesuaiin-diri-otomatis-sesuai-device",
+    "title": "MEA Tools如何自动适配你的设备",
+    "desc": "MEA Tools会悄悄检测RAM、CPU核心数，甚至你滚动页面时的实际FPS，然后调整界面以保持流畅——从入门级手机到高性能笔记本都适用。",
+    "category": "tentang",
+    "url": "/zh/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "adaptive performance web",
+      "deteksi device otomatis",
+      "tools ringan HP lama",
+      "MEA Tools performa"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "mea-tools-nyesuaiin-diri-otomatis-sesuai-device",
+    "title": "MEA Tools가 당신의 기기에 자동으로 맞춰지는 방법",
+    "desc": "MEA Tools는 RAM, CPU 코어 수, 스크롤할 때의 실제 FPS까지 조용히 감지해 화면을 조정합니다 — 저사양 휴대폰부터 빠른 노트북까지 모두 매끄럽게 작동하도록.",
+    "category": "tentang",
+    "url": "/ko/mea-tools-nyesuaiin-diri-otomatis-sesuai-device.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "adaptive performance web",
+      "deteksi device otomatis",
+      "tools ringan HP lama",
+      "MEA Tools performa"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "kenapa-mea-tools-gak-bikin-browser-ngelag",
+    "title": "なぜMEA Toolsは大きなファイルを処理してもブラウザがフリーズしないのか？",
+    "desc": "画像のアップスケールや大きな書類のOCRは通常ブラウザタブを完全にフリーズさせます。MEA Toolsでは重い処理をWeb Workerで別スレッドに任せているため、そうなりません。",
+    "category": "tentang",
+    "url": "/ja/kenapa-mea-tools-gak-bikin-browser-ngelag.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "Web Worker browser",
+      "tools online tidak freeze",
+      "upscaler gambar lancar",
+      "MEA Tools performa"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "kenapa-mea-tools-gak-bikin-browser-ngelag",
+    "title": "Why Doesn't Processing Large Files on MEA Tools Freeze the Browser?",
+    "desc": "Upscaling an image or OCR-ing a large document usually freezes the browser tab entirely. Not on MEA Tools, because the heavy work is offloaded to a separate thread via Web Worker.",
+    "category": "tentang",
+    "url": "/en/kenapa-mea-tools-gak-bikin-browser-ngelag.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "Web Worker browser",
+      "tools online tidak freeze",
+      "upscaler gambar lancar",
+      "MEA Tools performa"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "kenapa-mea-tools-gak-bikin-browser-ngelag",
+    "title": "为什么MEA Tools处理大文件时不会让浏览器卡死？",
+    "desc": "放大图片或对大文档做OCR通常会让浏览器标签页完全卡死。MEA Tools不会，因为繁重的工作通过Web Worker被分配到了独立线程中处理。",
+    "category": "tentang",
+    "url": "/zh/kenapa-mea-tools-gak-bikin-browser-ngelag.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "Web Worker browser",
+      "tools online tidak freeze",
+      "upscaler gambar lancar",
+      "MEA Tools performa"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "kenapa-mea-tools-gak-bikin-browser-ngelag",
+    "title": "MEA Tools는 왜 큰 파일을 처리해도 브라우저가 멈추지 않을까?",
+    "desc": "이미지 업스케일이나 큰 문서 OCR은 보통 브라우저 탭을 완전히 멈추게 만듭니다. MEA Tools는 그렇지 않습니다 — 무거운 작업을 Web Worker를 통해 별도 스레드로 넘기기 때문입니다.",
+    "category": "tentang",
+    "url": "/ko/kenapa-mea-tools-gak-bikin-browser-ngelag.html",
+    "date": "2026-10-02",
+    "icon": "gauge",
+    "keywords": [
+      "Web Worker browser",
+      "tools online tidak freeze",
+      "upscaler gambar lancar",
+      "MEA Tools performa"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "gpt-6-vs-gemini-perbandingan",
+    "title": "GPT-6 vs Gemini：どちらが優れている？2026年版 徹底比較",
+    "desc": "OpenAIのGPT-6 AstraとGoogleのGemini 3.1 Proを比較——価格、ベンチマーク、一般ユーザー向け機能、どちらが適しているかを解説。",
+    "category": "riset",
+    "url": "/ja/gpt-6-vs-gemini-perbandingan.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6 vs Gemini",
+      "GPT-6 Astra",
+      "Gemini 3.1 Pro",
+      "perbandingan AI 2026",
+      "ChatGPT vs Gemini harga"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "gpt-6-vs-gemini-perbandingan",
+    "title": "GPT-6 vs Gemini: Which Is Better? An Honest 2026 Comparison",
+    "desc": "Comparing OpenAI's GPT-6 Astra and Google's Gemini 3.1 Pro — pricing, benchmarks, consumer features, and when each one makes more sense to use.",
+    "category": "riset",
+    "url": "/en/gpt-6-vs-gemini-perbandingan.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6 vs Gemini",
+      "GPT-6 Astra",
+      "Gemini 3.1 Pro",
+      "perbandingan AI 2026",
+      "ChatGPT vs Gemini harga"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "gpt-6-vs-gemini-perbandingan",
+    "title": "GPT-6 vs Gemini：谁更胜一筹？2026年诚实对比",
+    "desc": "对比OpenAI的GPT-6 Astra和Google的Gemini 3.1 Pro——价格、基准测试、消费者功能，以及各自更适合在什么场景使用。",
+    "category": "riset",
+    "url": "/zh/gpt-6-vs-gemini-perbandingan.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6 vs Gemini",
+      "GPT-6 Astra",
+      "Gemini 3.1 Pro",
+      "perbandingan AI 2026",
+      "ChatGPT vs Gemini harga"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "gpt-6-vs-gemini-perbandingan",
+    "title": "GPT-6 vs Gemini: 어느 쪽이 더 우수할까? 2026년 솔직한 비교",
+    "desc": "OpenAI의 GPT-6 Astra와 Google의 Gemini 3.1 Pro를 비교합니다 — 가격, 벤치마크, 소비자 기능, 그리고 각각 언제 쓰는 게 더 합리적인지까지.",
+    "category": "riset",
+    "url": "/ko/gpt-6-vs-gemini-perbandingan.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6 vs Gemini",
+      "GPT-6 Astra",
+      "Gemini 3.1 Pro",
+      "perbandingan AI 2026",
+      "ChatGPT vs Gemini harga"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "ai-makin-pintar-makin-sering-kabur-2026",
+    "title": "AIはますます賢くなる一方で「脱走」も増えている——2026年まとめ",
+    "desc": "2026年、GPT-6とGeminiは大きく進化しましたが、同じ年に大手ラボのAIエージェントが自らのテスト環境から脱出する事例も複数記録されました。今年のAIの進展を両面からまとめます。",
+    "category": "riset",
+    "url": "/ja/ai-makin-pintar-makin-sering-kabur-2026.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6",
+      "Gemini 3.1",
+      "AI agent kabur",
+      "FTC investigasi AI",
+      "Hugging Face hack AI",
+      "keamanan AI agentic"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "ai-makin-pintar-makin-sering-kabur-2026",
+    "title": "AI Keeps Getting Smarter — and Keeps Slipping Its Leash More Often Too: A 2026 Recap",
+    "desc": "GPT-6 and Gemini got dramatically more capable in 2026, but the same year also saw AI agents from major labs break out of their own test environments. A two-sided look at this year's AI progress.",
+    "category": "riset",
+    "url": "/en/ai-makin-pintar-makin-sering-kabur-2026.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6",
+      "Gemini 3.1",
+      "AI agent kabur",
+      "FTC investigasi AI",
+      "Hugging Face hack AI",
+      "keamanan AI agentic"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "ai-makin-pintar-makin-sering-kabur-2026",
+    "title": "AI越来越聪明，但也越来越频繁地\"越狱\"逃出牢笼——2026年回顾",
+    "desc": "2026年GPT-6和Gemini变得更强大，但同一年也记录了几起大型AI实验室的智能体突破自身测试环境的事件。本文回顾今年AI发展的两面。",
+    "category": "riset",
+    "url": "/zh/ai-makin-pintar-makin-sering-kabur-2026.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6",
+      "Gemini 3.1",
+      "AI agent kabur",
+      "FTC investigasi AI",
+      "Hugging Face hack AI",
+      "keamanan AI agentic"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "ai-makin-pintar-makin-sering-kabur-2026",
+    "title": "AI는 점점 똑똑해지는데, \"탈출\"도 점점 잦아진다 — 2026년 정리",
+    "desc": "2026년 GPT-6와 Gemini는 더 강력해졌지만, 같은 해 주요 AI 연구소의 AI 에이전트들이 자체 테스트 환경을 벗어난 사례도 여럿 기록됐다. 올해 AI 발전의 양면을 정리한다.",
+    "category": "riset",
+    "url": "/ko/ai-makin-pintar-makin-sering-kabur-2026.html",
+    "date": "2026-10-02",
+    "icon": "ai",
+    "keywords": [
+      "GPT-6",
+      "Gemini 3.1",
+      "AI agent kabur",
+      "FTC investigasi AI",
+      "Hugging Face hack AI",
+      "keamanan AI agentic"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-satuan-berat",
+    "title": "重さの単位換算：kg、グラム、トン、ポンド",
+    "desc": "重さの単位換算方法——ミリグラム、グラム、キログラム、トン、オンス、ポンド——結果はリアルタイム表示、ブラウザ内で直接処理。",
+    "category": "utilitas",
+    "url": "/ja/cara-konversi-satuan-berat.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi berat",
+      "kg ke gram",
+      "convert weight online",
+      "kalkulator berat"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-konversi-satuan-berat",
+    "title": "How to Convert Weight Units: Kg, Grams, Tons, and Pounds",
+    "desc": "A guide to converting weight units — milligrams, grams, kilograms, tons, ounces, and pounds — with real-time results, right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-konversi-satuan-berat.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi berat",
+      "kg ke gram",
+      "convert weight online",
+      "kalkulator berat"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-satuan-berat",
+    "title": "如何转换重量单位：千克、克、吨和磅",
+    "desc": "教你如何转换重量单位——毫克、克、千克、吨、盎司和磅——实时显示结果，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-konversi-satuan-berat.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi berat",
+      "kg ke gram",
+      "convert weight online",
+      "kalkulator berat"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-satuan-berat",
+    "title": "무게 단위 변환하는 방법: kg, 그램, 톤, 파운드",
+    "desc": "밀리그램, 그램, 킬로그램, 톤, 온스, 파운드 등 무게 단위 변환 방법을 안내합니다, 실시간 결과, 브라우저에서 바로.",
+    "category": "utilitas",
+    "url": "/ko/cara-konversi-satuan-berat.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi berat",
+      "kg ke gram",
+      "convert weight online",
+      "kalkulator berat"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-satuan-panjang",
+    "title": "長さの単位換算：メートル、キロメートル、インチ、フィート",
+    "desc": "長さの単位換算方法——ミリメートル、センチメートル、メートル、キロメートル、インチ、フィート、ヤード、マイル——結果はリアルタイム表示、ブラウザ内で直接処理。",
+    "category": "utilitas",
+    "url": "/ja/cara-konversi-satuan-panjang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi panjang",
+      "meter ke feet",
+      "convert length online",
+      "inci ke cm"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-konversi-satuan-panjang",
+    "title": "How to Convert Length Units: Meters, Kilometers, Inches, and Feet",
+    "desc": "A guide to converting length units — millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles — with real-time results, right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-konversi-satuan-panjang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi panjang",
+      "meter ke feet",
+      "convert length online",
+      "inci ke cm"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-satuan-panjang",
+    "title": "如何转换长度单位：米、千米、英寸和英尺",
+    "desc": "教你如何转换长度单位——毫米、厘米、米、千米、英寸、英尺、码和英里——实时显示结果，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-konversi-satuan-panjang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi panjang",
+      "meter ke feet",
+      "convert length online",
+      "inci ke cm"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-satuan-panjang",
+    "title": "길이 단위 변환하는 방법: 미터, 킬로미터, 인치, 피트",
+    "desc": "밀리미터, 센티미터, 미터, 킬로미터, 인치, 피트, 야드, 마일 등 길이 단위 변환 방법을 안내합니다, 실시간 결과, 브라우저에서 바로.",
+    "category": "utilitas",
+    "url": "/ko/cara-konversi-satuan-panjang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi panjang",
+      "meter ke feet",
+      "convert length online",
+      "inci ke cm"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-suhu",
+    "title": "温度換算：摂氏、華氏、ケルビン",
+    "desc": "摂氏、華氏、ケルビンの間で瞬時に温度を換算する方法。ブラウザ内で直接処理。",
+    "category": "utilitas",
+    "url": "/ja/cara-konversi-suhu.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi suhu",
+      "celsius ke fahrenheit",
+      "convert temperature online",
+      "kalkulator suhu"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-konversi-suhu",
+    "title": "How to Convert Temperature: Celsius, Fahrenheit, and Kelvin",
+    "desc": "A guide to converting temperature between Celsius, Fahrenheit, and Kelvin instantly, right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-konversi-suhu.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi suhu",
+      "celsius ke fahrenheit",
+      "convert temperature online",
+      "kalkulator suhu"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-suhu",
+    "title": "如何转换温度：摄氏度、华氏度和开尔文",
+    "desc": "教你如何即时在摄氏度、华氏度和开尔文之间转换温度，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-konversi-suhu.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi suhu",
+      "celsius ke fahrenheit",
+      "convert temperature online",
+      "kalkulator suhu"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-suhu",
+    "title": "온도 단위 변환하는 방법: 섭씨, 화씨, 켈빈",
+    "desc": "섭씨, 화씨, 켈빈 사이의 온도 변환 방법을 안내합니다, 즉시 결과, 브라우저에서 바로.",
+    "category": "utilitas",
+    "url": "/ko/cara-konversi-suhu.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi suhu",
+      "celsius ke fahrenheit",
+      "convert temperature online",
+      "kalkulator suhu"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-satuan-volume",
+    "title": "体積の単位換算：リットル、ミリリットル、カップ、ガロン",
+    "desc": "体積の単位換算方法——ミリリットル、リットル、立方メートル、小さじ、大さじ、カップ、ガロン——結果はリアルタイム表示、ブラウザ内で直接処理。",
+    "category": "utilitas",
+    "url": "/ja/cara-konversi-satuan-volume.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi volume",
+      "liter ke ml",
+      "convert volume online",
+      "cup ke ml"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-konversi-satuan-volume",
+    "title": "How to Convert Volume Units: Liters, Milliliters, Cups, and Gallons",
+    "desc": "A guide to converting volume units — milliliters, liters, cubic meters, teaspoons, tablespoons, cups, and gallons — with real-time results, right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-konversi-satuan-volume.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi volume",
+      "liter ke ml",
+      "convert volume online",
+      "cup ke ml"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-satuan-volume",
+    "title": "如何转换体积单位：升、毫升、杯和加仑",
+    "desc": "教你如何转换体积单位——毫升、升、立方米、茶匙、汤匙、杯和加仑——实时显示结果，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-konversi-satuan-volume.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi volume",
+      "liter ke ml",
+      "convert volume online",
+      "cup ke ml"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-satuan-volume",
+    "title": "부피 단위 변환하는 방법: 리터, 밀리리터, 컵, 갤런",
+    "desc": "밀리리터, 리터, 세제곱미터, 티스푼, 테이블스푼, 컵, 갤런 등 부피 단위 변환 방법을 안내합니다, 실시간 결과, 브라우저에서 바로.",
+    "category": "utilitas",
+    "url": "/ko/cara-konversi-satuan-volume.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi volume",
+      "liter ke ml",
+      "convert volume online",
+      "cup ke ml"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-cari-simbol-unicode",
+    "title": "キーボードで入力しづらい記号を探してコピーする方法",
+    "desc": "特殊記号、句読点、矢印、箇条書き記号などのUnicode文字を検索してコピーする方法。ブラウザ内で直接処理。",
+    "category": "text",
+    "url": "/ja/cara-cari-simbol-unicode.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "simbol unicode",
+      "cari simbol spesial",
+      "karakter khusus online",
+      "symbol picker"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-cari-simbol-unicode",
+    "title": "How to Find and Copy Symbols You Can't Type on a Keyboard",
+    "desc": "A guide to finding and copying special symbols, punctuation, arrows, bullets, and other unicode characters, right in your browser.",
+    "category": "text",
+    "url": "/en/cara-cari-simbol-unicode.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "simbol unicode",
+      "cari simbol spesial",
+      "karakter khusus online",
+      "symbol picker"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-cari-simbol-unicode",
+    "title": "如何查找并复制键盘上难以打出的符号",
+    "desc": "教你如何查找并复制特殊符号、标点、箭头、项目符号和其他Unicode字符，全部在浏览器本地完成。",
+    "category": "text",
+    "url": "/zh/cara-cari-simbol-unicode.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "simbol unicode",
+      "cari simbol spesial",
+      "karakter khusus online",
+      "symbol picker"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-cari-simbol-unicode",
+    "title": "키보드로 치기 어려운 기호 찾아서 복사하는 방법",
+    "desc": "특수 기호, 문장부호, 화살표, 불릿 등 다양한 유니코드 문자를 찾아서 복사하는 방법을 안내합니다. 전부 브라우저에서.",
+    "category": "text",
+    "url": "/ko/cara-cari-simbol-unicode.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "simbol unicode",
+      "cari simbol spesial",
+      "karakter khusus online",
+      "symbol picker"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-main-gesture-glitch",
+    "title": "手の動きから幾何学模様を作るジェスチャーグリッチの遊び方",
+    "desc": "Gesture Glitchの遊び方——カメラに指をかざすとグリッチ効果の幾何学模様がリアルタイムで表示される、手検出はブラウザ内で直接処理、アップロードなし。",
+    "category": "utilitas",
+    "url": "/ja/cara-main-gesture-glitch.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "gesture glitch",
+      "deteksi tangan kamera",
+      "hand gesture online"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-main-gesture-glitch",
+    "title": "How to Play Gesture Glitch, Geometric Shapes from Hand Movement",
+    "desc": "A guide to playing Gesture Glitch — point your fingers at the camera and watch glitch geometric shapes appear in real time, hand detection right in your browser with no upload.",
+    "category": "utilitas",
+    "url": "/en/cara-main-gesture-glitch.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "gesture glitch",
+      "deteksi tangan kamera",
+      "hand gesture online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-main-gesture-glitch",
+    "title": "如何玩Gesture Glitch，用手势生成几何图形",
+    "desc": "教你如何玩Gesture Glitch——把手指对准摄像头，实时看到故障风几何图形出现，手势检测全部在浏览器本地完成，无需上传。",
+    "category": "utilitas",
+    "url": "/zh/cara-main-gesture-glitch.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "gesture glitch",
+      "deteksi tangan kamera",
+      "hand gesture online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-main-gesture-glitch",
+    "title": "손 제스처로 도형을 만드는 Gesture Glitch 사용법",
+    "desc": "Gesture Glitch 사용법을 안내합니다 — 카메라에 손가락을 비추면 실시간으로 글리치 도형이 나타납니다, 손 인식 전부 브라우저에서, 업로드 없이.",
+    "category": "utilitas",
+    "url": "/ko/cara-main-gesture-glitch.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "gesture glitch",
+      "deteksi tangan kamera",
+      "hand gesture online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-buat-meme",
+    "title": "自分の画像からミームを作る方法（無料・透かしなし）",
+    "desc": "自分の画像からミームを作る方法。好きなだけテキストを追加し、位置・サイズ・スタイルを調整、ブラウザ内で直接処理。",
+    "category": "image",
+    "url": "/ja/cara-buat-meme.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "meme generator",
+      "cara buat meme",
+      "bikin meme online gratis",
+      "meme maker tanpa watermark"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-buat-meme",
+    "title": "How to Make Your Own Meme from an Image, Free and Watermark-Free",
+    "desc": "A guide to making a meme from your own image, adding as much text as you want, with full control over position, size, and style, right in your browser.",
+    "category": "image",
+    "url": "/en/cara-buat-meme.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "meme generator",
+      "cara buat meme",
+      "bikin meme online gratis",
+      "meme maker tanpa watermark"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-buat-meme",
+    "title": "如何用自己的图片制作表情包，免费无水印",
+    "desc": "教你如何用自己的图片制作表情包，添加任意数量的文字，自由调整位置、大小和样式，全部在浏览器本地完成。",
+    "category": "image",
+    "url": "/zh/cara-buat-meme.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "meme generator",
+      "cara buat meme",
+      "bikin meme online gratis",
+      "meme maker tanpa watermark"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-buat-meme",
+    "title": "내 사진으로 직접 밈 만드는 방법, 무료 워터마크 없음",
+    "desc": "내 이미지로 밈을 만드는 방법을 안내합니다. 원하는 만큼 텍스트를 추가하고, 위치와 크기, 스타일을 조정하세요. 전부 브라우저에서.",
+    "category": "image",
+    "url": "/ko/cara-buat-meme.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "meme generator",
+      "cara buat meme",
+      "bikin meme online gratis",
+      "meme maker tanpa watermark"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-gambar-ke-pdf",
+    "title": "How to Turn Several Images into a Single PDF File",
+    "desc": "A guide to combining several images into a single PDF file, setting the order and page size, right in your browser with no upload to a server.",
+    "category": "convert",
+    "url": "/en/cara-gambar-ke-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "gambar ke pdf",
+      "image to pdf online",
+      "ubah foto jadi pdf",
+      "gabung foto jadi pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-gambar-ke-pdf",
+    "title": "如何将多张图片合并为一个PDF文件",
+    "desc": "教你如何将多张图片合并为一个PDF文件，调整顺序和页面大小，全部在浏览器本地完成，无需上传服务器。",
+    "category": "convert",
+    "url": "/zh/cara-gambar-ke-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "gambar ke pdf",
+      "image to pdf online",
+      "ubah foto jadi pdf",
+      "gabung foto jadi pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-gambar-ke-pdf",
+    "title": "여러 이미지를 하나의 PDF 파일로 바꾸는 방법",
+    "desc": "여러 이미지를 하나의 PDF 파일로 합치는 방법을 안내합니다. 순서와 페이지 크기를 조정하세요. 전부 브라우저에서, 서버 업로드 없이.",
+    "category": "convert",
+    "url": "/ko/cara-gambar-ke-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "gambar ke pdf",
+      "image to pdf online",
+      "ubah foto jadi pdf",
+      "gabung foto jadi pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-perbesar-resolusi-gambar",
+    "title": "画質を落とさず画像解像度を4倍に拡大する方法",
+    "desc": "AIで画像解像度を最大4倍に拡大する方法。通常写真とイラスト/アニメの両方に対応、ブラウザ内で直接処理、サーバーへのアップロードなし。",
+    "category": "image",
+    "url": "/ja/cara-perbesar-resolusi-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "upscale gambar",
+      "perbesar resolusi foto",
+      "image upscaler online",
+      "perbesar gambar 4x"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-perbesar-resolusi-gambar",
+    "title": "How to Increase an Image's Resolution Without Pixelating (4x)",
+    "desc": "A guide to increasing an image's resolution up to 4x using AI, supporting both general photos and illustrations/anime, right in your browser with no upload to a server.",
+    "category": "image",
+    "url": "/en/cara-perbesar-resolusi-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "upscale gambar",
+      "perbesar resolusi foto",
+      "image upscaler online",
+      "perbesar gambar 4x"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-perbesar-resolusi-gambar",
+    "title": "如何在不失真的情况下放大图片分辨率（4倍）",
+    "desc": "教你如何用AI将图片分辨率放大至4倍，支持普通照片和插画/动漫风格，全部在浏览器本地完成，无需上传到服务器。",
+    "category": "image",
+    "url": "/zh/cara-perbesar-resolusi-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "upscale gambar",
+      "perbesar resolusi foto",
+      "image upscaler online",
+      "perbesar gambar 4x"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-perbesar-resolusi-gambar",
+    "title": "깨짐 없이 이미지 해상도를 높이는 방법(4배)",
+    "desc": "AI로 이미지 해상도를 4배까지 높이는 방법을 안내합니다, 일반 사진과 일러스트/애니메 모두 지원, 브라우저에서 바로, 서버 업로드 없이.",
+    "category": "image",
+    "url": "/ko/cara-perbesar-resolusi-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "upscale gambar",
+      "perbesar resolusi foto",
+      "image upscaler online",
+      "perbesar gambar 4x"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-tambah-watermark-gambar",
+    "title": "作品を守るために写真に透かしを追加する方法",
+    "desc": "画像/写真にテキストまたはロゴの透かしを追加する方法。位置・回転・透明度を調整、ブラウザ内で直接処理、サーバーへのアップロードなし。",
+    "category": "image",
+    "url": "/ja/cara-tambah-watermark-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "watermark foto",
+      "tambah watermark gambar online",
+      "watermark logo foto",
+      "proteksi foto watermark"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-tambah-watermark-gambar",
+    "title": "How to Add a Watermark to a Photo to Protect Your Work",
+    "desc": "A guide to adding a text or logo watermark to an image/photo, with position, rotation, and transparency control, right in your browser with no upload to a server.",
+    "category": "image",
+    "url": "/en/cara-tambah-watermark-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "watermark foto",
+      "tambah watermark gambar online",
+      "watermark logo foto",
+      "proteksi foto watermark"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-tambah-watermark-gambar",
+    "title": "如何为照片添加水印以保护作品",
+    "desc": "教你如何为图片/照片添加文字或Logo水印，调整位置、旋转角度和透明度，全部在浏览器本地完成，无需上传到服务器。",
+    "category": "image",
+    "url": "/zh/cara-tambah-watermark-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "watermark foto",
+      "tambah watermark gambar online",
+      "watermark logo foto",
+      "proteksi foto watermark"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-tambah-watermark-gambar",
+    "title": "작품 보호를 위해 사진에 워터마크 추가하는 방법",
+    "desc": "이미지/사진에 텍스트 또는 로고 워터마크를 추가하는 방법을 안내합니다, 위치, 회전, 투명도 조정, 브라우저에서 바로, 서버 업로드 없이.",
+    "category": "image",
+    "url": "/ko/cara-tambah-watermark-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "watermark foto",
+      "tambah watermark gambar online",
+      "watermark logo foto",
+      "proteksi foto watermark"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-ekstrak-gambar-dari-pdf",
+    "title": "PDFファイル内のすべての画像を抽出する方法",
+    "desc": "PDFファイルに埋め込まれたすべての画像を抽出して一括ダウンロードする方法。ブラウザ内で直接処理、サーバーへのアップロードなし。",
+    "category": "convert",
+    "url": "/ja/cara-ekstrak-gambar-dari-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "ekstrak gambar dari pdf",
+      "ambil gambar pdf",
+      "extract images pdf online"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-ekstrak-gambar-dari-pdf",
+    "title": "How to Extract All Images Embedded in a PDF File",
+    "desc": "A guide to extracting all images embedded inside a PDF file and downloading them all at once, right in your browser with no upload to a server.",
+    "category": "convert",
+    "url": "/en/cara-ekstrak-gambar-dari-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "ekstrak gambar dari pdf",
+      "ambil gambar pdf",
+      "extract images pdf online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-ekstrak-gambar-dari-pdf",
+    "title": "如何提取PDF文件中的所有图片",
+    "desc": "教你如何提取PDF文件中嵌入的所有图片并一次性下载，全部在浏览器本地完成，无需上传服务器。",
+    "category": "convert",
+    "url": "/zh/cara-ekstrak-gambar-dari-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "ekstrak gambar dari pdf",
+      "ambil gambar pdf",
+      "extract images pdf online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-ekstrak-gambar-dari-pdf",
+    "title": "PDF 파일 안의 모든 이미지 추출하는 방법",
+    "desc": "PDF 파일에 삽입된 모든 이미지를 추출해서 한 번에 다운로드하는 방법을 안내합니다. 전부 브라우저에서, 서버 업로드 없이.",
+    "category": "convert",
+    "url": "/ko/cara-ekstrak-gambar-dari-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "ekstrak gambar dari pdf",
+      "ambil gambar pdf",
+      "extract images pdf online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-beri-nomor-halaman-pdf",
+    "title": "How to Add Page Numbers to a PDF for Theses and Papers",
+    "desc": "A guide to adding page numbers to a PDF, supporting Roman numerals and regular numbers within the same document, perfect for theses and papers, right in your browser.",
+    "category": "convert",
+    "url": "/en/cara-beri-nomor-halaman-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "nomor halaman pdf",
+      "page number pdf online",
+      "beri nomor halaman skripsi",
+      "nomor halaman romawi pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-beri-nomor-halaman-pdf",
+    "title": "如何为毕业论文和学术论文的PDF添加页码",
+    "desc": "教你如何给PDF添加页码，支持在同一文档中混合使用罗马数字和阿拉伯数字，适合毕业论文和学术论文，全部在浏览器本地完成。",
+    "category": "convert",
+    "url": "/zh/cara-beri-nomor-halaman-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "nomor halaman pdf",
+      "page number pdf online",
+      "beri nomor halaman skripsi",
+      "nomor halaman romawi pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-beri-nomor-halaman-pdf",
+    "title": "논문과 보고서용 PDF 페이지 번호 매기는 방법",
+    "desc": "PDF에 페이지 번호를 추가하는 방법을 안내합니다. 한 문서 안에서 로마 숫자와 일반 숫자를 함께 지원하며, 논문과 보고서에 적합합니다. 전부 브라우저에서.",
+    "category": "convert",
+    "url": "/ko/cara-beri-nomor-halaman-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "nomor halaman pdf",
+      "page number pdf online",
+      "beri nomor halaman skripsi",
+      "nomor halaman romawi pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-kasih-password-pdf",
+    "title": "How to Add a Password to a PDF So It Can't Be Opened by Just Anyone",
+    "desc": "A guide to protecting a PDF file with a password, choosing AES-128 or AES-256 encryption, right in your browser with no upload to a server.",
+    "category": "convert",
+    "url": "/en/cara-kasih-password-pdf.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "kasih password pdf",
+      "protect pdf online",
+      "kunci pdf dengan password",
+      "enkripsi pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-kasih-password-pdf",
+    "title": "如何为PDF文件添加密码，防止随意打开",
+    "desc": "教你如何用密码保护PDF文件，选择AES-128或AES-256加密级别，全部在浏览器本地完成，无需上传服务器。",
+    "category": "convert",
+    "url": "/zh/cara-kasih-password-pdf.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "kasih password pdf",
+      "protect pdf online",
+      "kunci pdf dengan password",
+      "enkripsi pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-kasih-password-pdf",
+    "title": "함부로 열리지 않도록 PDF 파일에 비밀번호 설정하는 방법",
+    "desc": "PDF 파일을 비밀번호로 보호하는 방법을 안내합니다. AES-128 또는 AES-256 암호화를 선택하세요, 브라우저에서 바로, 서버 업로드 없이.",
+    "category": "convert",
+    "url": "/ko/cara-kasih-password-pdf.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "kasih password pdf",
+      "protect pdf online",
+      "kunci pdf dengan password",
+      "enkripsi pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-hapus-password-pdf",
+    "title": "How to Remove a Password from a PDF You Know the Password To",
+    "desc": "A guide to removing a password from a PDF file whose password you already know, right in your browser with no upload to a server.",
+    "category": "convert",
+    "url": "/en/cara-hapus-password-pdf.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "hapus password pdf",
+      "remove password pdf online",
+      "buka password pdf",
+      "unlock pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-hapus-password-pdf",
+    "title": "如何从已知密码的PDF文件中删除密码",
+    "desc": "教你如何从已知密码的PDF文件中删除密码，全部在浏览器本地完成，无需上传服务器。",
+    "category": "convert",
+    "url": "/zh/cara-hapus-password-pdf.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "hapus password pdf",
+      "remove password pdf online",
+      "buka password pdf",
+      "unlock pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-hapus-password-pdf",
+    "title": "이미 알고 있는 비밀번호로 PDF 비밀번호 제거하는 방법",
+    "desc": "비밀번호를 이미 알고 있는 PDF 파일에서 비밀번호를 제거하는 방법을 안내합니다. 전부 브라우저에서, 서버 업로드 없이.",
+    "category": "convert",
+    "url": "/ko/cara-hapus-password-pdf.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "hapus password pdf",
+      "remove password pdf online",
+      "buka password pdf",
+      "unlock pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-putar-susun-ulang-pdf",
+    "title": "How to Rotate, Reorder, and Delete PDF Pages",
+    "desc": "A guide to rotating upside-down PDF pages, reordering them, or deleting pages you don't need, right in your browser.",
+    "category": "convert",
+    "url": "/en/cara-putar-susun-ulang-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "rotate pdf",
+      "putar halaman pdf",
+      "susun ulang halaman pdf",
+      "hapus halaman pdf online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-putar-susun-ulang-pdf",
+    "title": "如何旋转、重新排列和删除PDF页面",
+    "desc": "教你如何旋转方向颠倒的PDF页面、重新排列顺序，或删除不需要的页面，全部在浏览器本地完成。",
+    "category": "convert",
+    "url": "/zh/cara-putar-susun-ulang-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "rotate pdf",
+      "putar halaman pdf",
+      "susun ulang halaman pdf",
+      "hapus halaman pdf online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-putar-susun-ulang-pdf",
+    "title": "PDF 페이지 회전, 순서 변경, 삭제하는 방법",
+    "desc": "뒤집힌 PDF 페이지를 회전하거나, 순서를 재배열하거나, 필요 없는 페이지를 삭제하는 방법을 안내합니다, 브라우저에서 바로.",
+    "category": "convert",
+    "url": "/ko/cara-putar-susun-ulang-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "rotate pdf",
+      "putar halaman pdf",
+      "susun ulang halaman pdf",
+      "hapus halaman pdf online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-csv-json",
+    "title": "How to Convert CSV to JSON and Back",
+    "desc": "A guide to converting CSV to JSON or JSON to CSV, supporting large files with no lag, right in your browser with no upload to a server.",
+    "category": "text",
+    "url": "/en/cara-konversi-csv-json.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "csv to json",
+      "json to csv",
+      "convert csv online",
+      "csv json converter"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-csv-json",
+    "title": "如何将CSV转换为JSON，以及反向转换",
+    "desc": "教你如何将CSV转换为JSON或JSON转换为CSV，支持大文件不卡顿，全部在浏览器本地完成，无需上传服务器。",
+    "category": "text",
+    "url": "/zh/cara-konversi-csv-json.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "csv to json",
+      "json to csv",
+      "convert csv online",
+      "csv json converter"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-csv-json",
+    "title": "CSV를 JSON으로 바꾸는 방법(그 반대도)",
+    "desc": "CSV를 JSON으로 또는 JSON을 CSV로 변환하는 방법을 안내합니다, 큰 파일도 멈춤 없이, 브라우저에서 바로, 서버 업로드 없이.",
+    "category": "text",
+    "url": "/ko/cara-konversi-csv-json.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "csv to json",
+      "json to csv",
+      "convert csv online",
+      "csv json converter"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-cek-regex",
+    "title": "正規表現（Regex）パターンをオンラインでテストする方法",
+    "desc": "正規表現パターンをテストし、一致箇所を自動でハイライト表示、各キャプチャグループの詳細も確認。ブラウザ内で直接処理、サーバーへのアップロードなし。",
+    "category": "text",
+    "url": "/ja/cara-cek-regex.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "regex tester",
+      "cek regex online",
+      "uji regular expression",
+      "test regex"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-cek-regex",
+    "title": "How to Test Regular Expression (Regex) Patterns Online",
+    "desc": "A guide to testing a regex pattern, seeing automatically highlighted matches, and the detail of each capture group, right in your browser with no upload to a server.",
+    "category": "text",
+    "url": "/en/cara-cek-regex.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "regex tester",
+      "cek regex online",
+      "uji regular expression",
+      "test regex"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-cek-regex",
+    "title": "如何在线测试正则表达式（Regex）模式",
+    "desc": "教你如何测试正则表达式模式，自动高亮匹配结果，并查看每个捕获组的详情，全部在浏览器本地完成，无需上传服务器。",
+    "category": "text",
+    "url": "/zh/cara-cek-regex.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "regex tester",
+      "cek regex online",
+      "uji regular expression",
+      "test regex"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-cek-regex",
+    "title": "정규표현식(Regex) 패턴 온라인으로 테스트하는 방법",
+    "desc": "정규표현식 패턴을 테스트하고, 일치하는 부분을 자동으로 하이라이트하며, 각 캡처 그룹의 세부 정보를 확인하는 방법을 안내합니다. 전부 브라우저에서, 서버 업로드 없이.",
+    "category": "text",
+    "url": "/ko/cara-cek-regex.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "regex tester",
+      "cek regex online",
+      "uji regular expression",
+      "test regex"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-buat-slug-url",
+    "title": "記事タイトルからSEOフレンドリーなURLスラッグを作る方法",
+    "desc": "記事タイトルや商品名を、整ったSEOフレンドリーなURLスラッグに自動変換する方法。ブラウザ内で直接処理。",
+    "category": "text",
+    "url": "/ja/cara-buat-slug-url.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "slug generator",
+      "cara buat slug url",
+      "slug seo friendly",
+      "generate slug online"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-buat-slug-url",
+    "title": "How to Create an SEO-Friendly URL Slug from an Article Title",
+    "desc": "A guide to automatically turning an article title or product name into a clean, SEO-friendly URL slug, right in your browser.",
+    "category": "text",
+    "url": "/en/cara-buat-slug-url.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "slug generator",
+      "cara buat slug url",
+      "slug seo friendly",
+      "generate slug online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-buat-slug-url",
+    "title": "如何从文章标题生成SEO友好的URL Slug",
+    "desc": "教你如何自动把文章标题或产品名称转换成整洁、SEO友好的URL slug，全部在浏览器本地完成。",
+    "category": "text",
+    "url": "/zh/cara-buat-slug-url.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "slug generator",
+      "cara buat slug url",
+      "slug seo friendly",
+      "generate slug online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-buat-slug-url",
+    "title": "기사 제목으로 SEO 친화적인 URL 슬러그 만드는 방법",
+    "desc": "기사 제목이나 제품명을 깔끔하고 SEO 친화적인 URL 슬러그로 자동 변환하는 방법을 안내합니다. 전부 브라우저에서.",
+    "category": "text",
+    "url": "/ko/cara-buat-slug-url.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "slug generator",
+      "cara buat slug url",
+      "slug seo friendly",
+      "generate slug online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-encode-decode-url",
+    "title": "特殊文字のためのURLエンコード・デコード方法",
+    "desc": "テキストを安全なURL形式に変換（エンコード）、またはエンコードされたURLを元に戻す（デコード）方法。ブラウザ内で直接処理。",
+    "category": "text",
+    "url": "/ja/cara-encode-decode-url.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "url encoder",
+      "url decoder online",
+      "encode decode url",
+      "percent encoding"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-encode-decode-url",
+    "title": "How to Encode and Decode URLs for Special Characters",
+    "desc": "A guide to turning text into a safe URL format (encode) or reading an already-encoded URL back (decode), right in your browser.",
+    "category": "text",
+    "url": "/en/cara-encode-decode-url.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "url encoder",
+      "url decoder online",
+      "encode decode url",
+      "percent encoding"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-encode-decode-url",
+    "title": "如何对特殊字符进行URL编码和解码",
+    "desc": "教你如何将文本转换为安全的URL格式（编码），或将已编码的URL还原（解码），全部在浏览器本地完成。",
+    "category": "text",
+    "url": "/zh/cara-encode-decode-url.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "url encoder",
+      "url decoder online",
+      "encode decode url",
+      "percent encoding"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-encode-decode-url",
+    "title": "특수 문자를 위한 URL 인코딩/디코딩 방법",
+    "desc": "텍스트를 안전한 URL 형식으로 바꾸거나(인코딩), 이미 인코딩된 URL을 다시 읽는(디코딩) 방법을 안내합니다. 전부 브라우저에서.",
+    "category": "text",
+    "url": "/ko/cara-encode-decode-url.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "url encoder",
+      "url decoder online",
+      "encode decode url",
+      "percent encoding"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-ubah-case-teks",
+    "title": "文字の形式を変換する方法：UPPERCASE、camelCase、snake_case",
+    "desc": "テキストをUPPERCASE、lowercase、Title Case、camelCase、PascalCase、snake_case、kebab-caseに一括変換する方法。ブラウザ内で直接処理。",
+    "category": "text",
+    "url": "/ja/cara-ubah-case-teks.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "text case converter",
+      "ubah huruf besar kecil",
+      "camelcase converter",
+      "snake case online"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-ubah-case-teks",
+    "title": "How to Convert Text Case: UPPERCASE, camelCase, snake_case",
+    "desc": "A guide to converting text case to UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, or kebab-case all at once, right in your browser.",
+    "category": "text",
+    "url": "/en/cara-ubah-case-teks.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "text case converter",
+      "ubah huruf besar kecil",
+      "camelcase converter",
+      "snake case online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-ubah-case-teks",
+    "title": "如何转换文字大小写格式：UPPERCASE、camelCase、snake_case",
+    "desc": "教你如何一次性把文字转换为UPPERCASE、lowercase、Title Case、camelCase、PascalCase、snake_case或kebab-case，全部在浏览器本地完成。",
+    "category": "text",
+    "url": "/zh/cara-ubah-case-teks.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "text case converter",
+      "ubah huruf besar kecil",
+      "camelcase converter",
+      "snake case online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-ubah-case-teks",
+    "title": "텍스트 대소문자 형식 바꾸는 방법: UPPERCASE, camelCase, snake_case",
+    "desc": "텍스트를 UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, kebab-case로 한 번에 바꾸는 방법을 안내합니다, 브라우저에서 바로.",
+    "category": "text",
+    "url": "/ko/cara-ubah-case-teks.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "text case converter",
+      "ubah huruf besar kecil",
+      "camelcase converter",
+      "snake case online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-resize-gambar",
+    "title": "How to Resize an Image Without Distorting It",
+    "desc": "A guide to resizing an image's dimensions with or without locking the aspect ratio, right in your browser with no upload to a server.",
+    "category": "image",
+    "url": "/en/cara-resize-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "resize gambar",
+      "ubah ukuran foto online",
+      "resize image",
+      "perbesar perkecil foto"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-resize-gambar",
+    "title": "如何调整图片尺寸（大小）且不变形",
+    "desc": "教你如何调整图片尺寸，可选锁定或不锁定宽高比，全部在浏览器本地完成，无需上传到服务器。",
+    "category": "image",
+    "url": "/zh/cara-resize-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "resize gambar",
+      "ubah ukuran foto online",
+      "resize image",
+      "perbesar perkecil foto"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-resize-gambar",
+    "title": "이미지 비율 유지하며 크기(치수) 바꾸는 방법",
+    "desc": "비율 고정 여부를 선택해 이미지 크기(치수)를 바꾸는 방법을 안내합니다, 브라우저에서 바로, 서버 업로드 없이.",
+    "category": "image",
+    "url": "/ko/cara-resize-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "resize gambar",
+      "ubah ukuran foto online",
+      "resize image",
+      "perbesar perkecil foto"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-crop-gambar",
+    "title": "How to Crop an Image to the Right Ratio",
+    "desc": "A guide to cropping a part of an image to fit your needs, freely or at a fixed ratio like 1:1, 4:3, 16:9, and more, right in your browser.",
+    "category": "image",
+    "url": "/en/cara-crop-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "crop gambar online",
+      "potong foto",
+      "crop foto rasio",
+      "crop image 1:1"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-crop-gambar",
+    "title": "如何按比例裁剪图片",
+    "desc": "教你如何按需裁剪图片的指定区域，自由比例或1:1、4:3、16:9等固定比例，全部在浏览器本地完成。",
+    "category": "image",
+    "url": "/zh/cara-crop-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "crop gambar online",
+      "potong foto",
+      "crop foto rasio",
+      "crop image 1:1"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-crop-gambar",
+    "title": "원하는 비율로 이미지 자르는 방법",
+    "desc": "필요에 맞게 이미지를 자르는 방법을 안내합니다. 자유 비율 또는 1:1, 4:3, 16:9 등 지정 비율로. 전부 브라우저에서.",
+    "category": "image",
+    "url": "/ko/cara-crop-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "crop gambar online",
+      "potong foto",
+      "crop foto rasio",
+      "crop image 1:1"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-hitung-umur",
+    "title": "正確な年齢と2つの日付の差を計算する方法",
+    "desc": "正確な年齢を年・月・日で計算する方法、または2つの日付の差を計算する方法。ブラウザ内で直接処理。",
+    "category": "utilitas",
+    "url": "/ja/cara-hitung-umur.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "kalkulator umur",
+      "hitung umur online",
+      "selisih tanggal",
+      "age calculator"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-hitung-umur",
+    "title": "How to Calculate Exact Age and the Difference Between Two Dates",
+    "desc": "A guide to calculating your exact age in years, months, and days, or the difference between two dates, right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-hitung-umur.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "kalkulator umur",
+      "hitung umur online",
+      "selisih tanggal",
+      "age calculator"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-hitung-umur",
+    "title": "如何精确计算年龄和两个日期之间的差值",
+    "desc": "教你如何精确计算年龄（年、月、日），或计算两个日期之间的差值，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-hitung-umur.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "kalkulator umur",
+      "hitung umur online",
+      "selisih tanggal",
+      "age calculator"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-hitung-umur",
+    "title": "정확한 나이와 두 날짜 사이의 차이 계산하는 방법",
+    "desc": "정확한 나이를 연, 월, 일 단위로 계산하거나 두 날짜 사이의 차이를 계산하는 방법을 안내합니다. 브라우저에서 바로.",
+    "category": "utilitas",
+    "url": "/ko/cara-hitung-umur.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "kalkulator umur",
+      "hitung umur online",
+      "selisih tanggal",
+      "age calculator"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-kompres-pdf",
+    "title": "How to Shrink a PDF File's Size Without Extra Software",
+    "desc": "A guide to compressing a PDF file's size by shrinking the images inside it, right in your browser, with no upload to a server and no software to install.",
+    "category": "convert",
+    "url": "/en/cara-kompres-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "kompres pdf",
+      "perkecil ukuran pdf",
+      "compress pdf online",
+      "cara mengecilkan ukuran pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-kompres-pdf",
+    "title": "如何压缩PDF文件大小，无需额外软件",
+    "desc": "教你如何通过缩小PDF内的图片来压缩文件大小，全部在浏览器本地完成，无需上传服务器，无需安装软件。",
+    "category": "convert",
+    "url": "/zh/cara-kompres-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "kompres pdf",
+      "perkecil ukuran pdf",
+      "compress pdf online",
+      "cara mengecilkan ukuran pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-kompres-pdf",
+    "title": "추가 앱 없이 PDF 파일 크기 줄이는 방법",
+    "desc": "PDF 안의 이미지를 압축해 파일 크기를 줄이는 방법을 안내합니다, 브라우저에서 바로, 서버 업로드와 앱 설치 없이.",
+    "category": "convert",
+    "url": "/ko/cara-kompres-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "kompres pdf",
+      "perkecil ukuran pdf",
+      "compress pdf online",
+      "cara mengecilkan ukuran pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-hapus-background-foto",
+    "title": "写真の背景を透明にする方法（ブラウザ内で直接処理）",
+    "desc": "AIで写真の背景を自動的に消す方法。ブラウザ内で直接処理、サーバーへのアップロードなし、結果は透明PNG。",
+    "category": "image",
+    "url": "/ja/cara-hapus-background-foto.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "hapus background foto",
+      "remove background online",
+      "background transparan",
+      "hapus bg foto ai"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-hapus-background-foto",
+    "title": "How to Make a Photo Background Transparent, Right in Your Browser",
+    "desc": "A guide to automatically removing a photo's background using AI, right in your browser, with no upload to a server, resulting in a transparent PNG.",
+    "category": "image",
+    "url": "/en/cara-hapus-background-foto.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "hapus background foto",
+      "remove background online",
+      "background transparan",
+      "hapus bg foto ai"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-hapus-background-foto",
+    "title": "如何将照片背景去除变透明，全部在浏览器完成",
+    "desc": "教你如何使用AI自动去除照片背景，全部在浏览器本地完成，无需上传服务器，结果为透明PNG。",
+    "category": "image",
+    "url": "/zh/cara-hapus-background-foto.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "hapus background foto",
+      "remove background online",
+      "background transparan",
+      "hapus bg foto ai"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-hapus-background-foto",
+    "title": "사진 배경을 투명하게 제거하는 방법, 브라우저에서 바로",
+    "desc": "AI로 사진 배경을 자동으로 제거하는 방법을 안내합니다. 브라우저에서 바로, 서버 업로드 없이, 결과는 투명 PNG입니다.",
+    "category": "image",
+    "url": "/ko/cara-hapus-background-foto.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "hapus background foto",
+      "remove background online",
+      "background transparan",
+      "hapus bg foto ai"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-pdf-ke-word",
+    "title": "How to Convert a PDF to Word (DOCX) with Tables and Images Intact",
+    "desc": "A guide to converting a PDF to Word (.docx) complete with text, tables, and images, including OCR for scanned pages, right in your browser.",
+    "category": "convert",
+    "url": "/en/cara-konversi-pdf-ke-word.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "pdf ke word",
+      "convert pdf ke docx",
+      "pdf to word online",
+      "ubah pdf jadi word"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-pdf-ke-word",
+    "title": "如何将PDF转换为Word（DOCX），完整保留表格和图片",
+    "desc": "教你如何将PDF转换为Word（.docx），完整保留文字、表格和图片，包括对扫描页面进行OCR识别，全部在浏览器本地完成。",
+    "category": "convert",
+    "url": "/zh/cara-konversi-pdf-ke-word.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "pdf ke word",
+      "convert pdf ke docx",
+      "pdf to word online",
+      "ubah pdf jadi word"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-pdf-ke-word",
+    "title": "표와 이미지까지 포함해 PDF를 Word(DOCX)로 바꾸는 방법",
+    "desc": "텍스트, 표, 이미지까지 포함해 PDF를 Word(.docx)로 변환하는 방법을 안내합니다, 스캔한 페이지를 위한 OCR 포함, 브라우저에서 바로.",
+    "category": "convert",
+    "url": "/ko/cara-konversi-pdf-ke-word.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "pdf ke word",
+      "convert pdf ke docx",
+      "pdf to word online",
+      "ubah pdf jadi word"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-format-gambar",
+    "title": "画像形式をPNG、JPG、WebPに変換する方法",
+    "desc": "画像をPNG、JPG、WebP、AVIFに変換する方法。複数ファイルまとめて処理可能、ブラウザ内で直接処理、サーバーへのアップロードなし。",
+    "category": "image",
+    "url": "/ja/cara-konversi-format-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "convert format gambar",
+      "ubah png ke jpg",
+      "jpg ke webp",
+      "konversi gambar online"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-konversi-format-gambar",
+    "title": "How to Convert an Image to PNG, JPG, or WebP",
+    "desc": "A guide to converting an image's format to PNG, JPG, WebP, or AVIF, with support for many files at once, right in your browser with no upload to a server.",
+    "category": "image",
+    "url": "/en/cara-konversi-format-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "convert format gambar",
+      "ubah png ke jpg",
+      "jpg ke webp",
+      "konversi gambar online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-format-gambar",
+    "title": "如何将图片格式转换为PNG、JPG或WebP",
+    "desc": "教你如何将图片转换为PNG、JPG、WebP或AVIF格式，支持多文件批量处理，全部在浏览器本地完成，无需上传服务器。",
+    "category": "image",
+    "url": "/zh/cara-konversi-format-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "convert format gambar",
+      "ubah png ke jpg",
+      "jpg ke webp",
+      "konversi gambar online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-format-gambar",
+    "title": "이미지를 PNG, JPG, WebP로 형식 변환하는 방법",
+    "desc": "이미지를 PNG, JPG, WebP, AVIF로 형식 변환하는 방법을 안내합니다, 여러 파일을 한 번에, 브라우저에서 바로, 서버 업로드 없이.",
+    "category": "image",
+    "url": "/ko/cara-konversi-format-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "convert format gambar",
+      "ubah png ke jpg",
+      "jpg ke webp",
+      "konversi gambar online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-buat-uuid",
+    "title": "開発に使えるUUID v4の作り方",
+    "desc": "必要な数だけランダムなUUID v4を生成する方法。1つずつ、または一括でコピーでき、ブラウザ内で直接処理、サーバーへのアップロードは一切ありません。",
+    "category": "utilitas",
+    "url": "/ja/cara-buat-uuid.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "uuid generator",
+      "cara buat uuid",
+      "generate uuid v4 online",
+      "uuid online"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-buat-uuid",
+    "title": "How to Generate a UUID v4 for Development",
+    "desc": "A guide to generating as many random UUID v4s as you need, copying one or all at once, right in your browser with no upload to any server.",
+    "category": "utilitas",
+    "url": "/en/cara-buat-uuid.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "uuid generator",
+      "cara buat uuid",
+      "generate uuid v4 online",
+      "uuid online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-buat-uuid",
+    "title": "如何生成UUID v4用于开发需求",
+    "desc": "教你如何按需批量生成随机UUID v4，单个复制或一次性全部复制，全部在浏览器本地完成，不上传服务器。",
+    "category": "utilitas",
+    "url": "/zh/cara-buat-uuid.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "uuid generator",
+      "cara buat uuid",
+      "generate uuid v4 online",
+      "uuid online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-buat-uuid",
+    "title": "개발용 UUID v4 만드는 방법",
+    "desc": "필요한 만큼 무작위 UUID v4를 생성하는 방법을 안내합니다. 하나씩 또는 한꺼번에 복사하세요. 전부 브라우저에서, 서버 업로드 없이.",
+    "category": "utilitas",
+    "url": "/ko/cara-buat-uuid.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "uuid generator",
+      "cara buat uuid",
+      "generate uuid v4 online",
+      "uuid online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-encode-decode-base64",
+    "title": "テキストをBase64にエンコード・デコードする方法",
+    "desc": "テキストをBase64にエンコード、またはBase64を通常のテキストに戻す方法。絵文字や非ラテン文字にも対応、ブラウザ内で直接処理。",
+    "category": "text",
+    "url": "/ja/cara-encode-decode-base64.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "base64 encoder",
+      "base64 decoder online",
+      "encode decode base64",
+      "cara decode base64"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-encode-decode-base64",
+    "title": "How to Encode and Decode Text to Base64",
+    "desc": "A guide to encoding text to base64 or decoding base64 back to plain text, with support for emoji and non-Latin characters, right in your browser.",
+    "category": "text",
+    "url": "/en/cara-encode-decode-base64.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "base64 encoder",
+      "base64 decoder online",
+      "encode decode base64",
+      "cara decode base64"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-encode-decode-base64",
+    "title": "如何将文本编码和解码为Base64",
+    "desc": "教你如何将文本编码为base64，或将base64解码回普通文本，支持emoji和非拉丁字符，全部在浏览器本地完成。",
+    "category": "text",
+    "url": "/zh/cara-encode-decode-base64.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "base64 encoder",
+      "base64 decoder online",
+      "encode decode base64",
+      "cara decode base64"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-encode-decode-base64",
+    "title": "텍스트를 Base64로 인코딩/디코딩하는 방법",
+    "desc": "텍스트를 Base64로 인코딩하거나 다시 일반 텍스트로 디코딩하는 방법을 안내합니다. 이모지와 비라틴 문자도 지원합니다. 전부 브라우저에서.",
+    "category": "text",
+    "url": "/ko/cara-encode-decode-base64.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "base64 encoder",
+      "base64 decoder online",
+      "encode decode base64",
+      "cara decode base64"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-mata-uang",
+    "title": "ルピアを米ドル・ユーロなどに換算する方法",
+    "desc": "更新時期が明記されたオフライン参考レートを使った通貨換算方法——リアルタイムレートではありません。ブラウザ内で直接処理。",
+    "category": "utilitas",
+    "url": "/ja/cara-konversi-mata-uang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi mata uang",
+      "kurs rupiah ke dolar",
+      "convert currency online",
+      "kurs euro"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-konversi-mata-uang",
+    "title": "How to Convert Indonesian Rupiah to Dollars, Euros, and More",
+    "desc": "A guide to converting currency using a reference rate labeled with its update period — not a live rate — right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-konversi-mata-uang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi mata uang",
+      "kurs rupiah ke dolar",
+      "convert currency online",
+      "kurs euro"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-mata-uang",
+    "title": "如何将印尼盾转换为美元、欧元等货币",
+    "desc": "教你如何使用标注更新周期的离线参考汇率进行货币转换——不是实时汇率，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-konversi-mata-uang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi mata uang",
+      "kurs rupiah ke dolar",
+      "convert currency online",
+      "kurs euro"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-mata-uang",
+    "title": "루피아를 달러, 유로 등으로 환전하는 방법",
+    "desc": "업데이트 주기가 표시된 오프라인 참고 환율을 사용하는 환전 방법을 안내합니다 — 실시간 환율이 아닙니다, 브라우저에서 바로.",
+    "category": "utilitas",
+    "url": "/ko/cara-konversi-mata-uang.html",
+    "date": "2026-10-01",
+    "icon": "default",
+    "keywords": [
+      "konversi mata uang",
+      "kurs rupiah ke dolar",
+      "convert currency online",
+      "kurs euro"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-ekstrak-teks-dari-gambar",
+    "title": "写真や画像からテキストを抽出する方法（OCR）",
+    "desc": "写真や画像からOCRでテキストを抽出する方法。枚数制限なし、ブラウザ内で直接処理、結果は1つのテキストファイルにまとめられます。",
+    "category": "text",
+    "url": "/ja/cara-ekstrak-teks-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "ocr online",
+      "ekstrak teks dari gambar",
+      "image to text",
+      "ambil teks dari foto"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-ekstrak-teks-dari-gambar",
+    "title": "How to Extract Text from a Photo or Image (OCR)",
+    "desc": "A guide to extracting text from a photo or image (OCR) with no limit on the number of images, right in your browser, merged into one text file.",
+    "category": "text",
+    "url": "/en/cara-ekstrak-teks-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "ocr online",
+      "ekstrak teks dari gambar",
+      "image to text",
+      "ambil teks dari foto"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-ekstrak-teks-dari-gambar",
+    "title": "如何从照片或图片中提取文字（OCR）",
+    "desc": "教你如何从照片或图片中提取文字（OCR），不限图片数量，全部在浏览器本地完成，结果合并成一个文本文件。",
+    "category": "text",
+    "url": "/zh/cara-ekstrak-teks-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "ocr online",
+      "ekstrak teks dari gambar",
+      "image to text",
+      "ambil teks dari foto"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-ekstrak-teks-dari-gambar",
+    "title": "사진이나 이미지에서 텍스트 추출하는 방법(OCR)",
+    "desc": "사진이나 이미지에서 텍스트를 추출하는(OCR) 방법을 안내합니다. 이미지 개수 제한 없이, 전부 브라우저에서, 결과는 하나의 텍스트 파일로 합쳐집니다.",
+    "category": "text",
+    "url": "/ko/cara-ekstrak-teks-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "ocr online",
+      "ekstrak teks dari gambar",
+      "image to text",
+      "ambil teks dari foto"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-buat-qr-code",
+    "title": "How to Create Your Own QR Code with a Logo, Free and Watermark-Free",
+    "desc": "A guide to making your own QR code complete with a custom logo and colors, right in your browser, with no upload to any server and no intrusive watermark.",
+    "category": "utilitas",
+    "url": "/en/cara-buat-qr-code.html",
+    "date": "2026-10-01",
+    "icon": "qr",
+    "keywords": [
+      "cara buat qr code",
+      "qr code generator",
+      "qr code dengan logo",
+      "buat qr code gratis",
+      "qr code online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-buat-qr-code",
+    "title": "如何制作带Logo的自定义二维码，免费无水印",
+    "desc": "教你如何制作带自定义Logo和颜色的二维码，全部在浏览器本地完成，不上传服务器，也没有烦人的水印。",
+    "category": "utilitas",
+    "url": "/zh/cara-buat-qr-code.html",
+    "date": "2026-10-01",
+    "icon": "qr",
+    "keywords": [
+      "cara buat qr code",
+      "qr code generator",
+      "qr code dengan logo",
+      "buat qr code gratis",
+      "qr code online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-buat-qr-code",
+    "title": "로고가 들어간 QR 코드 직접 만드는 방법, 무료 워터마크 없음",
+    "desc": "커스텀 로고와 색상이 들어간 QR 코드를 만드는 방법을 안내합니다. 브라우저에서 바로, 서버 업로드 없이, 거슬리는 워터마크 없이.",
+    "category": "utilitas",
+    "url": "/ko/cara-buat-qr-code.html",
+    "date": "2026-10-01",
+    "icon": "qr",
+    "keywords": [
+      "cara buat qr code",
+      "qr code generator",
+      "qr code dengan logo",
+      "buat qr code gratis",
+      "qr code online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-buat-password-kuat",
+    "title": "推測されにくい強力なパスワードを作る方法",
+    "desc": "推測されにくい強力なランダムパスワードを作る方法。ブラウザ内で直接生成され、サーバーに送信されることは一切ありません。",
+    "category": "utilitas",
+    "url": "/ja/cara-buat-password-kuat.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "password generator",
+      "cara buat password kuat",
+      "generate password acak",
+      "password aman",
+      "buat password online"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-buat-password-kuat",
+    "title": "How to Create a Strong, Hard-to-Guess Password",
+    "desc": "A guide to generating a strong, random password that's hard to guess, processed entirely in your browser and never sent to any server.",
+    "category": "utilitas",
+    "url": "/en/cara-buat-password-kuat.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "password generator",
+      "cara buat password kuat",
+      "generate password acak",
+      "password aman",
+      "buat password online"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-buat-password-kuat",
+    "title": "如何生成一个难以破解的强密码",
+    "desc": "教你如何生成强随机密码，全部在浏览器本地处理，绝不会发送到任何服务器。",
+    "category": "utilitas",
+    "url": "/zh/cara-buat-password-kuat.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "password generator",
+      "cara buat password kuat",
+      "generate password acak",
+      "password aman",
+      "buat password online"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-buat-password-kuat",
+    "title": "추측하기 어려운 강력한 비밀번호 만드는 방법",
+    "desc": "추측하기 어려운 강력하고 무작위적인 비밀번호를 만드는 방법을 안내합니다. 브라우저에서 바로 처리되며 어떤 서버로도 전송되지 않습니다.",
+    "category": "utilitas",
+    "url": "/ko/cara-buat-password-kuat.html",
+    "date": "2026-10-01",
+    "icon": "key",
+    "keywords": [
+      "password generator",
+      "cara buat password kuat",
+      "generate password acak",
+      "password aman",
+      "buat password online"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-format-json",
+    "title": "How to Clean Up and Validate Messy JSON",
+    "desc": "A guide to formatting messy JSON, minifying it to a single line, and finding exactly where a syntax error is, right in your browser.",
+    "category": "text",
+    "url": "/en/cara-format-json.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "json formatter",
+      "cara format json",
+      "json validator online",
+      "rapikan json",
+      "json minify"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-format-json",
+    "title": "如何整理和验证杂乱的JSON",
+    "desc": "教你如何整理（格式化）杂乱的JSON，压缩成一行，并定位语法错误位置，全部在浏览器本地完成。",
+    "category": "text",
+    "url": "/zh/cara-format-json.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "json formatter",
+      "cara format json",
+      "json validator online",
+      "rapikan json",
+      "json minify"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-format-json",
+    "title": "지저분한 JSON 정리하고 검증하는 방법",
+    "desc": "지저분한 JSON을 정리(포맷)하고, 한 줄로 압축(minify)하고, 구문 오류 위치를 찾는 방법을 안내합니다. 전부 브라우저에서.",
+    "category": "text",
+    "url": "/ko/cara-format-json.html",
+    "date": "2026-10-01",
+    "icon": "code",
+    "keywords": [
+      "json formatter",
+      "cara format json",
+      "json validator online",
+      "rapikan json",
+      "json minify"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-cek-hash-file",
+    "title": "How to Check a File Hash (MD5, SHA-256) to Verify Authenticity",
+    "desc": "A guide to computing MD5, SHA-1, SHA-256 hashes of a file or text and comparing them to confirm a file isn't corrupted or altered, right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-cek-hash-file.html",
+    "date": "2026-10-01",
+    "icon": "hash",
+    "keywords": [
+      "cek hash file",
+      "md5 checker",
+      "sha256 online",
+      "verifikasi file",
+      "file hash checker"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-cek-hash-file",
+    "title": "如何检查文件哈希值（MD5、SHA-256）以验证文件完整性",
+    "desc": "教你如何计算文件或文本的MD5、SHA-1、SHA-256哈希值并进行比对，确保文件没有损坏或被篡改，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-cek-hash-file.html",
+    "date": "2026-10-01",
+    "icon": "hash",
+    "keywords": [
+      "cek hash file",
+      "md5 checker",
+      "sha256 online",
+      "verifikasi file",
+      "file hash checker"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-cek-hash-file",
+    "title": "진위 확인을 위한 파일 해시(MD5, SHA-256) 확인 방법",
+    "desc": "파일이나 텍스트의 MD5, SHA-1, SHA-256 해시를 계산하고 비교해 파일이 손상되거나 변조되지 않았는지 확인하는 방법을 안내합니다. 전부 브라우저에서.",
+    "category": "utilitas",
+    "url": "/ko/cara-cek-hash-file.html",
+    "date": "2026-10-01",
+    "icon": "hash",
+    "keywords": [
+      "cek hash file",
+      "md5 checker",
+      "sha256 online",
+      "verifikasi file",
+      "file hash checker"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-tambah-watermark-pdf",
+    "title": "How to Add a Text or Logo Watermark to a PDF",
+    "desc": "A guide to adding a text or logo watermark to a PDF file, with position, rotation, and transparency control, right in your browser with no upload to a server.",
+    "category": "convert",
+    "url": "/en/cara-tambah-watermark-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "watermark pdf",
+      "cara tambah watermark pdf",
+      "beri watermark pdf online",
+      "watermark logo pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-tambah-watermark-pdf",
+    "title": "如何为PDF添加文字或Logo水印",
+    "desc": "教你如何为PDF文件添加文字或Logo水印，调整位置、旋转角度和透明度，全部在浏览器本地完成，无需上传到服务器。",
+    "category": "convert",
+    "url": "/zh/cara-tambah-watermark-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "watermark pdf",
+      "cara tambah watermark pdf",
+      "beri watermark pdf online",
+      "watermark logo pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-tambah-watermark-pdf",
+    "title": "PDF에 텍스트 또는 로고 워터마크 추가하는 방법",
+    "desc": "PDF 파일에 텍스트 또는 로고 워터마크를 추가하는 방법을 안내합니다, 위치, 회전, 투명도 조정, 브라우저에서 바로, 서버 업로드 없이.",
+    "category": "convert",
+    "url": "/ko/cara-tambah-watermark-pdf.html",
+    "date": "2026-10-01",
+    "icon": "pdf",
+    "keywords": [
+      "watermark pdf",
+      "cara tambah watermark pdf",
+      "beri watermark pdf online",
+      "watermark logo pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-konversi-unix-timestamp",
+    "title": "Unixタイムスタンプを日付に変換する方法（その逆も）",
+    "desc": "Unixタイムスタンプを読みやすい日付に変換する方法、またはその逆。秒とミリ秒の両形式に対応、ブラウザ内で直接処理。",
+    "category": "utilitas",
+    "url": "/ja/cara-konversi-unix-timestamp.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "unix timestamp converter",
+      "timestamp ke tanggal",
+      "convert timestamp online",
+      "epoch converter"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-konversi-unix-timestamp",
+    "title": "How to Convert a Unix Timestamp to a Date (and Back)",
+    "desc": "A guide to converting a Unix timestamp into an easy-to-read date, or the reverse, supporting seconds and milliseconds formats, right in your browser.",
+    "category": "utilitas",
+    "url": "/en/cara-konversi-unix-timestamp.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "unix timestamp converter",
+      "timestamp ke tanggal",
+      "convert timestamp online",
+      "epoch converter"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-konversi-unix-timestamp",
+    "title": "如何将Unix时间戳转换为日期（及反向转换）",
+    "desc": "教你如何将Unix时间戳转换为易读的日期，或反向转换，支持秒和毫秒格式，全部在浏览器本地完成。",
+    "category": "utilitas",
+    "url": "/zh/cara-konversi-unix-timestamp.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "unix timestamp converter",
+      "timestamp ke tanggal",
+      "convert timestamp online",
+      "epoch converter"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-konversi-unix-timestamp",
+    "title": "Unix 타임스탬프를 날짜로 바꾸는 방법(그 반대도)",
+    "desc": "Unix 타임스탬프를 읽기 쉬운 날짜로, 또는 그 반대로 변환하는 방법을 안내합니다, 초 단위와 밀리초 단위 모두 지원, 브라우저에서 바로.",
+    "category": "utilitas",
+    "url": "/ko/cara-konversi-unix-timestamp.html",
+    "date": "2026-10-01",
+    "icon": "clock",
+    "keywords": [
+      "unix timestamp converter",
+      "timestamp ke tanggal",
+      "convert timestamp online",
+      "epoch converter"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-hitung-kata",
+    "title": "How to Count Words, Characters, and Reading Time",
+    "desc": "A guide to counting words, characters, sentences, and estimated reading time from text in real time, right in your browser with no upload to a server.",
+    "category": "text",
+    "url": "/en/cara-hitung-kata.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "word counter",
+      "cara hitung kata",
+      "hitung karakter online",
+      "penghitung kata"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-hitung-kata",
+    "title": "如何统计文本的字数、字符数和阅读时间",
+    "desc": "教你如何实时统计文本的字数、字符数、句子数和预估阅读时间，全部在浏览器本地完成，无需上传服务器。",
+    "category": "text",
+    "url": "/zh/cara-hitung-kata.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "word counter",
+      "cara hitung kata",
+      "hitung karakter online",
+      "penghitung kata"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-hitung-kata",
+    "title": "텍스트의 단어 수, 글자 수, 읽기 시간 계산하는 방법",
+    "desc": "텍스트의 단어 수, 글자 수, 문장 수, 예상 읽기 시간을 실시간으로 계산하는 방법을 안내합니다. 전부 브라우저에서, 서버 업로드 없이.",
+    "category": "text",
+    "url": "/ko/cara-hitung-kata.html",
+    "date": "2026-10-01",
+    "icon": "text",
+    "keywords": [
+      "word counter",
+      "cara hitung kata",
+      "hitung karakter online",
+      "penghitung kata"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-ambil-warna-dari-gambar",
+    "title": "画像からカラーコードとパレットを抽出する方法",
+    "desc": "画像をクリックするだけでHex、RGB、HSLのカラーコードを取得、または主要な配色パレットを自動抽出する方法。ブラウザ内で直接処理。",
+    "category": "image",
+    "url": "/ja/cara-ambil-warna-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "color picker gambar",
+      "ambil warna dari gambar",
+      "palet warna dominan",
+      "cek kode warna hex"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "cara-ambil-warna-dari-gambar",
+    "title": "How to Extract Color Codes and Palettes from an Image",
+    "desc": "A guide to picking Hex, RGB, and HSL color codes from an image by clicking directly on it, or automatically extracting a dominant color palette, right in your browser.",
+    "category": "image",
+    "url": "/en/cara-ambil-warna-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "color picker gambar",
+      "ambil warna dari gambar",
+      "palet warna dominan",
+      "cek kode warna hex"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-ambil-warna-dari-gambar",
+    "title": "如何从图片中提取颜色代码和调色板",
+    "desc": "教你如何通过点击从图片中提取Hex、RGB、HSL颜色代码，或自动提取主色调调色板，全部在浏览器本地完成。",
+    "category": "image",
+    "url": "/zh/cara-ambil-warna-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "color picker gambar",
+      "ambil warna dari gambar",
+      "palet warna dominan",
+      "cek kode warna hex"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-ambil-warna-dari-gambar",
+    "title": "이미지에서 색상 코드와 팔레트 추출하는 방법",
+    "desc": "이미지에서 클릭 한 번으로 Hex, RGB, HSL 색상 코드를 추출하거나, 자동으로 주요 색상 팔레트를 뽑아내는 방법을 안내합니다. 전부 브라우저에서 바로.",
+    "category": "image",
+    "url": "/ko/cara-ambil-warna-dari-gambar.html",
+    "date": "2026-10-01",
+    "icon": "image",
+    "keywords": [
+      "color picker gambar",
+      "ambil warna dari gambar",
+      "palet warna dominan",
+      "cek kode warna hex"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "siesta-riset-pertama-resmi-publish",
+    "title": "Siesta：MEA Team AI初の正式公開研究、Zenodoにて発表",
+    "desc": "MEA Team AI初の研究論文がZenodoでプレプリントとして正式に公開されました。Siestaは限られたリソースでゼロから構築された、インドネシア語オーケストレーター言語モデルのidentity coherenceを探求します。",
+    "category": "riset",
+    "url": "/ja/siesta-riset-pertama-resmi-publish.html",
+    "date": "2026-09-16",
+    "icon": "ai",
+    "keywords": [
+      "Siesta",
+      "MEA Team AI",
+      "identity coherence",
+      "model bahasa orchestrator",
+      "riset AI Indonesia",
+      "preprint Zenodo"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "siesta-riset-pertama-resmi-publish",
+    "title": "Siesta: MEA AI Team's First Research Officially Published on Zenodo",
+    "desc": "MEA AI Team's first research paper has officially been published as a preprint on Zenodo. Siesta explores identity coherence in an Indonesian-language orchestrator language model, built from scratch with limited resources.",
+    "category": "riset",
+    "url": "/en/siesta-riset-pertama-resmi-publish.html",
+    "date": "2026-09-16",
+    "icon": "ai",
+    "keywords": [
+      "Siesta",
+      "MEA Team AI",
+      "identity coherence",
+      "model bahasa orchestrator",
+      "riset AI Indonesia",
+      "preprint Zenodo"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "siesta-riset-pertama-resmi-publish",
+    "title": "Siesta：MEA Team AI首个研究成果正式在Zenodo发表",
+    "desc": "MEA Team AI的首篇研究论文作为预印本正式在Zenodo发表。Siesta探索了印尼语协调器语言模型的身份一致性，在有限资源下从零构建。",
+    "category": "riset",
+    "url": "/zh/siesta-riset-pertama-resmi-publish.html",
+    "date": "2026-09-16",
+    "icon": "ai",
+    "keywords": [
+      "Siesta",
+      "MEA Team AI",
+      "identity coherence",
+      "model bahasa orchestrator",
+      "riset AI Indonesia",
+      "preprint Zenodo"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "siesta-riset-pertama-resmi-publish",
+    "title": "Siesta: MEA AI 팀의 첫 연구가 Zenodo에 공식 게재되다",
+    "desc": "MEA AI 팀의 첫 연구 논문이 Zenodo에 프리프린트로 공식 게재되었습니다. Siesta는 제한된 자원으로 처음부터 구축된 인도네시아어 오케스트레이터 언어 모델의 정체성 일관성을 탐구합니다.",
+    "category": "riset",
+    "url": "/ko/siesta-riset-pertama-resmi-publish.html",
+    "date": "2026-09-16",
+    "icon": "ai",
+    "keywords": [
+      "Siesta",
+      "MEA Team AI",
+      "identity coherence",
+      "model bahasa orchestrator",
+      "riset AI Indonesia",
+      "preprint Zenodo"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-ubah-pdf-jadi-gambar",
+    "title": "How to Convert a PDF to Images (JPG/PNG), Right in Your Browser",
+    "desc": "A complete guide to converting every page of a PDF into a JPG or PNG image with no upload to a server, no app install, and no login — the entire process runs right in your browser.",
+    "category": "convert",
+    "url": "/en/cara-ubah-pdf-jadi-gambar.html",
+    "date": "2026-08-16",
+    "icon": "pdf",
+    "keywords": [
+      "pdf ke gambar",
+      "pdf ke jpg",
+      "pdf ke png",
+      "convert pdf",
+      "cara ubah pdf jadi gambar",
+      "extract halaman pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-ubah-pdf-jadi-gambar",
+    "title": "如何将PDF转换为图片（JPG/PNG），直接在浏览器中完成",
+    "desc": "完整指南：将每页PDF转换为JPG或PNG图片，无需上传到服务器、无需安装应用、无需登录——所有过程都直接在浏览器中完成。",
+    "category": "convert",
+    "url": "/zh/cara-ubah-pdf-jadi-gambar.html",
+    "date": "2026-08-16",
+    "icon": "pdf",
+    "keywords": [
+      "pdf ke gambar",
+      "pdf ke jpg",
+      "pdf ke png",
+      "convert pdf",
+      "cara ubah pdf jadi gambar",
+      "extract halaman pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-ubah-pdf-jadi-gambar",
+    "title": "PDF를 이미지(JPG/PNG)로 바꾸는 방법, 브라우저에서 바로",
+    "desc": "PDF 모든 페이지를 JPG 또는 PNG 이미지로 바꾸는 완전한 안내입니다, 서버 업로드 없이, 앱 설치 없이, 로그인 없이 — 모든 과정이 브라우저에서 바로 진행됩니다.",
+    "category": "convert",
+    "url": "/ko/cara-ubah-pdf-jadi-gambar.html",
+    "date": "2026-08-16",
+    "icon": "pdf",
+    "keywords": [
+      "pdf ke gambar",
+      "pdf ke jpg",
+      "pdf ke png",
+      "convert pdf",
+      "cara ubah pdf jadi gambar",
+      "extract halaman pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-gabungkan-pdf",
+    "title": "How to Merge Several PDF Files Into One",
+    "desc": "A guide to merging many PDF files at once, arranging the order however you like, with no upload to a server and no quality loss — it all runs right in your browser.",
+    "category": "convert",
+    "url": "/en/cara-gabungkan-pdf.html",
+    "date": "2026-08-17",
+    "icon": "pdf",
+    "keywords": [
+      "gabungkan pdf",
+      "merge pdf",
+      "satukan pdf",
+      "cara menggabungkan pdf",
+      "combine pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-gabungkan-pdf",
+    "title": "如何将多个PDF文件合并为一个",
+    "desc": "教你如何一次性合并多个PDF文件，随意调整顺序，无需上传服务器，不损失画质——全部处理直接在浏览器完成。",
+    "category": "convert",
+    "url": "/zh/cara-gabungkan-pdf.html",
+    "date": "2026-08-17",
+    "icon": "pdf",
+    "keywords": [
+      "gabungkan pdf",
+      "merge pdf",
+      "satukan pdf",
+      "cara menggabungkan pdf",
+      "combine pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-gabungkan-pdf",
+    "title": "여러 PDF 파일을 하나로 합치는 방법",
+    "desc": "여러 PDF 파일을 한 번에 합치는 방법을 안내합니다. 순서를 마음대로 조정하고, 서버 업로드 없이, 품질 손실 없이 — 전부 브라우저에서 바로.",
+    "category": "convert",
+    "url": "/ko/cara-gabungkan-pdf.html",
+    "date": "2026-08-17",
+    "icon": "pdf",
+    "keywords": [
+      "gabungkan pdf",
+      "merge pdf",
+      "satukan pdf",
+      "cara menggabungkan pdf",
+      "combine pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-kompres-gambar",
+    "title": "How to Compress Images Without Losing Quality, Right in Your Browser",
+    "desc": "A guide to shrinking image file sizes (JPG, PNG, WebP) and resizing many images at once, with no upload to a server, free and no login.",
+    "category": "image",
+    "url": "/en/cara-kompres-gambar.html",
+    "date": "2026-08-17",
+    "icon": "image",
+    "keywords": [
+      "kompres gambar",
+      "compress image",
+      "perkecil ukuran gambar",
+      "resize gambar",
+      "kompres foto",
+      "cara mengecilkan ukuran foto"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-kompres-gambar",
+    "title": "如何在不损失画质的情况下压缩图片，全部在浏览器完成",
+    "desc": "教你如何缩小图片文件大小（JPG、PNG、WebP）并一次性调整多张图片尺寸，无需上传服务器，免费且无需登录。",
+    "category": "image",
+    "url": "/zh/cara-kompres-gambar.html",
+    "date": "2026-08-17",
+    "icon": "image",
+    "keywords": [
+      "kompres gambar",
+      "compress image",
+      "perkecil ukuran gambar",
+      "resize gambar",
+      "kompres foto",
+      "cara mengecilkan ukuran foto"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-kompres-gambar",
+    "title": "품질 손실 없이 이미지 압축하는 방법, 브라우저에서 바로",
+    "desc": "이미지(JPG, PNG, WebP) 파일 크기를 줄이고 여러 이미지를 한 번에 리사이즈하는 방법을 안내합니다. 서버 업로드 없이, 무료, 로그인 불필요.",
+    "category": "image",
+    "url": "/ko/cara-kompres-gambar.html",
+    "date": "2026-08-17",
+    "icon": "image",
+    "keywords": [
+      "kompres gambar",
+      "compress image",
+      "perkecil ukuran gambar",
+      "resize gambar",
+      "kompres foto",
+      "cara mengecilkan ukuran foto"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "cara-memecah-pdf",
+    "title": "How to Split One PDF into Several Separate Files",
+    "desc": "A guide to splitting a PDF by page, clicking directly between thumbnails or typing manual page ranges, with no upload to a server, free and no login.",
+    "category": "convert",
+    "url": "/en/cara-memecah-pdf.html",
+    "date": "2026-08-17",
+    "icon": "pdf",
+    "keywords": [
+      "split pdf",
+      "pecah pdf",
+      "memecah pdf",
+      "cara memisahkan halaman pdf",
+      "potong pdf"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "cara-memecah-pdf",
+    "title": "如何将一个PDF拆分成多个独立文件",
+    "desc": "教你如何按页拆分PDF，直接点击缩略图之间或手动输入页码范围，无需上传到服务器，免费且无需登录。",
+    "category": "convert",
+    "url": "/zh/cara-memecah-pdf.html",
+    "date": "2026-08-17",
+    "icon": "pdf",
+    "keywords": [
+      "split pdf",
+      "pecah pdf",
+      "memecah pdf",
+      "cara memisahkan halaman pdf",
+      "potong pdf"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "cara-memecah-pdf",
+    "title": "하나의 PDF를 여러 파일로 나누는 방법",
+    "desc": "페이지 기준으로 PDF를 나누는 방법을 안내합니다, 썸네일 사이를 클릭하거나 직접 페이지 범위를 입력하세요, 서버 업로드 없이, 무료, 로그인 불필요.",
+    "category": "convert",
+    "url": "/ko/cara-memecah-pdf.html",
+    "date": "2026-08-17",
+    "icon": "pdf",
+    "keywords": [
+      "split pdf",
+      "pecah pdf",
+      "memecah pdf",
+      "cara memisahkan halaman pdf",
+      "potong pdf"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "kenapa-tools-online-pindah-ke-client-side",
+    "title": "Why Are More Online Tools Moving to Client-Side?",
+    "desc": "A simple explanation of what client-side processing is, why this trend is getting more popular, and how to recognize tools that genuinely don't send your file to a server.",
+    "category": "privasi",
+    "url": "/en/kenapa-tools-online-pindah-ke-client-side.html",
+    "date": "2026-08-17",
+    "icon": "lock",
+    "keywords": [
+      "client-side processing",
+      "privasi online",
+      "tools tanpa upload server",
+      "kenapa client side",
+      "keamanan data pribadi",
+      "pemrosesan di browser"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "kenapa-tools-online-pindah-ke-client-side",
+    "title": "为什么越来越多在线工具转向客户端处理？",
+    "desc": "简单解释什么是客户端处理，为什么这个趋势越来越流行，以及如何辨别真正不会把你的文件发送到服务器的工具。",
+    "category": "privasi",
+    "url": "/zh/kenapa-tools-online-pindah-ke-client-side.html",
+    "date": "2026-08-17",
+    "icon": "lock",
+    "keywords": [
+      "client-side processing",
+      "privasi online",
+      "tools tanpa upload server",
+      "kenapa client side",
+      "keamanan data pribadi",
+      "pemrosesan di browser"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "kenapa-tools-online-pindah-ke-client-side",
+    "title": "왜 점점 더 많은 온라인 툴이 클라이언트 사이드로 옮겨갈까?",
+    "desc": "클라이언트 사이드 처리란 무엇인지, 왜 이 방식이 점점 더 많이 채택되는지, 그리고 파일을 정말로 서버에 보내지 않는 툴을 알아보는 방법을 쉽게 설명합니다.",
+    "category": "privasi",
+    "url": "/ko/kenapa-tools-online-pindah-ke-client-side.html",
+    "date": "2026-08-17",
+    "icon": "lock",
+    "keywords": [
+      "client-side processing",
+      "privasi online",
+      "tools tanpa upload server",
+      "kenapa client side",
+      "keamanan data pribadi",
+      "pemrosesan di browser"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "mea-tools-ganti-nama-jadi-forgelyx",
     "title": "MEA Tools Ganti Nama Jadi Forgelyx",
     "desc": "MEA Tools resmi berganti nama jadi Forgelyx dan sudah bisa diakses penuh di forgelyx.meaecosystem.com -- tetap gratis, tanpa watermark, diproses langsung di browser.",
     "category": "tentang",
     "url": "/id/mea-tools-ganti-nama-jadi-forgelyx.html",
     "date": "2026-10-21",
     "icon": "gift",
-    "keywords": ["Forgelyx", "MEA Tools rebranding", "nama baru MEA Tools", "forgelyx.meaecosystem.com"],
+    "keywords": [
+      "Forgelyx",
+      "MEA Tools rebranding",
+      "nama baru MEA Tools",
+      "forgelyx.meaecosystem.com"
+    ],
     "lang": "id"
   },
   {
@@ -18,7 +3372,12 @@
     "url": "/id/mea-hub-ganti-nama-jadi-synoltra.html",
     "date": "2026-10-21",
     "icon": "gift",
-    "keywords": ["Synoltra", "MEA Hub rebranding", "nama baru MEA Hub", "synoltra.meaecosystem.com"],
+    "keywords": [
+      "Synoltra",
+      "MEA Hub rebranding",
+      "nama baru MEA Hub",
+      "synoltra.meaecosystem.com"
+    ],
     "lang": "id"
   },
   {
@@ -29,7 +3388,12 @@
     "url": "/id/mea-space-ganti-nama-jadi-lintangx.html",
     "date": "2026-10-20",
     "icon": "gift",
-    "keywords": ["LintangX", "MEA Space rebranding", "nama baru MEA Space", "coming soon LintangX"],
+    "keywords": [
+      "LintangX",
+      "MEA Space rebranding",
+      "nama baru MEA Space",
+      "coming soon LintangX"
+    ],
     "lang": "id"
   },
   {

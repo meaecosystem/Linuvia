@@ -7,22 +7,43 @@
   file ini — kecuali menambah ikon baru ke MEA_ICONS.
 */
 
-const BLOG_CATEGORIES = [
-  { id: "all", label: "Semua" },
-  { id: "convert", label: "Konversi" },
-  { id: "image", label: "Gambar" },
-  { id: "text", label: "Teks" },
-  { id: "privasi", label: "Privasi & Keamanan" },
-  { id: "riset", label: "Riset & AI" },
-  { id: "utilitas", label: "Utilitas" },
-  { id: "tentang", label: "Tentang" },
-];
+/* Label kategori/sort/placeholder per bahasa. Struktur kategori (id &
+   urutan) sama di semua bahasa — cuma labelnya yang diterjemahkan. */
+const BLOG_I18N = {
+  id: {
+    categories: { all: "Semua", convert: "Konversi", image: "Gambar", text: "Teks", privasi: "Privasi & Keamanan", riset: "Riset & AI", utilitas: "Utilitas", tentang: "Tentang" },
+    sorts: { newest: "Terbaru", oldest: "Terlama", az: "A–Z" },
+    searchPlaceholder: "Cari artikel… misal 'pdf ke gambar'",
+    emptyState: "Belum ada artikel yang cocok. Coba kata kunci lain.",
+  },
+  en: {
+    categories: { all: "All", convert: "Convert", image: "Image", text: "Text", privasi: "Privacy & Security", riset: "Research & AI", utilitas: "Utilities", tentang: "About" },
+    sorts: { newest: "Newest", oldest: "Oldest", az: "A–Z" },
+    searchPlaceholder: "Search articles… e.g. 'pdf to image'",
+    emptyState: "No matching articles yet. Try another keyword.",
+  },
+  ja: {
+    categories: { all: "すべて", convert: "変換", image: "画像", text: "テキスト", privasi: "プライバシー＆セキュリティ", riset: "リサーチ＆AI", utilitas: "ユーティリティ", tentang: "について" },
+    sorts: { newest: "新着順", oldest: "古い順", az: "A–Z" },
+    searchPlaceholder: "記事を検索…例：「pdf 画像変換」",
+    emptyState: "該当する記事がまだありません。別のキーワードを試してください。",
+  },
+  zh: {
+    categories: { all: "全部", convert: "转换", image: "图片", text: "文本", privasi: "隐私与安全", riset: "研究与AI", utilitas: "实用工具", tentang: "关于" },
+    sorts: { newest: "最新", oldest: "最早", az: "A–Z" },
+    searchPlaceholder: "搜索文章…例如「pdf 转图片」",
+    emptyState: "暂无匹配的文章，试试其他关键词。",
+  },
+  ko: {
+    categories: { all: "전체", convert: "변환", image: "이미지", text: "텍스트", privasi: "개인정보 & 보안", riset: "연구 & AI", utilitas: "유틸리티", tentang: "소개" },
+    sorts: { newest: "최신순", oldest: "오래된순", az: "A–Z" },
+    searchPlaceholder: "글 검색… 예: 'pdf 이미지 변환'",
+    emptyState: "일치하는 글이 아직 없습니다. 다른 키워드를 시도해 보세요.",
+  },
+};
 
-const BLOG_SORTS = [
-  { id: "newest", label: "Terbaru" },
-  { id: "oldest", label: "Terlama" },
-  { id: "az", label: "A–Z" },
-];
+const BLOG_CATEGORY_ORDER = ["all", "convert", "image", "text", "privasi", "riset", "utilitas", "tentang"];
+const BLOG_SORT_ORDER = ["newest", "oldest", "az"];
 
 /* Ikon konkret per objek/topik (bukan ikon generik kategori).
    "pdf to image" -> ikon dokumen PDF, "image to pdf" -> ikon gambar, dst.
@@ -56,15 +77,24 @@ function meaIconSvg(key) {
 
   if (!gridEl) return; // halaman ini bukan homepage
 
+  // Bahasa listing ini ditentukan dari data-lang-current di <body>
+  // (lihat index.html per-bahasa: /en/index.html, /ja/index.html, dst).
+  // Fallback ke "id" kalau atributnya nggak ada atau nggak dikenal.
+  var currentLang = document.body.getAttribute("data-lang-current") || "id";
+  var i18n = BLOG_I18N[currentLang] || BLOG_I18N.id;
+
+  if (searchEl) searchEl.placeholder = i18n.searchPlaceholder;
+
   let articles = [];
   let activeCategory = "all";
   let activeSort = "newest";
   let query = "";
 
   function renderCategories() {
-    catEl.innerHTML = BLOG_CATEGORIES.map(function (cat) {
-      const active = cat.id === activeCategory ? " active" : "";
-      return '<button type="button" class="mea-category-btn' + active + '" data-cat="' + cat.id + '">' + cat.label + "</button>";
+    catEl.innerHTML = BLOG_CATEGORY_ORDER.map(function (catId) {
+      const active = catId === activeCategory ? " active" : "";
+      const label = i18n.categories[catId] || catId;
+      return '<button type="button" class="mea-category-btn' + active + '" data-cat="' + catId + '">' + label + "</button>";
     }).join("");
 
     catEl.querySelectorAll(".mea-category-btn").forEach(function (btn) {
@@ -78,8 +108,8 @@ function meaIconSvg(key) {
 
   function renderSortOptions() {
     if (!sortEl) return;
-    sortEl.innerHTML = BLOG_SORTS.map(function (s) {
-      return '<option value="' + s.id + '">' + s.label + "</option>";
+    sortEl.innerHTML = BLOG_SORT_ORDER.map(function (sortId) {
+      return '<option value="' + sortId + '">' + (i18n.sorts[sortId] || sortId) + "</option>";
     }).join("");
     sortEl.value = activeSort;
   }
@@ -113,12 +143,12 @@ function meaIconSvg(key) {
     );
 
     if (filtered.length === 0) {
-      gridEl.innerHTML = '<div class="mea-empty-state">Belum ada artikel yang cocok. Coba kata kunci lain.</div>';
+      gridEl.innerHTML = '<div class="mea-empty-state">' + i18n.emptyState + '</div>';
       return;
     }
 
     gridEl.innerHTML = filtered.map(function (a) {
-      const catLabel = (BLOG_CATEGORIES.find(function (c) { return c.id === a.category; }) || {}).label || a.category;
+      const catLabel = i18n.categories[a.category] || a.category;
       return (
         '<a href="' + a.url + '" class="mea-article-card glass">' +
           meaIconSvg(a.icon) +
@@ -134,12 +164,9 @@ function meaIconSvg(key) {
   fetch("/data/articles.json")
     .then(function (res) { return res.json(); })
     .then(function (data) {
-      // Blog ini sekarang multi-bahasa (lihat /ja/, /en/, dst). Homepage
-      // masih satu listing default berbahasa Indonesia — artikel bahasa
-      // lain tetap ada di articles.json (field "lang") tapi disaring dari
-      // sini supaya nggak numpuk campur. Entry lama (belum sempat dikasih
-      // field "lang") dianggap "id" lewat fallback di bawah.
-      articles = data.filter(function (a) { return (a.lang || "id") === "id"; });
+      // Entry lama (belum sempat dikasih field "lang") dianggap "id"
+      // lewat fallback di bawah.
+      articles = data.filter(function (a) { return (a.lang || "id") === currentLang; });
       renderCategories();
       renderSortOptions();
       renderGrid();
