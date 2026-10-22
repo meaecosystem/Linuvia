@@ -1,13 +1,82 @@
 [
   {
     "id": "mea-study-ganti-nama-jadi-scholavi",
+    "title": "MEA Studyが「Scholavi」に改名",
+    "desc": "MEA Studyは正式にScholaviへ改名し、scholavi.meaecosystem.comですでにアクセス可能です。Lorestraと連携した図書館機能はすでに稼働中、その他の機能は現在も開発が続いています。",
+    "category": "tentang",
+    "url": "/ja/mea-study-ganti-nama-jadi-scholavi.html",
+    "date": "2026-10-22",
+    "icon": "gift",
+    "keywords": [
+      "Scholavi",
+      "MEA Study rebranding",
+      "nama baru MEA Study",
+      "scholavi.meaecosystem.com"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "mea-study-ganti-nama-jadi-scholavi",
+    "title": "MEA Study Is Now Scholavi",
+    "desc": "MEA Study has officially been renamed to Scholavi and is already accessible at scholavi.meaecosystem.com. The Library (connected to Lorestra) is already running, other features are still being developed.",
+    "category": "tentang",
+    "url": "/en/mea-study-ganti-nama-jadi-scholavi.html",
+    "date": "2026-10-22",
+    "icon": "gift",
+    "keywords": [
+      "Scholavi",
+      "MEA Study rebranding",
+      "nama baru MEA Study",
+      "scholavi.meaecosystem.com"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "mea-study-ganti-nama-jadi-scholavi",
+    "title": "MEA Study更名为Scholavi",
+    "desc": "MEA Study正式更名为Scholavi，现已可在scholavi.meaecosystem.com访问。与Lorestra对接的图书馆功能已经上线，其他功能仍在持续开发中。",
+    "category": "tentang",
+    "url": "/zh/mea-study-ganti-nama-jadi-scholavi.html",
+    "date": "2026-10-22",
+    "icon": "gift",
+    "keywords": [
+      "Scholavi",
+      "MEA Study rebranding",
+      "nama baru MEA Study",
+      "scholavi.meaecosystem.com"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "mea-study-ganti-nama-jadi-scholavi",
+    "title": "MEA Study, Scholavi로 이름 변경",
+    "desc": "MEA Study가 공식적으로 Scholavi로 이름을 변경했으며, scholavi.meaecosystem.com에서 이미 접속 가능합니다. Lorestra와 연동된 도서관 기능은 이미 작동 중이며, 다른 기능들은 계속 개발되고 있습니다.",
+    "category": "tentang",
+    "url": "/ko/mea-study-ganti-nama-jadi-scholavi.html",
+    "date": "2026-10-22",
+    "icon": "gift",
+    "keywords": [
+      "Scholavi",
+      "MEA Study rebranding",
+      "nama baru MEA Study",
+      "scholavi.meaecosystem.com"
+    ],
+    "lang": "ko"
+  },
+  {
+    "id": "mea-study-ganti-nama-jadi-scholavi",
     "title": "MEA Study Ganti Nama Jadi Scholavi",
     "desc": "MEA Study resmi berganti nama jadi Scholavi dan sudah bisa diakses di scholavi.meaecosystem.com -- Perpustakaan sudah jalan, fitur lain masih terus dikembangkan.",
     "category": "tentang",
     "url": "/id/mea-study-ganti-nama-jadi-scholavi.html",
     "date": "2026-10-22",
     "icon": "gift",
-    "keywords": ["Scholavi", "MEA Study rebranding", "nama baru MEA Study", "scholavi.meaecosystem.com"],
+    "keywords": [
+      "Scholavi",
+      "MEA Study rebranding",
+      "nama baru MEA Study",
+      "scholavi.meaecosystem.com"
+    ],
     "lang": "id"
   },
   {
