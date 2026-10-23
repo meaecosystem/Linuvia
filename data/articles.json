@@ -4766,5 +4766,38 @@
       "linuvia.meaecosystem.com"
     ],
     "lang": "ko"
+  },
+  {
+    "id": "mea-news-ganti-nama-jadi-newsolva",
+    "title": "MEA News Ganti Nama Jadi Newsolva",
+    "desc": "MEA News resmi berganti nama jadi Newsolva dan sudah bisa diakses penuh di newsolva.meaecosystem.com. Agregator berita ini kini dilengkapi engine yang mengelompokkan berita terkait jadi satu kronologi.",
+    "category": "tentang",
+    "url": "/id/mea-news-ganti-nama-jadi-newsolva.html",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Newsolva",
+      "MEA News rebranding",
+      "nama baru MEA News",
+      "newsolva.meaecosystem.com"
+    ],
+    "lang": "id"
+  },
+  {
+    "id": "rebranding-produk-mea-ecosystem-yang-akan-datang",
+    "title": "Rebranding Produk MEA Ecosystem yang Akan Datang",
+    "desc": "Empat produk MEA Ecosystem lainnya -- MEA Link, MEA Data, MEA Trade, dan MEA Play -- juga akan berganti nama menjadi Selfolyx, Daivora, Bursalyx, dan Playzora. Rencana rebranding ini masih dalam tahap persiapan dan belum dieksekusi sepenuhnya.",
+    "category": "tentang",
+    "url": "/id/rebranding-produk-mea-ecosystem-yang-akan-datang.html",
+    "date": "2026-10-23",
+    "icon": "gift",
+    "keywords": [
+      "Selfolyx",
+      "Daivora",
+      "Bursalyx",
+      "Playzora",
+      "rebranding MEA Ecosystem"
+    ],
+    "lang": "id"
   }
 ]
