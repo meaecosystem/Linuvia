@@ -70,6 +70,14 @@
         "<span>" + lang.label + "</span>" +
         (available ? "" : '<span class="lang-switcher-note">Segera</span>');
 
+      // Simpan pilihan manual ke cookie yang sama dipakai functions/[[path]].js
+      // buat auto-detect bahasa, supaya auto-detect nggak nimpa pilihan ini lagi.
+      item.addEventListener("click", function () {
+        try {
+          document.cookie = "mea_lang=" + lang.code + "; Path=/; Max-Age=31536000; SameSite=Lax";
+        } catch (e) {}
+      });
+
       menu.appendChild(item);
     });
 
