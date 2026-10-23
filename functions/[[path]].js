@@ -18,6 +18,14 @@ const DEFAULT_LANG = 'id';
 const LANG_COOKIE = 'mea_lang';
 const BOT_PATTERN = /bot|crawl|spider|slurp|facebookexternalhit|preview|googlebot|bingbot|duckduckbot|baiduspider|yandex|semrush|ahrefs|mediapartners/i;
 
+// Slug lama yang sempat dipublish terus langsung diganti (kurang dari
+// sehari online, misal nama "Linuvia" ternyata collision sama platform
+// lain) -> slug barunya. Supaya link yang kebetulan sempat kesebar/keindex
+// nggak 404.
+const SLUG_RENAMES = {
+  'mea-blog-ganti-nama-jadi-linuvia.html': 'mea-blog-ganti-nama-jadi-vonetra.html',
+};
+
 function getCookie(request, name) {
   const header = request.headers.get('Cookie') || '';
   const match = header.match(new RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
@@ -70,9 +78,18 @@ export async function onRequest(context) {
 
   // Root (udah ditangani di atas), aset (shared/, data/, favicon, dst),
   // dan apapun yang sudah punya prefix bahasa yang valid (/id/..., /ja/...,
-  // dst) dibiarkan lewat apa adanya ke routing/asset normal.
+  // dst) dibiarkan lewat apa adanya ke routing/asset normal -- kecuali kalau
+  // nama filenya ada di SLUG_RENAMES, langsung redirect ke slug barunya.
   const firstSegment = path.split('/')[1];
   if (!firstSegment || SUPPORTED_LANGS.includes(firstSegment) || path.includes('.') === false) {
+    if (firstSegment && SUPPORTED_LANGS.includes(firstSegment)) {
+      const segments = path.split('/').filter(Boolean);
+      const filename = segments[segments.length - 1];
+      if (filename && SLUG_RENAMES[filename]) {
+        segments[segments.length - 1] = SLUG_RENAMES[filename];
+        return Response.redirect(`${url.origin}/${segments.join('/')}${url.search}`, 301);
+      }
+    }
     return context.next();
   }
 

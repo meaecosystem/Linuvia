@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://linuvia.meaecosystem.com/sitemap.xml
+Sitemap: https://vonetra.meaecosystem.com/sitemap.xml

@@ -1,21 +1,5 @@
 [
   {
-    "id": "mea-blog-ganti-nama-jadi-linuvia",
-    "title": "MEA Blog Ganti Nama Jadi Linuvia",
-    "desc": "MEA Blog resmi berganti nama jadi Linuvia dan pindah domain ke linuvia.meaecosystem.com. Murni ganti nama dan domain, isi dan fungsinya tetap sama.",
-    "category": "tentang",
-    "url": "/id/mea-blog-ganti-nama-jadi-linuvia.html",
-    "date": "2026-10-23",
-    "icon": "gift",
-    "keywords": [
-      "Linuvia",
-      "MEA Blog rebranding",
-      "nama baru MEA Blog",
-      "linuvia.meaecosystem.com"
-    ],
-    "lang": "id"
-  },
-  {
     "id": "mea-study-ganti-nama-jadi-scholavi",
     "title": "MEA Studyが「Scholavi」に改名",
     "desc": "MEA Studyは正式にScholaviへ改名し、scholavi.meaecosystem.comですでにアクセス可能です。Lorestraと連携した図書館機能はすでに稼働中、その他の機能は現在も開発が続いています。",
@@ -4704,70 +4688,6 @@
     ]
   },
   {
-    "id": "mea-blog-ganti-nama-jadi-linuvia",
-    "title": "MEA Blog Is Now Linuvia",
-    "desc": "MEA Blog has officially been renamed to Linuvia and moved to linuvia.meaecosystem.com. A pure name and domain change -- the content and purpose as MEA Ecosystem's internal blog stay the same.",
-    "category": "tentang",
-    "url": "/en/mea-blog-ganti-nama-jadi-linuvia.html",
-    "date": "2026-10-23",
-    "icon": "gift",
-    "keywords": [
-      "Linuvia",
-      "MEA Blog rebranding",
-      "nama baru MEA Blog",
-      "linuvia.meaecosystem.com"
-    ],
-    "lang": "en"
-  },
-  {
-    "id": "mea-blog-ganti-nama-jadi-linuvia",
-    "title": "MEA Blogが「Linuvia」に改名",
-    "desc": "MEA Blogは正式にLinuviaへ改名し、linuvia.meaecosystem.comへ移行しました。純粋な名称とドメインの変更のみで、MEA Ecosystemの社内ブログとしての内容・役割は変わりません。",
-    "category": "tentang",
-    "url": "/ja/mea-blog-ganti-nama-jadi-linuvia.html",
-    "date": "2026-10-23",
-    "icon": "gift",
-    "keywords": [
-      "Linuvia",
-      "MEA Blog rebranding",
-      "nama baru MEA Blog",
-      "linuvia.meaecosystem.com"
-    ],
-    "lang": "ja"
-  },
-  {
-    "id": "mea-blog-ganti-nama-jadi-linuvia",
-    "title": "MEA Blog更名为Linuvia",
-    "desc": "MEA Blog正式更名为Linuvia，并迁移到linuvia.meaecosystem.com。纯粹的名称与域名变更——作为MEA Ecosystem内部博客的内容和功能保持不变。",
-    "category": "tentang",
-    "url": "/zh/mea-blog-ganti-nama-jadi-linuvia.html",
-    "date": "2026-10-23",
-    "icon": "gift",
-    "keywords": [
-      "Linuvia",
-      "MEA Blog rebranding",
-      "nama baru MEA Blog",
-      "linuvia.meaecosystem.com"
-    ],
-    "lang": "zh"
-  },
-  {
-    "id": "mea-blog-ganti-nama-jadi-linuvia",
-    "title": "MEA Blog, Linuvia로 이름 변경",
-    "desc": "MEA Blog가 공식적으로 Linuvia로 이름을 변경하고 linuvia.meaecosystem.com으로 이전했습니다. 순수한 이름과 도메인 변경으로, MEA Ecosystem 내부 블로그로서의 내용과 역할은 그대로입니다.",
-    "category": "tentang",
-    "url": "/ko/mea-blog-ganti-nama-jadi-linuvia.html",
-    "date": "2026-10-23",
-    "icon": "gift",
-    "keywords": [
-      "Linuvia",
-      "MEA Blog rebranding",
-      "nama baru MEA Blog",
-      "linuvia.meaecosystem.com"
-    ],
-    "lang": "ko"
-  },
-  {
     "id": "mea-news-ganti-nama-jadi-newsolva",
     "title": "MEA News Ganti Nama Jadi Newsolva",
     "desc": "MEA News resmi berganti nama jadi Newsolva dan sudah bisa diakses penuh di newsolva.meaecosystem.com. Agregator berita ini kini dilengkapi engine yang mengelompokkan berita terkait jadi satu kronologi.",
@@ -4799,5 +4719,85 @@
       "rebranding MEA Ecosystem"
     ],
     "lang": "id"
+  },
+  {
+    "id": "mea-blog-ganti-nama-jadi-vonetra",
+    "title": "MEA Blog Ganti Nama Jadi Vonetra",
+    "desc": "MEA Blog resmi berganti nama jadi Vonetra dan pindah domain ke vonetra.meaecosystem.com. Murni ganti nama dan domain, isi dan fungsinya tetap sama.",
+    "category": "tentang",
+    "url": "/id/mea-blog-ganti-nama-jadi-vonetra.html",
+    "date": "2026-10-24",
+    "icon": "gift",
+    "keywords": [
+      "Vonetra",
+      "MEA Blog rebranding",
+      "nama baru MEA Blog",
+      "vonetra.meaecosystem.com"
+    ],
+    "lang": "id"
+  },
+  {
+    "id": "mea-blog-ganti-nama-jadi-vonetra",
+    "title": "MEA Blog Is Now Vonetra",
+    "desc": "MEA Blog has officially been renamed to Vonetra and moved to vonetra.meaecosystem.com. A pure name and domain change -- the content and purpose as MEA Ecosystem's internal blog stay the same.",
+    "category": "tentang",
+    "url": "/en/mea-blog-ganti-nama-jadi-vonetra.html",
+    "date": "2026-10-24",
+    "icon": "gift",
+    "keywords": [
+      "Vonetra",
+      "MEA Blog rebranding",
+      "nama baru MEA Blog",
+      "vonetra.meaecosystem.com"
+    ],
+    "lang": "en"
+  },
+  {
+    "id": "mea-blog-ganti-nama-jadi-vonetra",
+    "title": "MEA Blogが「Vonetra」に改名",
+    "desc": "MEA Blogは正式にVonetraへ改名し、vonetra.meaecosystem.comへ移行しました。純粋な名称とドメインの変更のみで、MEA Ecosystemの社内ブログとしての内容・役割は変わりません。",
+    "category": "tentang",
+    "url": "/ja/mea-blog-ganti-nama-jadi-vonetra.html",
+    "date": "2026-10-24",
+    "icon": "gift",
+    "keywords": [
+      "Vonetra",
+      "MEA Blog rebranding",
+      "nama baru MEA Blog",
+      "vonetra.meaecosystem.com"
+    ],
+    "lang": "ja"
+  },
+  {
+    "id": "mea-blog-ganti-nama-jadi-vonetra",
+    "title": "MEA Blog更名为Vonetra",
+    "desc": "MEA Blog正式更名为Vonetra，并迁移到vonetra.meaecosystem.com。纯粹的名称与域名变更——作为MEA Ecosystem内部博客的内容和功能保持不变。",
+    "category": "tentang",
+    "url": "/zh/mea-blog-ganti-nama-jadi-vonetra.html",
+    "date": "2026-10-24",
+    "icon": "gift",
+    "keywords": [
+      "Vonetra",
+      "MEA Blog rebranding",
+      "nama baru MEA Blog",
+      "vonetra.meaecosystem.com"
+    ],
+    "lang": "zh"
+  },
+  {
+    "id": "mea-blog-ganti-nama-jadi-vonetra",
+    "title": "MEA Blog, Vonetra로 이름 변경",
+    "desc": "MEA Blog가 공식적으로 Vonetra로 이름을 변경하고 vonetra.meaecosystem.com으로 이전했습니다. 순수한 이름과 도메인 변경으로, MEA Ecosystem 내부 블로그로서의 내용과 역할은 그대로입니다.",
+    "category": "tentang",
+    "url": "/ko/mea-blog-ganti-nama-jadi-vonetra.html",
+    "date": "2026-10-24",
+    "icon": "gift",
+    "keywords": [
+      "Vonetra",
+      "MEA Blog rebranding",
+      "nama baru MEA Blog",
+      "vonetra.meaecosystem.com"
+    ],
+    "lang": "ko"
   }
 ]
