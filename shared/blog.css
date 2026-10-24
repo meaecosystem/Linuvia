@@ -283,20 +283,42 @@ ul, ol { list-style: none; }
 }
 
 /* ============================================================
-   HERO — full viewport, static glow (no drift animation), glass card
+   HERO VIEWPORT GROUP — header + hero + promo strip digabung jadi satu
+   blok flex setinggi 1 layar penuh (100dvh), biar semuanya muat tanpa
+   perlu scroll. Header & promo auto-height, hero ambil sisa ruangnya.
+   ============================================================ */
+
+.mea-hero-viewport {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.mea-hero-viewport .site-header {
+  flex: 0 0 auto;
+}
+
+.mea-hero-viewport .mea-promo {
+  flex: 0 0 auto;
+}
+
+/* ============================================================
+   HERO — ambil sisa tinggi viewport (lihat .mea-hero-viewport di atas),
+   static glow (no drift animation), glass card
    ============================================================ */
 
 .mea-hero {
   position: relative;
-  height: 100vh;
-  height: calc(100dvh - 1px); /* -1px jaga-jaga dari rounding zoom/browser chrome */
-  min-height: 560px;
+  flex: 1 1 auto;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 88px 20px 64px;
+  padding: 24px 20px;
+  overflow: hidden;
 }
 
 /* Static glow — dua titik cahaya diam, tidak ada animasi drift, ringan */
@@ -345,8 +367,17 @@ ul, ol { list-style: none; }
 }
 
 @media (max-width: 520px) {
-  .mea-hero { padding: 76px 20px 52px; }
-  .mea-hero-content { gap: 12px; }
+  .mea-hero { padding: 16px 20px; }
+  .mea-hero-content { gap: 10px; }
+}
+
+/* Layar pendek (landscape HP, laptop kecil) -- kecilin lagi biar tetap
+   muat 1 layar bareng header + promo strip */
+@media (max-height: 680px) {
+  .mea-hero-content { gap: 8px; }
+  .mea-hero h1 { font-size: clamp(32px, 8vw, 52px); }
+  .mea-hero-lead { font-size: 14px; }
+  .mea-hero-scroll-cue { display: none; }
 }
 
 .mea-hero-badge {
